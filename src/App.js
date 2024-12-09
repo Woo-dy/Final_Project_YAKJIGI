@@ -33,6 +33,10 @@ import Sub203 from './pages/sub203/Sub203';
 import Sub301 from './pages/sub301/Sub301';
 import Sub302 from './pages/sub302/Sub302';
 import Sub303 from './pages/sub303/Sub303';
+import NoticeList from './pages/notice/NoticeList';
+import FaqList from './pages/faq/FaqList';
+import QnaList from './pages/qna/QnaList';
+import MinquiryList from './pages/minquiry/MinquiryList';
 
 function App() {
    
@@ -98,6 +102,10 @@ function App() {
                <Route path='/sub301' element={<Sub301 />} />
                <Route path='/sub302' element={<Sub302 />} />
                <Route path='/sub303' element={<Sub303 />} />
+               <Route path='/noticelist' element={<NoticeList />} />
+               <Route path='/faqlist' element={<FaqList />} />
+               <Route path='/qnalist' element={<QnaList />} />
+               <Route path='/minquiry' element={<MinquiryList />} />
             </Routes>
 
             <Footer />

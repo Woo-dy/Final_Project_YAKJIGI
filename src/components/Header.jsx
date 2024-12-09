@@ -133,7 +133,7 @@ function Header(props) {
                                                       GCAS는 문화 예술 전반에 걸친 분야에서 탁월한 실력과 리더십으로 세상을 섬기고 변화시킬 인재를 양성하는 기독예술학교입니다.
                                                    </em>
                                                    <div className="button">
-                                                      <Link>View More</Link>
+                                                      <Link to="/sub101">View More</Link>
                                                    </div>
                                                 </div>
                                                 <div className="menu_01_img">
@@ -190,7 +190,7 @@ function Header(props) {
                                                       GCAS는 잠재력을 가진 사람들과 함께 합니다. 학업적인 성공과 더불어 좋은마음 그리고 학생들의 목표를 열정적으로 지원합니다.
                                                    </em>
                                                    <div className="button">
-                                                      <Link>View More</Link>
+                                                      <Link to="/sub201">View More</Link>
                                                    </div>
                                                 </div>
                                                 <div className="menu_01_img">
@@ -200,13 +200,13 @@ function Header(props) {
                                                 </div>
                                                 <div className="menu_01">
                                                    <p className="menu_01_p">
-                                                      <Link>의약품 검색하기</Link>
+                                                      <Link to="/sub201">의약품 검색하기</Link>
                                                    </p>
                                                    <p className="menu_02_p">
-                                                      <Link>부작용 검색하기</Link>
+                                                      <Link to="/sub202">부작용 검색하기</Link>
                                                    </p>
                                                    <p className="menu_03_p">
-                                                      <Link>병용금기 검색하기</Link>
+                                                      <Link to="/sub203">병용금기 검색하기</Link>
                                                    </p>
                                                 </div>
                                           </div>
@@ -231,7 +231,7 @@ function Header(props) {
                                                          학생들이 탐험과 모험에 대한 호기심을 그들이 할 수있는 능력과 실력으로 발전시키는데 최선을 다합니다.
                                                       </em>
                                                       <div className="button">
-                                                         <Link>View More</Link>
+                                                         <Link to="/sub301">View More</Link>
                                                       </div>
                                                    </div>
                                                    <div className="menu_01_img">
@@ -241,13 +241,13 @@ function Header(props) {
                                                    </div>
                                                    <div className="menu_01">
                                                       <p className="menu_01_p">
-                                                         <Link>약국 찾아보기</Link>
+                                                         <Link to="/sub301">약국 찾아보기</Link>
                                                       </p>
                                                       <p className="menu_02_p">
-                                                         <Link>보도자료 찾아보기</Link>
+                                                         <Link to="/sub302">보도자료 찾아보기</Link>
                                                       </p>
                                                       <p className="menu_03_p">
-                                                         <Link>폐의약품 수거함 찾아보기</Link>
+                                                         <Link to="/sub303">폐의약품 수거함 찾아보기</Link>
                                                       </p>
                                                    </div>
                                              </div>
@@ -272,7 +272,7 @@ function Header(props) {
                                                       GCAS는 예술문화 영역의 다양한 기관과 함께 건강한 연대를 진행하고 있습니다.
                                                    </em>
                                                    <div className="button">
-                                                      <Link>View More</Link>
+                                                      <Link to="/noticelist">View More</Link>
                                                    </div>
                                                 </div>
                                                 <div className="menu_01_img">
@@ -282,16 +282,16 @@ function Header(props) {
                                                 </div>
                                                 <div className="menu_01">
                                                    <p className="menu_01_p">
-                                                      <Link>공지사항</Link>
+                                                      <Link to="/noticelist">공지사항</Link>
                                                    </p>
                                                    <p className="menu_02_p">
-                                                      <Link>자주묻는 질문</Link>
+                                                      <Link to="/faqlist">자주묻는 질문</Link>
                                                    </p>
                                                    <p className="menu_03_p">
-                                                      <Link>전문가와의 상담</Link>
+                                                      <Link to="/qnalist">전문가와의 상담</Link>
                                                    </p>
                                                    <p className="menu_04_p">
-                                                      <Link>운영진에게 문의</Link>
+                                                      <Link to="/minquiry">운영진에게 문의</Link>
                                                    </p>
                                                 </div>
                                           </div>
@@ -301,7 +301,7 @@ function Header(props) {
                                  </ul>
                               </li>
                               <li>
-                                 <Link href="#">개인정보 처리방침</Link>
+                                 <Link to="#">개인정보 처리방침</Link>
                                  <ul>
                                     <li className="menuItem2_ul">
                                        <div className="clearfix">
@@ -365,75 +365,75 @@ function Header(props) {
                         <div className="flexBox">
                               <ul className="menu depth1 flexBox2">
                                  <li>
-                                    <Link href="#" className="slide">의약품이란?</Link>
+                                    <Link to="#" className="slide">의약품이란?</Link>
                                     <ul className="sub slideContent">
                                        <li>
                                           <Link to="/sub101">의약품의 정의</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">의약품의 종류</Link>
+                                          <Link to="/sub102">의약품의 종류</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">의약품의 허가과정</Link>
+                                          <Link to="/sub103">의약품의 허가과정</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">신약과 제네릭</Link>
+                                          <Link to="/sub104">신약과 제네릭</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">의약품의 관련 법령</Link>
+                                          <Link to="/sub105">의약품의 관련 법령</Link>
                                        </li>
                                     </ul>
                                  </li>
                                  <li>
-                                    <Link href="#" className="slide">안전한 의약생활</Link>
+                                    <Link to="#" className="slide">안전한 의약생활</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link href="#">안전한 의약생활</Link>
+                                          <Link to="/sub201">안전한 의약생활</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">부작용 검색하기</Link>
+                                          <Link to="/sub202">부작용 검색하기</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">병용금기 검색하기</Link>
+                                          <Link to="/sub203">병용금기 검색하기</Link>
                                        </li>
                                     </ul>
                                  </li>
                                  <li>
-                                    <Link href="#" className="slide">생활 속 의약</Link>
+                                    <Link to="#" className="slide">생활 속 의약</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link href="#">약국 찾아보기</Link>
+                                          <Link to="/sub301">약국 찾아보기</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">보도자료 찾아보기</Link>
+                                          <Link to="/sub302">보도자료 찾아보기</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">폐의약품 수거함 찾아보기</Link>
+                                          <Link to="/sub303">폐의약품 수거함 찾아보기</Link>
                                        </li>
                                     </ul>
                                  </li>
                                  <li>
-                                    <Link href="#" className="slide">커뮤니티</Link>
+                                    <Link to="#" className="slide">커뮤니티</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link href="#">공지사항</Link>
+                                          <Link to="/noticelist">공지사항</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">자주묻는 질문</Link>
+                                          <Link to="/faqlist">자주묻는 질문</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">전문가와의 상담</Link>
+                                          <Link to="/qnalist">전문가와의 상담</Link>
                                        </li>
                                        <li>
-                                          <Link href="#">운영진에게 문의</Link>
+                                          <Link to="/minquiry">운영진에게 문의</Link>
                                        </li>
                                     </ul>
                                  </li>
                                  <li>
-                                    <Link href="#" class="slide">개인정보 처리방침</Link>
+                                    <Link to="#" class="slide">개인정보 처리방침</Link>
                                     <ul class="sub slideContent">
                                        <li>
-                                          <Link href="#">개인정보 처리방침</Link>
+                                          <Link to="#">개인정보 처리방침</Link>
                                        </li>
                                     </ul>
                                  </li>
