@@ -37,6 +37,10 @@ function SubTopImages(props) {
             return 'url(./images/main/bg_service3.png)'; 
          case '/minquiry':
             return 'url(./images/main/bg_service4.png)'; 
+         case '/privacy':
+            return 'url(./images/main/bg_service1.png)'; 
+         case '/termsofuse':
+            return 'url(./images/main/bg_service2.png)'; 
          default:
             return null; // 메인 페이지 또는 다른 페이지에서는 null 반환
       }

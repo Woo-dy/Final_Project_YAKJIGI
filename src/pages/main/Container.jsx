@@ -4,9 +4,11 @@ import MedicineLife from "./MedicineLife";
 import MedicineDefault from "./MedicineDefault";
 import MedicineCategory from "./MedicineCategory";
 import MedicineNotice from "./MedicineNotice";
+import MedicineNews from "./MedicineNews";
 import "../../styles/main/medicinecategory.css";
 import '../../styles/main/medicinedefault.css';
 import '../../styles/main/medicinenotice.css';
+import '../../styles/main/medicinenews.css';
 import '../../styles/main/swipercustom.css';
 
 function Container() {
@@ -22,8 +24,11 @@ function Container() {
       {/* 의약품이란? */}
       <MedicineDefault />
 
-      {/* 의약품이란? */}
+      {/* 약국 찾아보기 */}
       <MedicineCategory />
+
+      {/* 뉴스 API */}
+      <MedicineNews />
 
       {/* 공지사항 */}
       <MedicineNotice />

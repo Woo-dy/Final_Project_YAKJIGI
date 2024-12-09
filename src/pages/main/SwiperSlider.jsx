@@ -81,28 +81,28 @@ function SwiperSlider(props) {
                loop={true} // 무한 반복
             >
                <SwiperSlide>
-                  <Link href="#">
+                  <Link to='/sub201'>
                      크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내
                   </Link>
                </SwiperSlide>
                <SwiperSlide>
-                  <Link href="#">
+                  <Link to='/sub201'>
                      [당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트
                   </Link>
                </SwiperSlide>
                <SwiperSlide>
-                  <Link href="#">
+                  <Link to='/sub201'>
                      스타벅스커피 코리아 애플리케이션 버전 업데이트 안내
                   </Link>
                </SwiperSlide>
                <SwiperSlide>
-                  <Link href="#">
+                  <Link to='/sub201'>
                      [당첨자 발표] 뉴이어 전자영수증 이벤트
                   </Link>
                </SwiperSlide>
             </Swiper>
                
-            <Link href="#" class="main__Realtime__search__icon">
+            <Link to='/sub201' class="main__Realtime__search__icon">
                <div class="material-icons">search</div>
             </Link>
          </section>

@@ -61,10 +61,10 @@ function Footer(props) {
             </div>
             <div className='footer__content'>
                <ul class="btn-group">
-                  <Link class="btn btn__white">개인정보처리방침</Link>
-                  <Link class="btn btn__white">이용약관</Link>
-                  <Link class="btn btn__white">고객센터</Link>
-                  <Link class="btn btn__white">공지사항</Link>
+                  <Link class="btn btn__white" to="/privacy">개인정보처리방침</Link>
+                  <Link class="btn btn__white" to="/termsofuse">이용약관</Link>
+                  <Link class="btn btn__white" to="/minquiry">운영진에게 문의</Link>
+                  <Link class="btn btn__white" to="/noticelist">공지사항</Link>
                </ul>
                <p>TEL : 031-1234-5678 Email : official@naver.com <br />
                주소 : 경기도 고양시 덕양구 행신동 000길 00 ○○빌딩 ○○○호 </p>

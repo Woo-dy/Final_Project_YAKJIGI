@@ -13,44 +13,52 @@ function MedicineNotice(props) {
             <li>
                <ul className='main__notice__list'>
                   <li>
-                     <div>
-                        <p className='main__Days'>08</p>
-                        <em className='main__Year'>2024.12</em>
-                     </div>
-                     <div>
-                        <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
-                        <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
-                     </div>
+                     <Link to="/noticelist">
+                        <div>
+                           <p className='main__Days'>08</p>
+                           <em className='main__Year'>2024.12</em>
+                        </div>
+                        <div>
+                           <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
+                           <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
+                        </div>
+                     </Link>
                   </li>
                   <li>
-                     <div>
-                        <p className='main__Days'>08</p>
-                        <em className='main__Year'>2024.12</em>
+                     <Link to="/noticelist">
+                        <div>
+                           <p className='main__Days'>08</p>
+                           <em className='main__Year'>2024.12</em>
                         </div>
-                     <div>
-                        <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
-                        <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
-                     </div>
+                        <div>
+                           <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
+                           <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
+                        </div>
+                     </Link>
                   </li>
                   <li>
-                     <div>
-                        <p className='main__Days'>08</p>
-                        <em className='main__Year'>2024.12</em>
+                     <Link to="/noticelist">
+                        <div>
+                           <p className='main__Days'>08</p>
+                           <em className='main__Year'>2024.12</em>
                         </div>
-                     <div>
-                        <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
-                        <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
-                     </div>
+                        <div>
+                           <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
+                           <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
+                        </div>
+                     </Link>
                   </li>
                   <li>
-                     <div>
-                        <p className='main__Days'>08</p>
-                        <em className='main__Year'>2024.12</em>
+                     <Link to="/noticelist">
+                        <div>
+                           <p className='main__Days'>08</p>
+                           <em className='main__Year'>2024.12</em>
                         </div>
-                     <div>
-                        <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
-                        <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
-                     </div>
+                        <div>
+                           <p className='main__title'>U2CLab 홈페이지가 오픈하였습니다.</p>
+                           <em className='main__descriptions'>체외진단 의료기기 임상시험 분야 대한민국 No.1 U2CLab의 홈페이지가 새롭게 오픈하였습니다. 많은 관심...</em>
+                        </div>
+                     </Link>
                   </li>
                </ul>
             </li>

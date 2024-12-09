@@ -37,6 +37,9 @@ import NoticeList from './pages/notice/NoticeList';
 import FaqList from './pages/faq/FaqList';
 import QnaList from './pages/qna/QnaList';
 import MinquiryList from './pages/minquiry/MinquiryList';
+import Privacy from './pages/privacy/Privacy';
+import TermsOfUse from './pages/termsofuse/TermsOfUse';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
    
@@ -86,6 +89,7 @@ function App() {
    return (
       <BrowserRouter>
          <div className='App'>
+            <ScrollToTop />
             {/* 메인 */}
             <Header />
 
@@ -106,6 +110,8 @@ function App() {
                <Route path='/faqlist' element={<FaqList />} />
                <Route path='/qnalist' element={<QnaList />} />
                <Route path='/minquiry' element={<MinquiryList />} />
+               <Route path='/privacy' element={<Privacy />} />
+               <Route path='/termsofuse' element={<TermsOfUse />} />
             </Routes>
 
             <Footer />

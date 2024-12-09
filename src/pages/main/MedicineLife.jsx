@@ -15,7 +15,7 @@ function MedicineLife(props) {
 
          <ul className="main__medicine__Life__contents">
             <li data-aos="fade-up" data-aos-delay="0">
-               <Link to="/test">
+               <Link to="/sub201">
                   <img src="./images/main_slide_1.jpg" alt="이미지" />
                   <div className='icon'></div>
                   <p>의약품 검색하기</p>
@@ -23,7 +23,7 @@ function MedicineLife(props) {
                </Link>
             </li>
             <li data-aos="fade-up" data-aos-delay="200">
-               <Link to="/test">
+               <Link to="/sub202">
                   <img src="./images/main_slide_2.jpg" alt="이미지" />
                   <div className='icon'></div>
                   <p>부작용 검색하기</p>
@@ -31,7 +31,7 @@ function MedicineLife(props) {
                </Link>
             </li>
             <li data-aos="fade-up" data-aos-delay="400">
-               <Link to="/test">
+               <Link to="/sub203">
                   <img src="./images/main_slide_3.jpg" alt="이미지" />
                   <div className='icon'></div>
                   <p>병용금기 검색하기</p>

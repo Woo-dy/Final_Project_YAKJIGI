@@ -1,0 +1,56 @@
+.Medicinenews__slide {
+   background-color: #272727;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Medicinenews__slide .inner {
+   width: 100%;
+   max-width: 1100px;
+   margin: 0 auto;
+   position: relative;
+   padding: 20px 0;
+}
+
+.Medicinenews__slide .swiper {
+   height: 46px;
+   width: 100%;
+}
+
+.Medicinenews__slide .swiper-button-prev,
+.Medicinenews__slide .swiper-button-next {
+   width: 42px;
+   height: 42px;
+   border: 2px solid #fff;
+   border-radius: 50%;
+   outline: none;
+   color: #fff;
+   opacity: .3;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+}
+
+
+.Medicinenews__slide .swiper-button-prev:hover,
+.Medicinenews__slide .swiper-button-next:hover {
+   background-color: #fff;
+   color: #333;
+}
+
+.Medicinenews__slide .swiper-button-prev::after,
+.Medicinenews__slide .swiper-button-next::after {
+   content: none;
+}
+
+.Medicinenews__slide .swiper-button-prev {
+   left: -100px;
+}
+
+.Medicinenews__slide .swiper-button-next {
+   right: -100px;
+}
