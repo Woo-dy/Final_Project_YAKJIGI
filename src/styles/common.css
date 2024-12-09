@@ -1,0 +1,38 @@
+:root {
+   --MainColor: #4553AD;
+   --MainWhite: #fff;
+   --MainBlack: #333;
+   --MainTransform: transform;
+   --FontMainColor: #333;
+   --FontSubColor: #555;
+
+   --SubGrandTitle: 40px;
+   --SubMiddleTitle: 20px;
+   --SubSubTitle: 40px;
+
+   --SubContentsTitle: 32px;
+   --SubContentsTitle: 20px;
+
+}
+
+
+
+header ul {
+   display: flex;
+}
+
+.main__Slider {
+   width: 100%;
+   height: calc(100vh - 230px);
+   background-color: #f9f9f9;
+   box-sizing: border-box;
+}
+
+footer {
+   width: 100%;
+   height: 500px;
+   box-sizing: border-box;
+   border-top: 1px solid #ccc;
+   background-color: #272727;
+   color: var(--MainWhite);
+}

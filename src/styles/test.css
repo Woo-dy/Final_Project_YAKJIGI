@@ -1,0 +1,124 @@
+
+
+/* ========== 기준 ========== */
+.test_container {
+   width: 100%; 
+   max-width: 1320px; 
+   margin: 0 auto;
+   background-color: #ddd;
+   padding: 120px 0;
+}
+
+.main_title {
+   font-size: 40px;
+   line-height: 54px;
+   font-weight: 600;
+   margin-bottom: 12px;
+   color: var(--FontMainColor);
+}
+
+.sub_title {
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+}
+
+.contents_title {
+   font-size: 32px;
+   font-weight: 600;
+   line-height: 42px;
+   color: var(--FontMainColor);
+}
+
+.contents_description {
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   word-break: keep-all; 
+}
+
+@media screen and (max-width: 1380px) {
+   .test_container {
+      width: 90%;
+      padding: 120px 0;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .main_title {
+      font-size: 36px;
+      line-height: 50px;
+   }
+   
+   .sub_title {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .contents_title {
+      font-size: 28px;
+      line-height: 38px;
+   }
+
+   .contents_description {
+      font-size: 18px;
+      line-height: 34px;
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .test_container {
+      padding: 100px 0;
+   }
+
+   .main_title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 2px;
+   }
+   
+   .sub_title {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .contents_title {
+      font-size: 22px;
+      line-height: 34px;
+   }
+
+   .contents_description {
+      font-size: 18px;
+      line-height: 34px;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .test_container {
+      padding: 80px 0;
+   }
+
+   .main_title {
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 0px;
+   }
+   
+   .sub_title {
+      font-size: 16px;
+      line-height: 28px;
+   }
+
+   .contents_title {
+      font-size: 20px;
+      line-height: 32px;
+   }
+   
+   .contents_description {
+      font-size: 14px;
+      line-height: 26px;
+   }
+}

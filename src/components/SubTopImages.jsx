@@ -1,0 +1,44 @@
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
+function SubTopImages(props) {
+   const location = useLocation();
+
+   // 현재 경로에 따라 배경 이미지 설정
+   const getBackgroundImage = () => {
+      switch (location.pathname) {
+         case '/sub101':
+            return 'url(./images/main/bg_service1.png)'; 
+         case '/sub102':
+            return 'url(./images/main/bg_service2.png)'; 
+         case '/sub103':
+            return 'url(./images/main/bg_service3.png)'; 
+         case '/sub104':
+            return 'url(./images/main/bg_service4.png)'; 
+         case '/sub105':
+            return 'url(./images/main/bg_service5.png)'; 
+         default:
+            return null; // 메인 페이지 또는 다른 페이지에서는 null 반환
+      }
+   };
+
+   const backgroundImage = getBackgroundImage();
+
+   // 배경 이미지가 없으면 <div>를 렌더링하지 않음
+   if (!backgroundImage) {
+      return null; // <div>를 렌더링하지 않음
+   }
+
+   return (
+      <div
+         style={{
+            height: '360px',
+            backgroundImage: backgroundImage,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+         }}
+      ></div>
+   );
+}
+
+export default SubTopImages;
