@@ -15,8 +15,6 @@
 
 }
 
-
-
 header ul {
    display: flex;
 }
@@ -35,4 +33,59 @@ footer {
    border-top: 1px solid #ccc;
    background-color: #272727;
    color: var(--MainWhite);
+}
+
+/* 공통 상단 문구 */
+.container__box {
+   padding-top: 120px;
+}
+
+.container__box h2 {
+   font-size: 40px;
+   color: var(--FontMainColor);
+   font-weight: 600;
+   margin-bottom: 12px;
+}
+
+.container__box p {
+   font-size: 20px;
+   color: var(--FontSubColor);
+   font-weight: 400;
+   margin-bottom: 60px;
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   /* 공통 상단 문구 */
+   .container__box {
+      padding-top: 120px;
+   }
+
+   .container__box h2 {
+      font-size: 40px;
+      color: var(--FontMainColor);
+      font-weight: 600;
+      margin-bottom: 6px;
+   }
+
+   .container__box p {
+      font-size: 20px;
+      color: var(--FontSubColor);
+      font-weight: 400;
+      margin-bottom: 60px;
+   }
+}
+
+
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   
+}
+
+
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   
 }

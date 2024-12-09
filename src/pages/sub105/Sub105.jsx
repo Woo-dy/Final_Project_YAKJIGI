@@ -3,8 +3,9 @@ import React from 'react';
 function Sub105(props) {
    return (
       <>
-         <div style={{height:"1000px"}}>
-            <p>sub105 / 의약품 관련 법령</p>
+         <div className='sub101__container container__box' style={{height:"1000px"}}>
+            <h2>의약품 관련 법령</h2>
+            <p>도심 공원에서 만나는  자연과 지속가능성</p>
          </div>
       </>
    );

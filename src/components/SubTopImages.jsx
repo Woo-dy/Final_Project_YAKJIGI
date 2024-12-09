@@ -17,6 +17,26 @@ function SubTopImages(props) {
             return 'url(./images/main/bg_service4.png)'; 
          case '/sub105':
             return 'url(./images/main/bg_service5.png)'; 
+         case '/sub201':
+            return 'url(./images/main/bg_service1.png)'; 
+         case '/sub202':
+            return 'url(./images/main/bg_service2.png)'; 
+         case '/sub203':
+            return 'url(./images/main/bg_service3.png)'; 
+         case '/sub301':
+            return 'url(./images/main/bg_service1.png)'; 
+         case '/sub302':
+            return 'url(./images/main/bg_service2.png)'; 
+         case '/sub303':
+            return 'url(./images/main/bg_service3.png)'; 
+         case '/noticelist':
+            return 'url(./images/main/bg_service1.png)'; 
+         case '/faqlist':
+            return 'url(./images/main/bg_service2.png)'; 
+         case '/qnalist':
+            return 'url(./images/main/bg_service3.png)'; 
+         case '/minquiry':
+            return 'url(./images/main/bg_service4.png)'; 
          default:
             return null; // 메인 페이지 또는 다른 페이지에서는 null 반환
       }

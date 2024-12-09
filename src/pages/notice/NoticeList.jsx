@@ -2,9 +2,12 @@ import React from 'react';
 
 function NoticeList(props) {
    return (
-      <div>
-         공지사항 게시판 리스트입니다.
-      </div>
+      <>
+         <div className='sub101__container container__box' style={{height:"1000px"}}>
+            <h2>공지사항</h2>
+            <p>도심 공원에서 만나는  자연과 지속가능성</p>
+         </div>
+      </>
    );
 }
 

@@ -23,7 +23,9 @@ function Header(props) {
       setIsHovered(false);
    };
 
-   
+   const handleLinkClick = () => {
+      setIsMenuOpen(false); // 메뉴를 닫기 위해 상태 업데이트
+   };   
 
    const showTopArea = () => {
       // Top area를 보여주는 로직
@@ -368,19 +370,19 @@ function Header(props) {
                                     <Link to="#" className="slide">의약품이란?</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link to="/sub101">의약품의 정의</Link>
+                                          <Link to="/sub101" onClick={handleLinkClick}>의약품의 정의</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub102">의약품의 종류</Link>
+                                          <Link to="/sub102" onClick={handleLinkClick}>의약품의 종류</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub103">의약품의 허가과정</Link>
+                                          <Link to="/sub103" onClick={handleLinkClick}>의약품의 허가과정</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub104">신약과 제네릭</Link>
+                                          <Link to="/sub104" onClick={handleLinkClick}>신약과 제네릭</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub105">의약품의 관련 법령</Link>
+                                          <Link to="/sub105" onClick={handleLinkClick}>의약품의 관련 법령</Link>
                                        </li>
                                     </ul>
                                  </li>
@@ -388,13 +390,13 @@ function Header(props) {
                                     <Link to="#" className="slide">안전한 의약생활</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link to="/sub201">안전한 의약생활</Link>
+                                          <Link to="/sub201" onClick={handleLinkClick}>안전한 의약생활</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub202">부작용 검색하기</Link>
+                                          <Link to="/sub202" onClick={handleLinkClick}>부작용 검색하기</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub203">병용금기 검색하기</Link>
+                                          <Link to="/sub203" onClick={handleLinkClick}>병용금기 검색하기</Link>
                                        </li>
                                     </ul>
                                  </li>
@@ -402,13 +404,13 @@ function Header(props) {
                                     <Link to="#" className="slide">생활 속 의약</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link to="/sub301">약국 찾아보기</Link>
+                                          <Link to="/sub301" onClick={handleLinkClick}>약국 찾아보기</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub302">보도자료 찾아보기</Link>
+                                          <Link to="/sub302" onClick={handleLinkClick}>보도자료 찾아보기</Link>
                                        </li>
                                        <li>
-                                          <Link to="/sub303">폐의약품 수거함 찾아보기</Link>
+                                          <Link to="/sub303" onClick={handleLinkClick}>폐의약품 수거함 찾아보기</Link>
                                        </li>
                                     </ul>
                                  </li>
@@ -416,16 +418,16 @@ function Header(props) {
                                     <Link to="#" className="slide">커뮤니티</Link>
                                     <ul className="sub slideContent">
                                        <li>
-                                          <Link to="/noticelist">공지사항</Link>
+                                          <Link to="/noticelist" onClick={handleLinkClick}>공지사항</Link>
                                        </li>
                                        <li>
-                                          <Link to="/faqlist">자주묻는 질문</Link>
+                                          <Link to="/faqlist" onClick={handleLinkClick}>자주묻는 질문</Link>
                                        </li>
                                        <li>
-                                          <Link to="/qnalist">전문가와의 상담</Link>
+                                          <Link to="/qnalist" onClick={handleLinkClick}>전문가와의 상담</Link>
                                        </li>
                                        <li>
-                                          <Link to="/minquiry">운영진에게 문의</Link>
+                                          <Link to="/minquiry" onClick={handleLinkClick}>운영진에게 문의</Link>
                                        </li>
                                     </ul>
                                  </li>
