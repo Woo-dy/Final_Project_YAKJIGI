@@ -30,6 +30,7 @@
 .Main__textcontents span {
    font-size: 24px;
    line-height: 36px;
+   word-break: keep-all;
    color: var(--FontSubColor);
    text-align: left;
    display: block;
@@ -414,27 +415,27 @@
    }
 
    .Main__imgbox01 {
-      width: 90%;
+      width: 100%;
       height: 280px;
    }
 
    .Main__imgbox02 {
-      width: 90%;
+      width: 100%;
       height: 280px;
    }
 
    .Main__imgbox03 {
-      width: 90%;
+      width: 100%;
       height: 280px;
    }
 
    .Main__imgbox04 {
-      width: 90%;
+      width: 100%;
       height: 280px;
    }
 
    .Main__imgbox05 {
-      width: 90%;
+      width: 100%;
       height: 280px;
    }
 

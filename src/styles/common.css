@@ -21,7 +21,7 @@ header ul {
 
 .main__Slider {
    width: 100%;
-   height: calc(100vh - 230px);
+   height: calc(100vh - 80px);
    background-color: #f9f9f9;
    box-sizing: border-box;
 }

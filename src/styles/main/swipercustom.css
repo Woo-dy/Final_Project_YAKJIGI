@@ -93,12 +93,12 @@
 
 .main__Slider .swiper .swiper-button-next,
 .main__Slider .swiper .swiper-button-prev {
-	width: 46px;
-	height: 46px;
+	width: 60px;
+	height: 60px;
 	border: 2px solid #fff;
 	outline: none;
 	color: #fff;
-	opacity: 0.3;
+	opacity: 0.5;
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -117,11 +117,16 @@
 
 .main__Slider .swiper .swiper-button-prev:hover, 
 .main__Slider .swiper .swiper-button-next:hover {
-   background-color: transparent;
-   border: 2px solid #00A38B;
-   color: #00A38B;
-   transition: all 0.5s;
+   background-color: var(--MainColor);
+   color: #fff;
+   border-color: var(--MainColor);
+   transition: all 0.3s;
    opacity: 1.0;
+}
+
+.main__Slider .swiper .swiper-button-next div.material-icons,
+.main__Slider .swiper .swiper-button-prev div.material-icons {
+	font-size: 30px;
 }
 
 
@@ -174,7 +179,7 @@
 }
 
 /* ========== 1200px 기준 ========== */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
    .main__Realtime__searchterms {
       width: 90%;
       height: 80px;

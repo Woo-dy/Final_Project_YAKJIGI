@@ -40,7 +40,10 @@ body {
 .top_menu > ul > li:hover > a.white {color: #ea511e;}
 .top_menu > ul > li:last-child {margin: 0px 0px 0px 15px;}
 
-.header_line {border-bottom: 1px solid rgba(221, 221, 221, 0.3);}
+.header_line {
+    border-top: 1px solid rgba(221, 221, 221, 0.3);
+    border-bottom: 1px solid rgba(221, 221, 221, 0.3);
+}
 
 /* sub일때 추가 */
 #gnb .logo_sub {

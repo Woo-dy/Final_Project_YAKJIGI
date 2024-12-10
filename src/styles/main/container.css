@@ -60,6 +60,14 @@
    background-color: #F9FBFF;
    border: 5px solid #fff;
    margin: -50px auto 30px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li div.icon img {
+   width: auto;
+   height: auto;
 }
 
 .main__medicine__Life .main__medicine__Life__contents li p {
@@ -91,7 +99,7 @@
 }   
 
 /* ========== 1200px 기준 ========== */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
    .main__medicine__Life {
       width: 90%;
       margin: 0 auto;

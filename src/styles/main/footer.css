@@ -107,7 +107,7 @@
 }
 
 /* ========== 1200px 기준 ========== */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
    .logos .inner {
       width: 100%;
       max-width: 90%;

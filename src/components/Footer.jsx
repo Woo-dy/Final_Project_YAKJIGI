@@ -31,22 +31,34 @@ function Footer(props) {
                      }} // 반응형
                   >
                      <SwiperSlide>
-                        <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        <Link>
+                           <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        </Link>
                      </SwiperSlide>
                      <SwiperSlide>
-                        <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        <Link>
+                           <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        </Link>
                      </SwiperSlide>
                      <SwiperSlide>
-                        <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        <Link>
+                           <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        </Link>
                      </SwiperSlide>
                      <SwiperSlide>
-                        <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        <Link>
+                           <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        </Link>
                      </SwiperSlide>
                      <SwiperSlide>
-                        <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        <Link>
+                           <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        </Link>
                      </SwiperSlide>
                      <SwiperSlide>
-                        <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        <Link>
+                           <img src="./images/main/f_icon1.png" alt="이미지" style={{width: "100%"}} />
+                        </Link>
                      </SwiperSlide>
                   </Swiper>
 
