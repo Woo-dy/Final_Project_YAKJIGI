@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function MedicineCategory() {
    const quickMenuRef = useRef(null);
    const [activeIndex, setActiveIndex] = useState(0);
    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
    const quickStandard = 1500;
+   const location = useLocation(); // 현재 경로 가져오기
 
    // eslint-disable-next-line react-hooks/exhaustive-deps
    const backgrounds = [
@@ -31,6 +32,29 @@ function MedicineCategory() {
       "전문가와 소통하며 신뢰 있는 정보를 얻으세요",
       "사이트와 관련된 질문을 운영진에게 직접 남기세요",
    ];
+
+   const links = [
+      "sub301",
+      "sub303",
+      "sub302",
+      "qnalist",
+      "minquiry",
+   ];
+
+
+
+   // 자동 활성화된 링크 클릭 방지
+   useEffect(() => {
+      if (location.pathname === "/") {
+      // 메인 페이지에서는 자동으로 클릭하지 않음
+      return;
+      }
+
+      const activeLink = document.querySelector(".circle li a.on");
+      if (activeLink) {
+      activeLink.click(); // 활성화된 링크 클릭
+      }
+   }, [activeIndex, location.pathname]); // 경로 변경 시 실행
 
    useEffect(() => {
       const handleResize = () => {
@@ -58,7 +82,7 @@ function MedicineCategory() {
    useEffect(() => {
       const interval = setInterval(() => {
          setActiveIndex((prevIndex) => (prevIndex + 1) % backgrounds.length); // 다음 인덱스로 순환
-      }, 50000);
+      }, 10000);
 
       return () => clearInterval(interval);
    }, [backgrounds.length]);
@@ -102,7 +126,7 @@ function MedicineCategory() {
                   {backgrounds.map((_, index) => (
                      <li key={index}>
                      <Link
-                        to="#"
+                        to={activeIndex === index ? `/${links[index]}` : ""}
                         className={activeIndex === index ? "on" : ""}
                         onClick={() => handleCircleClick(index)}
                      >
