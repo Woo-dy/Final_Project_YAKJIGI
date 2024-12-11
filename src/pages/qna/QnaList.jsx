@@ -28,15 +28,15 @@ function QnaList(props) {
                   spaceBetween={30} // 슬라이드 간 간격
                   slidesPerView={6} // 한 화면에 보여줄 슬라이드 갯수
                   navigation={{
-                  nextEl: `.${styles.next}`,
-                  prevEl: `.${styles.prev}`,
-               }} // 네비게이션 화살표 추가
-               breakpoints={{ 
-                  360: { slidesPerView: 1, spaceBetween: 30 },
-                  480: { slidesPerView: 2, spaceBetween: 30 },
-                  768: { slidesPerView: 3, spaceBetween: 30 },
-                  1200: { slidesPerView: 6, spaceBetween: 30 },
-               }} // 반응형
+                     nextEl: `.${styles.next}`,
+                     prevEl: `.${styles.prev}`,
+                  }} // 네비게이션 화살표 추가
+                  breakpoints={{ 
+                     360: { slidesPerView: 1, spaceBetween: 30 },
+                     480: { slidesPerView: 2, spaceBetween: 30 },
+                     768: { slidesPerView: 3, spaceBetween: 30 },
+                     1200: { slidesPerView: 6, spaceBetween: 30 },
+                  }} // 반응형
                >
                   <SwiperSlide className={styles.sub403__profile__box}>
                         <img src="./images/sub4-3/cat01.png" 

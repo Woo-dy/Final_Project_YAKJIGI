@@ -1,11 +1,11 @@
 import 'reset-css';
-import './App.css';
 import "./styles/main/head.css";
 import "./styles/main/menu.css";
 import './styles/main/container.css';
 import './styles/main/footer.css';
+import './App.css';
 
-import { gsap } from "gsap";
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Container from './pages/main/Container';
@@ -15,10 +15,8 @@ import 'swiper/css'; // node_modules 불러오는 swipercss
 import 'swiper/css/pagination'; // node_modules 불러오는 pagination
 import 'swiper/css/navigation'; // node_modules 불러오는 navigation
 
-import AOS from 'aos';
-import '../node_modules/aos/dist/aos.css';
 
-import { useEffect } from 'react';
+import '../node_modules/aos/dist/aos.css';
 
 import Sub101 from './pages/sub101/Sub101';
 import Sub102 from './pages/sub102/Sub102';
@@ -40,49 +38,6 @@ import TermsOfUse from './pages/termsofuse/TermsOfUse';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-   
-   useEffect(() => {
-      // Swiper 슬라이드 인스턴스 가져오기
-      const swiperInstance = document.querySelector(".swiper").swiper;
-
-      const animateActiveSlide = () => {
-         const activeSlide = document.querySelector(".swiper-slide-active");
-         if (!activeSlide) return;
-
-         // 애니메이션 초기화
-         gsap.fromTo(
-            activeSlide.querySelector("h2"),
-            { y: 50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 1 }
-         );
-
-         gsap.fromTo(
-            activeSlide.querySelector("p"),
-            { y: 50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 1, delay: 0.5 }
-         );
-
-         gsap.fromTo(
-            activeSlide.querySelector("button"),
-            { y: 50, opacity: 0 },
-            { y: 0, opacity: 1, duration: 1, delay: 1.0 }
-         );
-      };
-
-      // 슬라이드 변경 시 애니메이션 실행
-      swiperInstance.on("slideChangeTransitionStart", animateActiveSlide);
-
-      // 첫 화면 애니메이션 실행
-      animateActiveSlide();
-
-
-      AOS.init({
-         duration: 1000, // 애니메이션 지속 시간
-      });
-      return () => {
-         AOS.refresh(); // 컴포넌트 언마운트 시 AOS 새로 고침
-      };
-   }, []);
 
    return (
       <BrowserRouter>
