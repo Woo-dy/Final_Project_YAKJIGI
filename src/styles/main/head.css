@@ -30,7 +30,11 @@ html {
    box-sizing: border-box;
    border-bottom: 1px solid #ddd;
    position: relative;
-   z-index: 1;
+   z-index: 3;
+}
+
+.main__global__menu__none {
+   display: none;
 }
 
 .main__global__menu > ul {
@@ -53,6 +57,7 @@ html {
 .main__global__menu > ul > li > a {
    font-size: 14px;
    color: #333;
+   font-weight: 400;
 }
 
 .main__global__menu > ul > li > a:hover {
@@ -118,6 +123,7 @@ background: #fff;
 .menubar2 ul {
    list-style: none;
    width: 100%;
+   display: flex;
 }
 
 /* .menubar2 li {
@@ -201,14 +207,14 @@ background: #fff;
    /* height: 100px; */
    overflow: hidden;
    margin: 0 auto;
-position: absolute;
-bottom: 0;
+   position: absolute;
+   bottom: 0;
    background: #3942cc;
    height: 50px;
    line-height: 50px;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
 }
 
 .menubar2 li li:last-child span{cursor: pointer;}
@@ -647,6 +653,15 @@ align-items: center;
 @media(max-width:1000px){
    .menubar2 {display: none;}
 
+   .main__global__menu > ul {
+      padding: 0 0px;
+   }
+
+   .main__global__menu > ul > li {
+      height: auto;
+      line-height: normal;
+   }
+
    .popup_slide .swiper {display: none;}
 
    .golbal_menu {display: none;}
@@ -680,7 +695,13 @@ align-items: center;
       border-bottom: 1px solid #eee;
    }
 
-   #header > div { padding: 20px 20px;}
+   #header > div.main__global__menu {
+      padding: 10px 20px;
+   }
+
+   #header > div { 
+      padding: 20px 20px;
+   }
 
    .hamberger_menu {
       padding-right: 0;

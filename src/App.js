@@ -1,10 +1,9 @@
 import 'reset-css';
+import './App.css';
 import "./styles/main/head.css";
 import "./styles/main/menu.css";
 import './styles/main/container.css';
 import './styles/main/footer.css';
-import "animate.css";
-import './App.css';
 
 import { gsap } from "gsap";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -18,7 +17,7 @@ import 'swiper/css/navigation'; // node_modules 불러오는 navigation
 
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
-import 'animate.css';
+
 import { useEffect } from 'react';
 
 import Sub101 from './pages/sub101/Sub101';

@@ -102,17 +102,17 @@ function Header(props) {
 
    return (
       <>
-      <div className='main__global__menu'>
-         <ul>
-            <li>
-               <Link>로그인</Link>
-               <Link>회원가입</Link>
-               <Link>공지사항</Link>
-            </li>
-         </ul>
-      </div>
       <div className='main__wrap'>
          <header id="header" className={`wrap ${isScrolled ? 'bg_on' : ''}`}>
+            <div className={`${isScrolled ? 'main__global__menu__none' : 'main__global__menu'}`}>
+               <ul>
+                  <li>
+                     <Link>로그인</Link>
+                     <Link>회원가입</Link>
+                     <Link>공지사항</Link>
+                  </li>
+               </ul>
+            </div>
             <div className="header_line">
                <div id="gnb" className="clear logo_menu_bar">
                   <div className="top_menu_bat">

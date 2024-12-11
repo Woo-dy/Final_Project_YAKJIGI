@@ -9,14 +9,6 @@
    --SubGrandTitle: 40px;
    --SubMiddleTitle: 20px;
    --SubSubTitle: 40px;
-
-   --SubContentsTitle: 32px;
-   --SubContentsTitle: 20px;
-
-}
-
-header ul {
-   display: flex;
 }
 
 footer {
@@ -42,13 +34,16 @@ footer {
    color: var(--FontMainColor);
    font-weight: 600;
    margin-bottom: 12px;
+   text-align: center;
 }
 
-.container__box p {
+.container__box p.sub_title {
    font-size: 20px;
    color: var(--FontSubColor);
    font-weight: 400;
    margin-bottom: 60px;
+   text-align: center;
+   word-break: keep-all;
 }
 
 /* 개인정보처리방침 */
@@ -266,6 +261,11 @@ button.btn__search:hover {
 
 /* ========== 1380px 기준 ========== */
 @media screen and (max-width: 1380px) { 
+   .container__box {
+      width: 90%;
+      margin: 0 auto 120px auto;
+   }
+
    /* ============= 버리는 영역 (임의 확인 용도) ============= */
    .input__container,
    .btn__center__container,
@@ -286,17 +286,20 @@ button.btn__search:hover {
    /* 공통 상단 문구 */
    .container__box {
       padding-top: 120px;
+      margin: 0 auto 120px auto;
    }
 
    .container__box h2 {
-      font-size: 40px;
+      font-size: 36px;
+      line-height: 50px;
       color: var(--FontMainColor);
       font-weight: 600;
       margin-bottom: 6px;
    }
 
-   .container__box p {
-      font-size: 20px;
+   .container__box p.sub_title {
+      font-size: 18px;
+      line-height: 34px;
       color: var(--FontSubColor);
       font-weight: 400;
       margin-bottom: 60px;
@@ -325,6 +328,22 @@ button.btn__search:hover {
 
 /* ========== 768px 기준 ========== */
 @media screen and (max-width: 768px) {
+   .container__box {
+      padding-top: 100px;
+      margin: 0 auto 100px auto;
+   }
+
+   .container__box h2.main_title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 2px;
+   }
+
+   .container__box p.sub_title {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
    .input__list__container {
       display: flex;
       flex-direction: column;
@@ -376,6 +395,22 @@ button.btn__search:hover {
 
 /* ========== 480px 기준 ========== */
 @media screen and (max-width: 480px) {
+   .container__box {
+      padding-top: 80px;
+      margin: 0 auto 80px auto;
+   }
+
+   .container__box h2.main_title {
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 0px;
+   }
+
+   .container__box p.sub_title {
+      font-size: 16px;
+      line-height: 28px;
+   }
+
    .board__input__text {
       font-size: 14px;
    }
