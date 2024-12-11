@@ -7,7 +7,6 @@
    outline: none;
    color: #333;
    opacity: .5;
-   cursor: pointer;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -16,6 +15,7 @@
    bottom: 0;
    margin: auto;
    z-index: 1;
+   cursor: pointer;
 }
 
 

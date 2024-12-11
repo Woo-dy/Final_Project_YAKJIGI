@@ -22,7 +22,7 @@ function QnaList(props) {
             </ul>
          </div>
 
-         <div className={Swiper.Qna__slide}>
+         <div className={swipernavi.Qna__slide}>
             <Swiper Autoplay
                modules={[Autoplay, Pagination, Navigation]} // 사용하는 모듈
                spaceBetween={30} // 슬라이드 간 간격
@@ -76,10 +76,10 @@ function QnaList(props) {
 
                {/* 사용자 정의 버튼 (넘기는 버튼) */}
                <div className={swipernavi.prev}>
-                  <div class="material-icons">arrow_back</div>
+                  <div className="material-icons">arrow_back</div>
                </div>
                <div className={swipernavi.next}>
-                  <div class="material-icons">arrow_forward</div>
+                  <div className="material-icons">arrow_forward</div>
                </div>	
             </Swiper>
          </div>
