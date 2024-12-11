@@ -76,6 +76,211 @@ footer {
 	color: #222;
 }
 
+/* ============= 버리는 영역 (임의 확인 용도) ============= */
+.input__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.input__container li {
+   text-align: left;
+   padding: 10px 0;
+}
+
+.input__list__container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+}
+
+.input__list__container li:first-child {
+   width: 160px;
+   font-weight: 600;
+   font-size: 20px;
+}
+
+.input__list__container li:first-child span {
+   color: #FF1212;
+}
+
+.input__list__container li:last-child {
+   width: calc(100% - 160px);
+}
+
+/* ============= 버리는 영역 (임의 확인 용도) ============= */
+
+/* ============= input ============= */
+
+/* input type=text style */
+.board__input__text {
+   width: 300px; /* 가로 크기 */
+   height: 42px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding: 0 15px;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+input:focus {
+   outline: 1px solid var(--MainColor); /* 파란색 테두리 */
+}
+
+/* button search style */
+button.btn__search {
+   width: 130px; /* 가로 크기 */
+   height: 42px;
+   line-height: 42px;
+   border-radius: 5px;
+   box-sizing: border-box;
+   background-color: #333;
+   color: #fff;
+   font-size: 16px;
+   margin-left: 16px;
+   cursor: pointer;
+} 
+
+button.btn__search:hover {
+   background-color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+
+/* input type=file style */
+.filebox .uploadName {
+   width: 500px; /* 가로 크기 */
+   display: inline-block;
+   height: 42px;
+   font-size: 16px;
+   padding: 0 15px;
+   vertical-align: middle;
+   border: 1px solid #dddddd;
+   color: #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.filebox label {
+   width: 130px;
+   height: 42px;
+   border-radius: 5px;
+   display: inline-block;
+   padding: 0px 20px;
+   color: #fff;
+   vertical-align: middle;
+   background-color: #999999;
+   cursor: pointer;
+   height: 40px;
+   line-height: 40px;
+   margin-left: 16px;
+   box-sizing: border-box;
+   text-align: center;
+   font-size: 16px;
+}
+
+/* 버튼 가운데 영역 */
+.btn__center__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   border-top: 1px solid #000;
+   padding: 15px 0;
+}
+
+.btn__center__container ul {
+   display: flex;
+   justify-content: center;
+}
+
+
+/* 버튼 사이드 영역 */
+.btn__side__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   border-top: 1px solid #000;
+   padding: 15px 0;
+}
+
+.btn__side__container ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+.bth_list, .bth_regist {
+   width: 130px;
+   height: 42px;
+   line-height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   background-color: var(--MainBlack);
+   color: var(--MainWhite);
+   font-size: 20px;
+   font-weight: 400;
+   cursor: pointer;
+}
+
+.bth_list:hover, .bth_regist:hover {
+   background-color: var(--MainColor);
+   color: var(--MainWhite);
+   transition: all 0.3s;
+}
+
+.bth_cancle {
+   width: 130px;
+   height: 42px;
+   line-height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #aaa;
+   background-color: transparent;
+   color: #666;
+   font-size: 20px;
+   font-weight: 400;
+   margin-left: 20px;
+   cursor: pointer;
+}
+
+.bth_cancle:hover {
+   border: 1px solid var(--MainColor);
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+
+
+/* 기존 디자인 삭제 */
+.filebox input[type="file"] {
+   position: absolute;
+   width: 0;
+   height: 0;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+}
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) { 
+   /* ============= 버리는 영역 (임의 확인 용도) ============= */
+   .input__container,
+   .btn__center__container,
+   .btn__side__container {
+      width: 90%;
+   }
+
+   .input__container li {
+      text-align: left;
+      padding: 10px 0;
+   }
+
+}
+
+
 /* ========== 1000px 기준 ========== */
 @media screen and (max-width: 1000px) {
    /* 공통 상단 문구 */
@@ -96,18 +301,96 @@ footer {
       font-weight: 400;
       margin-bottom: 60px;
    }
+
+   .input__list__container li:first-child,
+   .input__list__container li:last-child {
+      font-size: 18px;
+   }
+
+   /* input type=file style */
+   .filebox .uploadName {
+      width: calc(100% - 146px); /* 가로 크기 */
+   }
+
+   .bth_list, .bth_regist {
+      font-size: 18px;
+   }
+   
+   .bth_cancle {
+      font-size: 18px;
+   }
 }
 
 
 
 /* ========== 768px 기준 ========== */
 @media screen and (max-width: 768px) {
+   .input__list__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+   }
+
+   .input__list__container li:first-child,
+   .input__list__container li:last-child {
+      width: 100%;
+      font-size: 16px;
+   }
    
+   .board__input__text {
+      width: calc(100% - 116px); /* 가로 크기 */
+      font-size: 16px;
+   }
+
+   /* button search style */
+   button.btn__search {
+      width: 100px; /* 가로 크기 */
+      font-size: 16px;
+   } 
+
+   /* input type=file style */
+   .filebox .uploadName {
+      width: calc(100% - 116px); /* 가로 크기 */
+      font-size: 16px;
+   }
+
+   .filebox label {
+      width: 100px;
+      height: 42px;
+      font-size: 16px;
+   }
+
+   .bth_list, .bth_regist {
+      width: 100px;
+      font-size: 16px;
+   }
+   
+   .bth_cancle {
+      width: 100px;
+      font-size: 16px;
+   }
 }
 
 
 
 /* ========== 480px 기준 ========== */
 @media screen and (max-width: 480px) {
+   .board__input__text {
+      font-size: 14px;
+   }
+
+   .filebox .uploadName {
+      font-size: 14px;
+   }
+
+   .bth_list, .bth_regist {
+      width: 70px;
+      font-size: 14px;
+   }
    
+   .bth_cancle {
+      width: 70px;
+      font-size: 14px;
+   }
 }

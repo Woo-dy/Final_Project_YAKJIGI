@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -7,19 +5,12 @@ import commons from '../../styles/common.module.css';
 import swipernavi from '../../styles/qna/Navigation.module.css';
 
 function QnaList(props) {
+
    return (
       <>
          <div className={`${commons.sub101__container} ${commons.container__box}`}>
             <h2>전문가와의 상담</h2>
             <p>도심 공원에서 만나는  자연과 지속가능성</p>
-         </div>
-
-         <div>
-            <ul>
-               <li>
-                  <input type="text" className={commons.input}/>
-               </li>
-            </ul>
          </div>
 
          <div className={swipernavi.Qna__slide}>

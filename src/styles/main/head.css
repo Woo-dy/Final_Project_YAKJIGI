@@ -30,7 +30,7 @@ html {
    box-sizing: border-box;
    border-bottom: 1px solid #ddd;
    position: relative;
-   z-index: 3;
+   z-index: 1;
 }
 
 .main__global__menu > ul {
@@ -38,6 +38,7 @@ html {
    max-width: 1500px;
    margin: 0 auto;
    padding: 0 20px;
+   box-sizing: border-box;
 }
 
 .main__global__menu > ul > li {
@@ -559,6 +560,13 @@ align-items: center;
 
 .hamberger_menu {
    padding-right: 20px;
+}
+
+@media(max-width:1580px){
+   .main__global__menu > ul {
+      width: 100%;
+      max-width: 100%;
+   }
 }
 
 @media(max-width:1320px){
