@@ -1,5 +1,4 @@
 import 'reset-css';
-import './styles/common.css';
 import "./styles/main/head.css";
 import "./styles/main/menu.css";
 import './styles/main/container.css';

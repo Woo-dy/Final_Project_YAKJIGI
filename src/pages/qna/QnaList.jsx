@@ -1,160 +1,87 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import commons from '../../styles/common.module.css';
+import swipernavi from '../../styles/qna/Navigation.module.css';
 
 function QnaList(props) {
    return (
       <>
-         <div className='sub101__container container__box'>
+         <div className={`${commons.sub101__container} ${commons.container__box}`}>
             <h2>전문가와의 상담</h2>
             <p>도심 공원에서 만나는  자연과 지속가능성</p>
          </div>
 
          <div>
-            <Swiper
+            <ul>
+               <li>
+                  <input type="text" className={commons.input}/>
+               </li>
+            </ul>
+         </div>
+
+         <div className={Swiper.Qna__slide}>
+            <Swiper Autoplay
+               modules={[Autoplay, Pagination, Navigation]} // 사용하는 모듈
                spaceBetween={30} // 슬라이드 간 간격
+               loop={true} // 무한 반복 추가src/pages/main/SwiperSlider.jsx
                slidesPerView={5} // 한 화면에 보여줄 슬라이드 개
                navigation={{
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
+                  nextEl: `.${swipernavi.next}`,
+                  prevEl: `.${swipernavi.prev}`,
                }} // 네비게이션 화살표 추가
             >
-               <SwiperSlide>1</SwiperSlide>
-               <SwiperSlide>2</SwiperSlide>
-               <SwiperSlide>3</SwiperSlide>
-               <SwiperSlide>4</SwiperSlide>
-               <SwiperSlide>5</SwiperSlide>
-               <SwiperSlide>6</SwiperSlide>
-               <SwiperSlide>7</SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
+               <SwiperSlide style={{background:"#ddd"}}>
+                  이미지<br />
+                  텍스트
+               </SwiperSlide>
 
                {/* 사용자 정의 버튼 (넘기는 버튼) */}
-               <div class="swiper-button-prev">
+               <div className={swipernavi.prev}>
                   <div class="material-icons">arrow_back</div>
                </div>
-               <div class="swiper-button-next">
+               <div className={swipernavi.next}>
                   <div class="material-icons">arrow_forward</div>
                </div>	
             </Swiper>
-         </div>
-         
-         <div className='Medicinenews__slide' style={{paddingBottom:"120px"}}>
-            <div className='inner'>
-               <Swiper Autoplay
-                  modules={[Autoplay, Pagination, Navigation]} // 사용하는 모듈
-
-                  autoplay={{
-                     delay: 3000, // 3초마다 슬라이드 변경
-                     disableOnInteraction: false, // 사용자 조작 시 자동 재생 유지
-                  }}
-                  loop={true} // 무한 반복 추가src/pages/main/SwiperSlider.jsx
-                  spaceBetween={30} // 슬라이드 간 간격
-                  slidesPerView={5} // 한 화면에 보여줄 슬라이드 개
-                  navigation={{
-                     nextEl: '.swiper-button-next',
-                     prevEl: '.swiper-button-prev',
-                  }} // 네비게이션 화살표 추가
-                  breakpoints={{ 
-                     360: { slidesPerView: 1, spaceBetween: 30 },
-                     480: { slidesPerView: 2, spaceBetween: 30 },
-                     768: { slidesPerView: 3, spaceBetween: 30 },
-                     1200: { slidesPerView: 5, spaceBetween: 30 },
-                  }} // 반응형
-               >
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                     <Link>
-                        <img src="./images/main_slide_1.jpg" alt="이미지" style={{width: "100%"}} />
-                        <div className='Medicinenews__box'>
-                           <h2>‘비타그란 비타민C 팝핑스틱 샤인머스캣 맛’ 출시</h2>
-                           <p>‘비타그란 비타민C 팝핑스틱 
-                           샤인머스캣 맛’ 출시</p>
-                           <em>2024.00.00</em>
-                        </div>
-                     </Link>
-                  </SwiperSlide>
-               </Swiper>
-
-               {/* 사용자 정의 버튼 */}
-               <div class="swiper-button-prev">
-                  <div class="material-icons">arrow_back</div>
-               </div>
-               <div class="swiper-button-next">
-                  <div class="material-icons">arrow_forward</div>
-               </div>
-            </div>
          </div>
       </>
    );

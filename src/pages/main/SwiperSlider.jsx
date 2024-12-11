@@ -8,7 +8,7 @@ function SwiperSlider(props) {
    return (
       <>
          <section className='main__Slider'>
-            <Swiper className=''
+            <Swiper
                modules={[Autoplay, Pagination, Navigation]} // 사용하는 모듈 추가
                autoplay={{
                   delay: 3000, // 3초마다 슬라이드 변경
@@ -74,7 +74,7 @@ function SwiperSlider(props) {
 
 
          <section className='main__Realtime__searchterms'>
-            <Swiper className=''
+            <Swiper
                modules={[Autoplay]} // 사용하는 모듈 추가
                direction="vertical"
                autoplay={true}
