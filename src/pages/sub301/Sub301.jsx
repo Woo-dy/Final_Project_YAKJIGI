@@ -123,12 +123,13 @@ function Sub301(props) {
                         </tbody>
                      </table>
                   </div>
+
                   {/* paging 영역 start */}
                   <div>
-                     <ul className={styles.paging_num_ul}>
+                     <ul className={commons.paging_num_ul}>
                         <li className="material-icons prev">keyboard_double_arrow_left</li>
                         <li className="material-icons prev">chevron_left</li>
-                        <li className={styles.active}>1</li>
+                        <li className={commons.active}>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
@@ -138,6 +139,7 @@ function Sub301(props) {
                      </ul>
                   </div>
                   {/* paging 영역 end */}
+                  
                </li>
             </ul>
          </div>

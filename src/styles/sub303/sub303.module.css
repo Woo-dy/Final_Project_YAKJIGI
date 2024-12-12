@@ -33,7 +33,6 @@ body {
 }
 
 
-
 /* 필터 검색 창 */
 
 .Sub302__search_FieldContainer {
@@ -59,8 +58,7 @@ body {
 .Sub302__filterField {
    max-width: 1320px;
    width: 100%;
-   margin: 0 auto;
-   padding-bottom: 50px;
+   margin: 0 auto 50px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -74,6 +72,7 @@ body {
    font-weight: 600;
    padding: 0px 0px 25px 0px;
 }
+
 
 .Sub302__searchField p {
    text-align: left;
@@ -181,6 +180,13 @@ body {
 .Sub302__resultField p {
    width: 100%;
    padding: 60px 0;
+   font-size: 28px;
+   line-height: 38px;
+   word-break: keep-all;
+}
+
+.Sub302__resultField p span {
+   color: var(--MainColor);
 }
 
 .Sub302__map {
@@ -191,10 +197,14 @@ body {
    margin-bottom: 120px;
 }
 
+@media screen and (max-width: 1380px) {
+   .Sub302__resultField {
+      width: 90%;
+   }
+}
 
 @media screen and (max-width: 1320px) {
    .Sub302__resultField,
-   .Sub302__searchField,
    .Sub302__mainField {
       width: 90%;
    }
@@ -223,12 +233,22 @@ body {
 
 
 @media screen and (max-width: 1000px) {
-
-   .Sub302__resultField,
-   .Sub302__searchField,
-   .Sub302__mainField {
-      width: 70%;
+   .Sub302__search_FieldContainer {
+      padding: 80px 0;
    }
+
+   .Sub302__mainField p {
+      padding: 0px 0px 10px 0px;
+   }
+
+   
+
+   .Sub302__resultField p {
+      padding: 60px 0;
+      font-size: 24px;
+      line-height: 36px;
+   }
+   
 
    .Sub302__content_header h1 {
       font-size: 36px;
@@ -242,7 +262,6 @@ body {
 
 
    .Sub302__mainField,
-   .Sub302__searchField,
    .Sub302__search-container,
    .Sub302__resultField {
       font-size: 18px;
@@ -259,11 +278,8 @@ body {
 /* ========== 768px 기준 ========== */
 
 @media screen and (max-width: 768px) {
-
-   .Sub302__resultField,
-   .Sub302__searchField,
-   .Sub302__mainField {
-      width: 70%;
+   .Sub302__search_FieldContainer {
+      padding: 60px 0;
    }
 
    .Sub302__content_header h1 {
@@ -278,8 +294,15 @@ body {
    }
 
    
-   .Sub302__search_container,
-   .Sub302__resultField {
+
+   .Sub302__resultField p {
+      padding: 60px 0;
+      font-size: 20px;
+      line-height: 32px;
+   }
+
+   
+   .Sub302__search_container {
       font-size: 14px;
       line-height: 26px;
       width: 90%;
@@ -303,11 +326,17 @@ body {
 /* ========== 480px 기준 ========== */
 
 @media screen and (max-width: 480px) {
-
-   .Sub302__resultField,
    .Sub302__searchField,
    .Sub302__mainField {
       width: 90%;
+   }
+
+   .Sub302__filterField {
+      margin: 0 auto 30px;
+   }
+   
+   .Sub302__mainField p {
+      padding: 0px 0px 5px 0px;
    }
 
    .Sub302__content_header h1 {
@@ -331,17 +360,30 @@ body {
    }
 
    .Sub302__selects {
-      margin-bottom: 5px;
+      margin-bottom: 16px;
    }
 
 
    .Sub302__selects,
    .Sub302__searchField,
-   .Sub302__search_container,
-   .Sub302__resultField {
+   .Sub302__search_container  {
       font-size: 14px;
       line-height: 26px;
       width: 100%;
+   }
+
+   .Sub302__resultField {
+      width: 90%;
+   }
+
+   
+
+   
+
+   .Sub302__resultField p {
+      padding: 60px 0;
+      font-size: 18px;
+      line-height: 26px;
    }
 
    .Sub302__search_container {

@@ -15,9 +15,9 @@ function MinquiryList(props) {
 
    return (
       <>
-         <div className='sub101__container container__box'>
-            <h2>운영진에게 문의</h2>
-            <p>도심 공원에서 만나는  자연과 지속가능성</p>
+         <div className={commons.container__box__title}>
+            <h2 className={commons.main_title}>운영진에게 문의</h2>
+            <p className={commons.sub_title}>도심 공원에서 만나는  자연과 지속가능성</p>
          </div>
 
          <div>

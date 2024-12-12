@@ -51,19 +51,18 @@ function Sub303(props) {
                <div className={styles.Sub302__searchbarField}>
                      <p>검색어 검색</p>
                      <div className={styles.Sub302__searchField}>
-                        <input type="text" class={styles.Sub302__search_input} placeholder="상세주소로 검색하기" />
-                        <button class={styles.Sub302__search_button}>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                 <circle cx="11" cy="11" r="8"></circle>
-                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                              </svg>
-                        </button>
+                        <div className={commons.common_search_div}>
+                           <form name="" action="/">
+                              <input type="text" name="" id="" placeholder="상세주소로 검색하기" />
+                              <button className="material-icons">search</button>
+                           </form>
+                        </div>
                      </div>
                </div>
             </div>
          </div>
          <div className={styles.Sub302__resultField}>
-            <p>"서울특별시 강북구 우이동’에서 ‘검색어’(으)로 검색한 결과는 총 0건 입니다."</p>
+            <p>"서울특별시 강북구 우이동’에서 ‘검색어’(으)로 검색한 결과는 총 <span>0</span>건 입니다."</p>
             <div className={styles.Sub302__map}></div>
          </div>
       </div>

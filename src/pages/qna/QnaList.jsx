@@ -8,7 +8,7 @@ function QnaList(props) {
 
    return (
       <>
-         <div className={commons.container__box}>
+         <div className={commons.container__box__title}>
             <h2 className={commons.main_title}>전문가와의 상담</h2>
             <p className={commons.sub_title}>문의 내용을 남겨주시면 순차적으로 확인하여 답변 드리겠습니다.</p>
          </div>
@@ -160,17 +160,12 @@ function QnaList(props) {
                   <li>총 <span>16</span>건</li>
                   <li className={styles.sub403__search}>
                      <div className={styles.sub403__search__box}>
-                              <form className="sub403__form" action="/">
-                              <div className={styles.sub403__search__div}>
-                              <input
-                                 type="text"
-                                 name=""
-                                 id=""
-                                 placeholder="검색어를 입력해주세요."
-                              />
-                              <button className="material-icons" type='submit'>search</button>
-                              </div>
-                           </form>
+                        <form action="">
+                           <div className={commons.common__searchbar__box}>
+                              <input type="text" className={commons.common__search__input} placeholder="검색어를 입력해주세요" />
+                              <span className="material-icons">search</span>
+                           </div>
+                        </form>
                      </div>
                   </li>
                </ul>

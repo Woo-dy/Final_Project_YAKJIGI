@@ -436,6 +436,23 @@ ul.sub_search_container li.sub_search .sub_search_div input:focus {
    .status_table tbody tr td:nth-child(3) {
       width: 120px;
    }
+
+   ul.sub_search_container li.sub_search .sub_search_div {
+      position: relative;
+   }
+   
+   ul.sub_search_container li.sub_search .sub_search_div button {
+      font-size: 24px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+   }
+   
+   ul.sub_search_container li.sub_search .sub_search_div input[type="text"] {
+      height: 60px;
+      border-radius: 30px;
+      font-size: 18px;
+   }
 }
 /* ========== 480px 기준 ========== */
 @media screen and (max-width: 480px) {

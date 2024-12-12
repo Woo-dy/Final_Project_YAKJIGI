@@ -41,6 +41,7 @@ import Privacy from './pages/privacy/Privacy';
 import TermsOfUse from './pages/termsofuse/TermsOfUse';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
+import MyMain from './pages/mypage/MyMain';
 
 function App() {
    useEffect(() => {
@@ -60,24 +61,31 @@ function App() {
             <Header />
 
             <Routes>
+               {/* 웹 메인 */}
                <Route path='/' element={<Container />} />
+               {/* sub1 */}
                <Route path='/sub101' element={<Sub101 />} />
                <Route path='/sub102' element={<Sub102 />} />
                <Route path='/sub103' element={<Sub103 />} />
                <Route path='/sub104' element={<Sub104 />} />
                <Route path='/sub105' element={<Sub105 />} />
+               {/* sub2 */}
                <Route path='/sub201' element={<Sub201 />} />
                <Route path='/sub202' element={<Sub202 />} />
                <Route path='/sub203' element={<Sub203 />} />
+               {/* sub3 */}
                <Route path='/sub301' element={<Sub301 />} />
                <Route path='/sub302' element={<Sub302 />} />
                <Route path='/sub303' element={<Sub303 />} />
+               {/* 게시판 */}
                <Route path='/noticelist' element={<NoticeList />} />
                <Route path='/faqlist' element={<FaqList />} />
                <Route path='/qnalist' element={<QnaList />} />
                <Route path='/minquiry' element={<MinquiryList />} />
                <Route path='/privacy' element={<Privacy />} />
                <Route path='/termsofuse' element={<TermsOfUse />} />
+               <Route path='/mymain' element={<MyMain />} />
+               {/* 마이페이지 메인 */}
             </Routes>
 
             <Footer />

@@ -120,6 +120,45 @@ footer {
 
 /* ============= input ============= */
 
+/* search design */
+.common_search_div {
+   position: relative;
+}
+
+.common_search_div button {
+   position: absolute;
+   top: 0px; 
+   right: 0px;
+   color: #333;
+   font-size: 24px;
+   font-weight: 100;
+   display: inline-block;
+   width: 80px;
+   height: 80px;
+   background-color: #333333;
+   color: #fff;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.common_search_div input[type="text"] {
+   width: 100%;
+   max-width: 1320px;
+   height: 80px;
+   border: 1px solid #ddd;
+   border-radius: 40px;
+   padding: 0 0 0 34px;
+   box-sizing: border-box;
+   font-size: 18px;
+}
+
+.common_search_div input:focus {  
+   border-color:var(--MainColor);
+   border: 2px solid var(--MainColor);
+   outline: none;
+}
+
+
 /* select design */
 .commons__custom__selects {
    position: relative;
@@ -173,10 +212,6 @@ footer {
    font-size: 16px;
 }
 
-input:focus {
-   outline: 1px solid var(--MainColor); /* 파란색 테두리 */
-}
-
 /* button search style */
 button.btn__search {
    width: 130px; /* 가로 크기 */
@@ -196,6 +231,33 @@ button.btn__search:hover {
    transition: all 0.3s;
 }
 
+
+/* 게시판 우측 검색 영역 */
+.common__searchbar__box {
+   position: relative;
+}
+
+.common__search__input {
+   border-bottom: 1px solid #ddd;
+   box-sizing: border-box;
+   width: 300px;
+   height: 46px;
+   font-size: 16px;
+   padding: 0 10px;
+}
+
+.common__search__input:focus {
+   border: none; /* 기존 테두리 제거 */
+   border-bottom: 1px solid var(--MainColor); /* 밑줄만 적용 */
+   outline: none; /* 기본 outline 제거 */
+}
+
+.common__searchbar__box span {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 10px;
+}
 
 /* input type=file style */
 .filebox .uploadName {
@@ -312,6 +374,53 @@ button.btn__search:hover {
    overflow: hidden;
    border: 0;
 }
+
+/* paging_number */
+.paging_num_ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 60px;
+}
+
+.paging_num_ul li {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 1px solid #ddd;
+   color: #555;
+   margin: 0 5px;
+   cursor: pointer;
+   position: relative;
+}
+
+.paging_num_ul li a {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.paging_num_ul li.prev,
+.paging_num_ul li.next {
+   padding: 0;
+}
+
+.paging_num_ul li:hover {
+   border: 1px solid #111;
+   color: #111;
+}
+
+.paging_num_ul li.active {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 1px solid #111;
+}
+/* paging_number */
+
 
 /* ========== 1380px 기준 ========== */
 @media screen and (max-width: 1380px) { 
@@ -467,6 +576,46 @@ button.btn__search:hover {
    .commons__custom__selects select.commons__select {
       height: 60px;
    }
+
+   /* search design */
+   .common_search_div button {
+      font-size: 24px;
+      width: 60px;
+      height: 60px;
+   }
+
+   .common_search_div input[type="text"] {
+      height: 60px;
+      border-radius: 30px;
+      font-size: 18px;
+   }
+   
+   /* paging_number */
+   .paging_num_ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+   }
+
+   .paging_num_ul li {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+   }
+
+   .paging_num_ul li.active {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+   }
+   /* paging_number */
+
+   
+   /* 게시판 우측 검색 영역 */
+   .common__search__input {
+      width: 250px;
+      font-size: 16px;
+   }
 }
 
 
@@ -513,4 +662,32 @@ button.btn__search:hover {
       width: 70px;
       font-size: 14px;
    }
+
+   /* paging_number */
+   .paging_num_ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+   .paging_num_ul li {
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+   }
+
+   .paging_num_ul li.active {
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+   }
+   /* paging_number */
+
+   
+   /* 게시판 우측 검색 영역 */
+   .common__search__input {
+      width: 220px;
+      font-size: 14px;
+   }
+
 }

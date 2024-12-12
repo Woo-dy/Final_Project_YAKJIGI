@@ -109,6 +109,7 @@ function Header(props) {
                   <li>
                      <Link>로그인</Link>
                      <Link>회원가입</Link>
+                     <Link to="/mymain">마이페이지</Link>
                      <Link>공지사항</Link>
                   </li>
                </ul>
