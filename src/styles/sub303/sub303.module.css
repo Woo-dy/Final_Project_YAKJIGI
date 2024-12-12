@@ -242,25 +242,12 @@ body {
 
 
    .Sub302__mainField,
-   .Sub302__selects,
    .Sub302__searchField,
    .Sub302__search-container,
-   .Sub302__resultField,
-   .Sub302__select1,
-   .Sub302__select2,
-   .Sub302__select3 {
+   .Sub302__resultField {
       font-size: 18px;
       line-height: 34px;
       width: 90%;
-   }
-
-   .Sub302__search_input {
-      flex: 1 1;
-      border: none;
-      outline: none;
-      font-size: 18px;
-      padding: 10px 6px;
-      border-radius: 50px;
    }
 
    .Sub302__search_container {
@@ -290,26 +277,16 @@ body {
       line-height: 34px;
    }
 
-   .Sub302__mainField,
-   .Sub302__selects,
-   .Sub302__searchField,
+   
    .Sub302__search_container,
-   .Sub302__resultField,
-   .Sub302__select1,
-   .Sub302__select2,
-   .Sub302__select3 {
+   .Sub302__resultField {
       font-size: 14px;
       line-height: 26px;
       width: 90%;
    }
-
-   .Sub302__search_input {
-      flex: 1 1;
-      border: none;
-      outline: none;
-      font-size: 14px;
-      padding: 10px 6px;
-      border-radius: 50px;
+   
+   .Sub302__searchField {
+      width: 100%;
    }
 
    .Sub302__filterField {
@@ -330,7 +307,7 @@ body {
    .Sub302__resultField,
    .Sub302__searchField,
    .Sub302__mainField {
-      width: 70%;
+      width: 90%;
    }
 
    .Sub302__content_header h1 {
@@ -357,30 +334,14 @@ body {
       margin-bottom: 5px;
    }
 
-   .Sub302__mainField p {
-      text-align: left;
-      font-weight: 600;
-      padding: 50px 0px 30px 10px;
-   }
 
-
-   .Sub302__mainField,
    .Sub302__selects,
    .Sub302__searchField,
    .Sub302__search_container,
    .Sub302__resultField {
       font-size: 14px;
       line-height: 26px;
-      width: 90%;
-   }
-
-   .Sub302__search_input {
-      flex: 1 1;
-      border: none;
-      outline: none;
-      font-size: 14px;
-      padding: 10px 6px;
-      border-radius: 50px;
+      width: 100%;
    }
 
    .Sub302__search_container {

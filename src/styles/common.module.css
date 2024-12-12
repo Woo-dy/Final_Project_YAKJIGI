@@ -120,15 +120,11 @@ footer {
 
 /* ============= input ============= */
 
-/* select */
+/* select design */
 .commons__custom__selects {
    position: relative;
    width: 100%;
 }
-
-.commons__custom__selects select.commons__select {
-}
-
 .commons__custom__selects select.commons__select {
    width: 100%;
    padding: 0 20px;
@@ -465,6 +461,11 @@ button.btn__search:hover {
    .bth_cancle {
       width: 100px;
       font-size: 16px;
+   }
+
+   /* select design */
+   .commons__custom__selects select.commons__select {
+      height: 60px;
    }
 }
 
