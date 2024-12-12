@@ -15,6 +15,10 @@ import 'swiper/css'; // node_modules 불러오는 swipercss
 import 'swiper/css/pagination'; // node_modules 불러오는 pagination
 import 'swiper/css/navigation'; // node_modules 불러오는 navigation
 
+import AOS from 'aos';
+import 'swiper/swiper-bundle.css';
+import 'aos/dist/aos.css';
+
 
 import '../node_modules/aos/dist/aos.css';
 
@@ -36,8 +40,17 @@ import MinquiryList from './pages/minquiry/MinquiryList';
 import Privacy from './pages/privacy/Privacy';
 import TermsOfUse from './pages/termsofuse/TermsOfUse';
 import ScrollToTop from './components/ScrollToTop';
+import { useEffect } from 'react';
 
 function App() {
+   useEffect(() => {
+
+      AOS.init({ duration: 1000 });
+
+      return () => {
+         AOS.refresh();
+      };
+   }, []);
 
    return (
       <BrowserRouter>
