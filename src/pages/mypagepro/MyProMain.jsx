@@ -77,6 +77,149 @@ function MyProMain(props) {
          
 
          <div className={mycommons.my__container}>
+            <ul className={pro.my__container__list}>
+               {/* 상담 내역 */}
+               <li>
+                  <div className={pro.my__list__title}>
+                     <p>상담 내역</p>
+                     <button>
+                        더보기
+                        <span class="material-symbols-outlined">
+                           chevron_right
+                        </span>
+                     </button>
+                  </div>
+                  <div className={pro.my__consultation}>
+                     <table>
+                        <colgroup>
+                           <col width="calc(100% - 130px)"/>
+                           <col width="130px"/>
+                        </colgroup>
+                        <thead>
+                           <tr>
+                              <th>제목</th>
+                              <th>답변여부</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__wait}>답변대기</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>답변완료</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>답변완료</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>답변완료</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>답변완료</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </li>
+               {/* 문의 내역 */}
+               <li>
+                  <div className={pro.my__list__title}>
+                     <p>문의 내역</p>
+                     <button>
+                        더보기
+                        <span class="material-symbols-outlined">
+                           chevron_right
+                        </span>
+                     </button>
+                  </div>
+                  <div className={pro.my__consultation}>
+                     <table>
+                        <colgroup>
+                           <col width="calc(100% - 130px)"/>
+                           <col width="130px"/>
+                        </colgroup>
+                        <thead>
+                           <tr>
+                              <th>제목</th>
+                              <th>답변여부</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__wait}>상담대기</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>상담완료</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>상담완료</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>상담완료</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <p>타이틀입니다.</p>
+                              </td>
+                              <td>
+                                 <span className={pro.my__complete}>상담완료</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+         
+
+         <div className={mycommons.my__container}>
             <ul className={pro.my__container}>
                {/* 처방 내역 */}
                <li>

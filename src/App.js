@@ -43,6 +43,10 @@ import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
 import MyProMain from './pages/mypagepro/MyProMain';
 import MyBasicMain from './pages/mypagebasic/MyBasicMain';
+import MyBasicUserInfo from './pages/mypagebasicuserinfo/MyBasicUserInfo';
+import MyBasicProInfo from './pages/mypageprouserinfo/MyBasicProInfo';
+import MyBasicBoardCounsel from './pages/mybasicboardcounsel/MyBasicBoardCounsel';
+import MyBasicBoardInquiry from './pages/mybasicboardinquiry/MyBasicBoardInquiry';
 
 function App() {
    useEffect(() => {
@@ -87,9 +91,14 @@ function App() {
                <Route path='/termsofuse' element={<TermsOfUse />} />
                {/* 마이페이지 basic */}
                <Route path='/mybasicmain' element={<MyBasicMain />} />
+               {/* 회원정보 보기/수정 */}
+               <Route path='/mybasicinfo' element={<MyBasicUserInfo />} />
+               <Route path='/mybasicboardcounsel' element={<MyBasicBoardCounsel />} />
+               <Route path='/mybasicboardinquiry' element={<MyBasicBoardInquiry />} />
 
                {/* 마이페이지 pro */}
                <Route path='/mypromain' element={<MyProMain />} />
+               <Route path='/myproinfo' element={<MyBasicProInfo />} />
             </Routes>
 
             <Footer />

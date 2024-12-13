@@ -133,7 +133,7 @@
    opacity: 1;
 }
 
-.Main__imgbox_contents .info h3{
+.Main__imgbox_contents .info h3 {
    margin-bottom: 8px;
    font-size: 24px;
    color: #fff;
@@ -181,6 +181,7 @@
    .Main__textcontents {
       padding: 120px 0 30px 0;
       width: 100%;
+      top: 30px;
       margin: 0 auto;
       height: auto;
    }
@@ -270,6 +271,7 @@
    .Main__textcontents {
       padding: 80px 0 30px 0;
       width: 100%;
+      top: 30px;
       margin: 0 auto;
       height: auto;
    }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import styles from '../../styles/mypage/mymain.module.css';
@@ -7,6 +7,7 @@ import basic from '../../styles/mypage/mybasicmain.module.css';
 import UserProfile from '../../components/UserProfile';
 
 function MyBasicMain(props) {
+   const location = useLocation();
    const [isScrolled, setIsScrolled] = useState(false);
 
    useEffect(() => {
@@ -40,39 +41,29 @@ function MyBasicMain(props) {
          <nav className={`${styles.mypage_nav} ${isScrolled ? styles.bg_on : ""}`}>
             <ul>
                <li className={styles.home}>
-                  <Link to="/mybasicmain">
+                  <Link to="/mybasicmain" className={`${styles.link} ${location.pathname === '/mybasicmain' ? styles.active : ''}`}>
                      <span class="material-symbols-outlined">home</span>
                   </Link>
                </li>
                <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>회원정보</div>
-                  <div className={styles.dropdownContent}>
-                     <p>캘린더</p>
-                     <p>스크랩</p>
-                     <p>내가 쓴 리뷰</p>
+                  <div className={styles.dropdownMenu}>
+                     <Link to="/mybasicinfo" className={`${styles.link} ${location.pathname === '/mybasicinfo' ? styles.textActive : ''}`}>
+                        회원정보
+                     </Link>
                   </div>
                </li>
                <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>게시판</div>
-                  <div className={styles.dropdownContent}>
-                     <p>내 프로필</p>
-                     <p>내 프로필</p>
-                     <p>내 프로필</p>
+                  <div className={styles.dropdownMenu}>
+                     <Link to="/mybasicboardcounsel" className={`${styles.link} ${location.pathname === '/mybasicboardcounsel' ? styles.textActive : ''}`}>
+                        게시판
+                     </Link>
                   </div>
                </li>
                <li className={styles.dropdown}>
                   <div className={styles.dropdownMenu}>복약일지</div>
-                  <div className={styles.dropdownContent}>
-                     <p>1 : 1 문의 내역</p>
-                     <p>불편사항 신고 내역</p>
-                  </div>
                </li>
                <li className={styles.dropdown}>
                   <div className={styles.dropdownMenu}>진료기록</div>
-                  <div className={styles.dropdownContent}>
-                     <p>1 : 1 문의 내역</p>
-                     <p>불편사항 신고 내역</p>
-                  </div>
                </li>
             </ul>
          </nav>
@@ -159,7 +150,7 @@ function MyBasicMain(props) {
                                  <p>타이틀입니다.</p>
                               </td>
                               <td>
-                                 <span className={basic.my__wait}>상담대기</span>
+                                 <span className={basic.my__wait}>답변대기</span>
                               </td>
                            </tr>
                            <tr>
@@ -167,7 +158,7 @@ function MyBasicMain(props) {
                                  <p>타이틀입니다.</p>
                               </td>
                               <td>
-                                 <span className={basic.my__complete}>상담완료</span>
+                                 <span className={basic.my__complete}>답변완료</span>
                               </td>
                            </tr>
                            <tr>
@@ -175,7 +166,7 @@ function MyBasicMain(props) {
                                  <p>타이틀입니다.</p>
                               </td>
                               <td>
-                                 <span className={basic.my__complete}>상담완료</span>
+                                 <span className={basic.my__complete}>답변완료</span>
                               </td>
                            </tr>
                            <tr>
@@ -183,7 +174,7 @@ function MyBasicMain(props) {
                                  <p>타이틀입니다.</p>
                               </td>
                               <td>
-                                 <span className={basic.my__complete}>상담완료</span>
+                                 <span className={basic.my__complete}>답변완료</span>
                               </td>
                            </tr>
                            <tr>
@@ -191,7 +182,7 @@ function MyBasicMain(props) {
                                  <p>타이틀입니다.</p>
                               </td>
                               <td>
-                                 <span className={basic.my__complete}>상담완료</span>
+                                 <span className={basic.my__complete}>답변완료</span>
                               </td>
                            </tr>
                         </tbody>
