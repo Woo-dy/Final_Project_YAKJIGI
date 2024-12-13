@@ -41,7 +41,8 @@ import Privacy from './pages/privacy/Privacy';
 import TermsOfUse from './pages/termsofuse/TermsOfUse';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
-import MyMain from './pages/mypage/MyMain';
+import MyProMain from './pages/mypagepro/MyProMain';
+import MyBasicMain from './pages/mypagebasic/MyBasicMain';
 
 function App() {
    useEffect(() => {
@@ -84,8 +85,11 @@ function App() {
                <Route path='/minquiry' element={<MinquiryList />} />
                <Route path='/privacy' element={<Privacy />} />
                <Route path='/termsofuse' element={<TermsOfUse />} />
-               <Route path='/mymain' element={<MyMain />} />
-               {/* 마이페이지 메인 */}
+               {/* 마이페이지 basic */}
+               <Route path='/mybasicmain' element={<MyBasicMain />} />
+
+               {/* 마이페이지 pro */}
+               <Route path='/mypromain' element={<MyProMain />} />
             </Routes>
 
             <Footer />

@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import styles from '../../styles/mypage/mymain.module.css';
-import { Link } from 'react-router-dom';
-import UserProfile from './UserProfile';
+import pro from '../../styles/mypage/mypromain.module.css';
+import UserProfile from '../../components/UserProfile';
 
-function MyMain(props) {
+function MyProMain(props) {
    const [isScrolled, setIsScrolled] = useState(false);
 
    useEffect(() => {
    // 스크롤 이벤트 핸들러
    const handleScroll = () => {
-      if (window.scrollY > 480) {
+      if (window.scrollY > 0) {
          setIsScrolled(true);
       } else {
          setIsScrolled(false);
@@ -40,12 +41,12 @@ function MyMain(props) {
          <nav className={`${styles.mypage_nav} ${isScrolled ? styles.bg_on : ""}`}>
             <ul>
                <li className={styles.home}>
-                  <Link to="/mymain">
+                  <Link to="/mypromain">
                      <span class="material-symbols-outlined">home</span>
                   </Link>
                </li>
                <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>히스토리</div>
+                  <div className={styles.dropdownMenu}>회원정보</div>
                   <div className={styles.dropdownContent}>
                      <p>캘린더</p>
                      <p>스크랩</p>
@@ -53,13 +54,13 @@ function MyMain(props) {
                   </div>
                </li>
                <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>내 정보 보기</div>
+                  <div className={styles.dropdownMenu}>상담내역</div>
                   <div className={styles.dropdownContent}>
                      <p>내 프로필</p>
                   </div>
                </li>
                <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>문의 내역</div>
+                  <div className={styles.dropdownMenu}>문의내역</div>
                   <div className={styles.dropdownContent}>
                      <p>1 : 1 문의 내역</p>
                      <p>불편사항 신고 내역</p>
@@ -69,17 +70,34 @@ function MyMain(props) {
          </nav>
 
          {/* User Profile */}
-         <div className={mycommons.my_profile_container}>
+         <div className={mycommons.my__profile__container}>
             <UserProfile />
          </div>
 
-         <div className={mycommons.my_basic_container}>
-            <div  style={{height:"1000px", backgroundColor:"#ddd", boxSizing:"border-box", paddingTop:"100px"}}>
-               내용을 입력해주세요.
-            </div>
+         
+
+         <div className={mycommons.my__container}>
+            <ul className={pro.my__container}>
+               {/* 처방 내역 */}
+               <li>
+                  
+               </li>
+               {/* 복약 일지 */}
+               <li>
+
+               </li>
+               {/* 상담 내역 */}
+               <li>
+
+               </li>
+               {/* 문의 내역 */}
+               <li>
+
+               </li>
+            </ul>
          </div>
       </>
    );
 }
 
-export default MyMain;
+export default MyProMain;

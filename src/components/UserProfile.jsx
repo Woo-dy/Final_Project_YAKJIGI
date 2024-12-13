@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profile from '../../styles/mypage/userprofile.module.css';
+import profile from '../styles/mypage/userprofile.module.css';
 import NumberCounter from "./NumberCounter";
 
 function UserProfile(props) {
