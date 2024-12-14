@@ -3,16 +3,18 @@ import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import styles from '../../styles/mypage/mymain.module.css';
 import MyBasicMenu from '../../components/MyBasicMenu';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 // import info from '../../styles/mypage/mybasicboardinquiry.module.css';
 
 function MyBasicBoardInquiry(props) {
    const location = useLocation();
+   const { mainTitle, subTitle } = useDocumentTitle();
 
    return (
       <>
          <div className={commons.container__box__title}>
-            <h2 className={commons.main_title}>마이페이지</h2>
-            <p className={commons.sub_title}>약지기에서의 나의 기록들을 확인하세요</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
          {/* 마이 페이지 메뉴 */}

@@ -180,6 +180,11 @@ nav.mypage_nav ul li {
    nav.mypage_nav ul {
       width: 90%;
    }
+
+   /* 게시판 탭 메뉴 */
+   .my__board__tabmenu {
+      width: 90%;
+   }
 }
 
 @media screen and (max-width: 1000px) {
@@ -211,7 +216,6 @@ nav.mypage_nav ul li {
 
    .home a span {
       margin: 13px 0;
-      color: var(--MainWhite);
    }
 
    .dropdownMenu {
@@ -237,6 +241,16 @@ nav.mypage_nav ul li {
       font-size: 14px;
       padding: 12px 16px;
    }
+
+   .dropdownContent p a {
+      padding: 0px 0px;
+   }
+
+   .my__board__tabmenu ul li {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+   }
 }
 
 @media screen and (max-width: 480px) {
@@ -248,8 +262,13 @@ nav.mypage_nav ul li {
 
    .home a span {
       margin: 8px 0;
+   }
+
+   .home a.active span {
+      margin: 8px 0;
       color: var(--MainWhite);
    }
+   
 
    .dropdownMenu {
       color: #333;

@@ -3,16 +3,19 @@ import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import styles from '../../styles/mypage/mymain.module.css';
 import MyProMenu from '../../components/MyProMenu';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 // import info from '../../styles/mypage/mybasicboardcounsel.module.css';
 
 function MyProBoardCounsel(props) {
    const location = useLocation();
 
+   const { mainTitle, subTitle } = useDocumentTitle();
+
    return (
       <>
          <div className={commons.container__box__title}>
-            <h2 className={commons.main_title}>마이페이지</h2>
-            <p className={commons.sub_title}>약지기에서의 나의 기록들을 확인하세요</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
          {/* 마이 페이지 메뉴 */}
@@ -24,8 +27,8 @@ function MyProBoardCounsel(props) {
                <li className={`${styles.link} ${location.pathname === '/myproboardcounsel' ? styles.boardActive : ''}`}>
                   <Link to="/myproboardcounsel">전문가와의 상담</Link>
                </li>
-               <li className={`${styles.link} ${location.pathname === '/myprocounselmy' ? styles.boardActive : ''}`}>
-                  <Link to="/myprocounselmy">내 상담내역</Link>
+               <li className={`${styles.link} ${location.pathname === '/myproboardcounselmy' ? styles.boardActive : ''}`}>
+                  <Link to="/myproboardcounselmy">내 상담내역</Link>
                </li>
             </ul>
          </div>

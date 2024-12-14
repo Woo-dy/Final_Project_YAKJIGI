@@ -1,8 +1,9 @@
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import pro from '../../styles/mypage/mypromain.module.css';
-import UserProfile from '../../components/UserProfile';
 import MyProMenu from '../../components/MyProMenu';
+import { Link } from 'react-router-dom';
+import UserProProfile from '../../components/UserProProfile';
 
 function MyProMain(props) {
 
@@ -17,7 +18,7 @@ function MyProMain(props) {
 
          {/* User Profile */}
          <div className={mycommons.my__profile__container}>
-            <UserProfile />
+            <UserProProfile />
          </div>
 
          
@@ -29,10 +30,12 @@ function MyProMain(props) {
                   <div className={pro.my__list__title}>
                      <p>상담 내역</p>
                      <button>
-                        더보기
-                        <span class="material-symbols-outlined">
-                           chevron_right
-                        </span>
+                        <Link to="/myproboardcounsel">
+                           더보기
+                           <span class="material-symbols-outlined">
+                              chevron_right
+                           </span>
+                        </Link>
                      </button>
                   </div>
                   <div className={pro.my__consultation}>
@@ -97,10 +100,12 @@ function MyProMain(props) {
                   <div className={pro.my__list__title}>
                      <p>문의 내역</p>
                      <button>
-                        더보기
-                        <span class="material-symbols-outlined">
-                           chevron_right
-                        </span>
+                        <Link to="/myproboardinquiry">
+                           더보기
+                           <span class="material-symbols-outlined">
+                              chevron_right
+                           </span>
+                        </Link>
                      </button>
                   </div>
                   <div className={pro.my__consultation}>

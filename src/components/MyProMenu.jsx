@@ -8,14 +8,7 @@ function MyProMenu(props) {
    
    // 한 페이지 내에 페이지가 여러개 추가될 시 버튼 활성화  
    const activeClass = ['/myproboardcounsel', 
-                        '/myproboardinquiry', 
-                        '/myproboardlog', 
-                        '/myproboardlogwrite', 
-                        '/myproboardlogdetail', 
-                        '/myproboardlogedit', 
-                        '/myproboardrecords', 
-                        '/myproboardrecordswrite', 
-                        '/myproboardrecordsdetail' ].includes(location.pathname) ? 
+                        '/myproboardcounselmy' ].includes(location.pathname) ? 
                            styles.activate : '';
 
    useEffect(() => {
@@ -57,7 +50,7 @@ function MyProMenu(props) {
                </li>
                <li className={styles.dropdown}>
                   <div className={styles.dropdownMenu}>
-                     <Link to="/myproboardcounsel" className={['/myproboardcounsel', '/myproboardinquiry'].includes(location.pathname) ? activeClass : ''}>
+                     <Link to="/myproboardcounsel" className={['/myproboardcounsel', '/myproboardcounselmy'].includes(location.pathname) ? activeClass : ''}>
                         상담내역
                      </Link>
                   </div>

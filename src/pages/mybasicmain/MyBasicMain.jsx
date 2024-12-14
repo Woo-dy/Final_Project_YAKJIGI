@@ -2,16 +2,19 @@ import { Link } from 'react-router-dom';
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import basic from '../../styles/mypage/mybasicmain.module.css';
-import UserProfile from '../../components/UserProfile';
 import MyBasicMenu from '../../components/MyBasicMenu';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
+import UserBasicProfile from '../../components/UserBasicProfile';
+
 
 function MyBasicMain(props) {
+   const { mainTitle, subTitle } = useDocumentTitle();
 
    return (
       <>
          <div className={commons.container__box__title}>
-            <h2 className={commons.main_title}>마이페이지</h2>
-            <p className={commons.sub_title}>약지기에서의 나의 기록들을 확인하세요</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
          {/* 마이 페이지 메뉴 */}
@@ -19,7 +22,7 @@ function MyBasicMain(props) {
 
          {/* User Profile */}
          <div className={mycommons.my__profile__container}>
-            <UserProfile />
+            <UserBasicProfile />
          </div>
 
          <div className={mycommons.my__container}>
