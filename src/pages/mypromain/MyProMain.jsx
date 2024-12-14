@@ -1,35 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
-import styles from '../../styles/mypage/mymain.module.css';
 import pro from '../../styles/mypage/mypromain.module.css';
 import UserProfile from '../../components/UserProfile';
+import MyProMenu from '../../components/MyProMenu';
 
 function MyProMain(props) {
-   const [isScrolled, setIsScrolled] = useState(false);
-
-   useEffect(() => {
-   // 스크롤 이벤트 핸들러
-   const handleScroll = () => {
-      if (window.scrollY > 0) {
-         setIsScrolled(true);
-      } else {
-         setIsScrolled(false);
-      }
-   };
-
-   // 윈도우 크기가 0보다 클 때 스크롤 이벤트 등록
-   if (window.innerWidth > 0) {
-      window.addEventListener("scroll", handleScroll);
-   }
-
-   // 컴포넌트 언마운트 시 이벤트 제거
-   return () => {
-      window.removeEventListener("scroll", handleScroll);
-   };
-   }, []); // 빈 배열로 한 번만 실행
 
    return (
       <>
@@ -38,24 +13,7 @@ function MyProMain(props) {
             <p className={commons.sub_title}>약지기에서의 나의 기록들을 확인하세요</p>
          </div>
 
-         <nav className={`${styles.mypage_nav} ${isScrolled ? styles.bg_on : ""}`}>
-            <ul>
-               <li className={styles.home}>
-                  <Link to="/mypromain">
-                     <span class="material-symbols-outlined">home</span>
-                  </Link>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>회원정보</div>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>상담내역</div>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>문의내역</div>
-               </li>
-            </ul>
-         </nav>
+         <MyProMenu />
 
          {/* User Profile */}
          <div className={mycommons.my__profile__container}>

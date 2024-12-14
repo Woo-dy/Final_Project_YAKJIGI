@@ -44,7 +44,6 @@ import { useEffect } from 'react';
 import MyProMain from './pages/mypromain/MyProMain';
 import MyBasicMain from './pages/mybasicmain/MyBasicMain';
 import MyBasicUserInfo from './pages/mybasicuserinfo/MyBasicUserInfo';
-import MyBasicProInfo from './pages/myprouserinfo/MyBasicProInfo';
 import MyBasicBoardCounsel from './pages/mybasicboardcounsel/MyBasicBoardCounsel';
 import MyBasicBoardInquiry from './pages/mybasicboardinquiry/MyBasicBoardInquiry';
 import MyBasicBoardRecords from './pages/mybasicboardrecords/MyBasicBoardRecords';
@@ -54,6 +53,10 @@ import MyBasicBoardLogDetail from './pages/mybasicboardlogdetail/MyBasicBoardLog
 import MyBasicBoardLogEdit from './pages/mybasicboardlogedit/MyBasicBoardLogEdit';
 import MyBasicBoardRecordsWrite from './pages/mybasicboardrecordswrite/MyBasicBoardRecordsWrite';
 import MyBasicBoardRecordsDetail from './pages/mybasicboardrecordsdetail/MyBasicBoardRecordsDetail';
+import MyProUserInfo from './pages/myprouserinfo/MyProUserInfo';
+import MyProBoardCounsel from './pages/myproboardcounsel/MyProBoardCounsel';
+import MyProBoardCounselMy from './pages/myproboardcounselmy/MyProBoardCounselMy';
+import MyProBoardInquiry from './pages/myproboardinquiry/MyProBoardInquiry';
 
 function App() {
    useEffect(() => {
@@ -114,7 +117,10 @@ function App() {
 
                {/* 마이페이지 pro */}
                <Route path='/mypromain' element={<MyProMain />} />
-               <Route path='/myproinfo' element={<MyBasicProInfo />} />
+               <Route path='/myprouserinfo' element={<MyProUserInfo />} />
+               <Route path='/myproboardcounsel' element={<MyProBoardCounsel />} />
+               <Route path='/myproboardcounselmy' element={<MyProBoardCounselMy />} />
+               <Route path='/myproboardinquiry' element={<MyProBoardInquiry />} />
             </Routes>
 
             <Footer />

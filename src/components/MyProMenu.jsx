@@ -5,6 +5,18 @@ import styles from '../styles/mypage/mymain.module.css';
 function MyProMenu(props) {
    const location = useLocation();
    const [isScrolled, setIsScrolled] = useState(false);
+   
+   // 한 페이지 내에 페이지가 여러개 추가될 시 버튼 활성화  
+   const activeClass = ['/myproboardcounsel', 
+                        '/myproboardinquiry', 
+                        '/myproboardlog', 
+                        '/myproboardlogwrite', 
+                        '/myproboardlogdetail', 
+                        '/myproboardlogedit', 
+                        '/myproboardrecords', 
+                        '/myproboardrecordswrite', 
+                        '/myproboardrecordsdetail' ].includes(location.pathname) ? 
+                           styles.activate : '';
 
    useEffect(() => {
    // 스크롤 이벤트 핸들러
@@ -45,34 +57,27 @@ function MyProMenu(props) {
                </li>
                <li className={styles.dropdown}>
                   <div className={styles.dropdownMenu}>
-                     <Link to="/myproboardcounsel" className={`${styles.link} ${location.pathname === '/myproboardcounsel' ? styles.textActive : ''}`}>
-                        게시판
+                     <Link to="/myproboardcounsel" className={['/myproboardcounsel', '/myproboardinquiry'].includes(location.pathname) ? activeClass : ''}>
+                        상담내역
                      </Link>
                   </div>
                   <div className={styles.dropdownContent}>
                      <p>
-                        <Link to="/myproboardcounsel" className={`${styles.link} ${location.pathname === '/myproboardcounsel' ? styles.textActive : ''}`}>
+                        <Link to="/myproboardcounsel" className={['/myproboardcounsel', '/myproboardcounselmy'].includes(location.pathname) ? activeClass : ''}>
                            전문가와의 상담
                         </Link>
                      </p>
                      <p>
-                        <Link to="/myproboardinquiry" className={`${styles.link} ${location.pathname === '/myproboardinquiry' ? styles.textActive : ''}`}>
-                           운영진에게 문의
+                        <Link to="/myproboardcounselmy" className={['/myproboardcounsel', '/myproboardcounselmy'].includes(location.pathname) ? activeClass : ''}>
+                           내 상담내역
                         </Link>
                      </p>
                   </div>
                </li>
                <li className={styles.dropdown}>
                   <div className={styles.dropdownMenu}>
-                     <Link to="/mybasicboardlog" className={`${styles.link} ${location.pathname === '/mybasicboardlog' ? styles.textActive : ''}`}>
-                        복약일지
-                     </Link>
-                  </div>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>
-                     <Link to="/mybasicboardrecords" className={`${styles.link} ${location.pathname === '/mybasicboardrecords' ? styles.textActive : ''}`}>
-                        진료기록
+                     <Link to="/myproboardinquiry" className={`${styles.link} ${location.pathname === '/myproboardinquiry' ? styles.textActive : ''}`}>
+                        운영진에게 문의
                      </Link>
                   </div>
                </li>
