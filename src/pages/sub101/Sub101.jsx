@@ -2,13 +2,16 @@ import React from 'react';
 
 import commons from '../../styles/common.module.css';
 import styles from '../../styles/sub101/sub101.module.css';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
-function sub101(props) {
+function Sub101(props) {
+   const { mainTitle, subTitle } = useDocumentTitle();
+
    return (
       <>
          <div className={commons.container__box}>
-            <h2 className={commons.main_title}>의약품의 정의</h2>
-            <p className={commons.sub_title}>도심 공원에서 만나는  자연과 지속가능성</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
 
             <p className={styles.sub101__ccontent}>의약품에 관한 텍스트 내용입니다. 의약품에 관한 텍스트 내용입니다. 의약품에 관한 텍스트 내용입니다. 의약품에 관한 텍스트 내용입니다.
             의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.ㅍ의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.의약품에 관한 텍스트 내용입니다.</p>
@@ -48,4 +51,4 @@ function sub101(props) {
    );
 }
 
-export default sub101;
+export default Sub101;

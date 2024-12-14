@@ -3,14 +3,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import commons from '../../styles/common.module.css';
 import styles from '../../styles/qna/qnalist.module.css';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 function QnaList(props) {
+   const { mainTitle, subTitle } = useDocumentTitle();
 
    return (
       <>
          <div className={commons.container__box__title}>
-            <h2 className={commons.main_title}>전문가와의 상담</h2>
-            <p className={commons.sub_title}>문의 내용을 남겨주시면 순차적으로 확인하여 답변 드리겠습니다.</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
          <div className={styles.sub403__container__box}>

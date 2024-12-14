@@ -1,12 +1,16 @@
 import { useState } from 'react';
 
 import styles from '../../styles/sub105/sub105.module.css';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
+import commons from '../../styles/common.module.css';
 
 
 function Sub105(props) {
    const [activeCategory, setActiveCategory] = useState(null);
    const [apiData, setApiData] = useState(null);
    const [isLoading, setIsLoading] = useState(false);
+   const { mainTitle, subTitle } = useDocumentTitle();
+
 
    const fetchData = (category) => {
    setActiveCategory(category);
@@ -50,13 +54,17 @@ function Sub105(props) {
       const htmlString = new XMLSerializer().serializeToString(xmlDoc);
       return htmlString;
    };
+   
+   
 
    return (
       <>
-         <div className={styles.sub105__medlawcontainer}>
-            <h2 className={styles.sub105__medlawtitle}>의약품 관련 법령</h2>
-            <h3 className={styles.sub105__medlawsubtitle}>의약품 관련 법령들을 조회해보세요</h3>
+         <div className={commons.container__box__title}>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
+         </div>
 
+         <div className={styles.sub105__medlawcontainer}>
             <div className={styles.sub105__medlawcategories}>
                {['법률', '대통령령', '총리령', '고시'].map((category) => (
                <button

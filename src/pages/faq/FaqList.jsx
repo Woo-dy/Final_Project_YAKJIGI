@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 
 import commons from '../../styles/common.module.css';
 import styles from '../../styles/faq/faq.module.css';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 function FaqList(props) {
+   const { mainTitle, subTitle } = useDocumentTitle();
+
    const faqData = [
    {
       question: "도심 공원의 이용시간은  어떻게 되나요?",
@@ -44,8 +47,8 @@ function FaqList(props) {
    return (
       <>
          <div className={commons.container__box__title}>
-            <h2 className={commons.main_title}>자주 묻는 질문</h2>
-            <p className={commons.sub_title}>개별 문의 전, 필요한 정보를 빠르게 확인해보세요</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
          <div className={styles.faq__container}>

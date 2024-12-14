@@ -99,27 +99,40 @@ function App() {
                <Route path='/minquiry' element={<MinquiryList />} />
                <Route path='/privacy' element={<Privacy />} />
                <Route path='/termsofuse' element={<TermsOfUse />} />
-               {/* 마이페이지 basic */}
+
+               {/* basic 마이페이지 */}
                <Route path='/mybasicmain' element={<MyBasicMain />} />
-               {/* 회원정보 보기/수정 */}
+               {/* basic 회원정보  */}
                <Route path='/mybasicuserinfo' element={<MyBasicUserInfo />} />
+               {/* basic 게시판 / 전문가와의 상담 */}
                <Route path='/mybasicboardcounsel' element={<MyBasicBoardCounsel />} />
+               {/* basic 게시판 / 운영진에게 문의 */}
                <Route path='/mybasicboardinquiry' element={<MyBasicBoardInquiry />} />
 
+               {/* basic 복약일지 / 메인 */}
                <Route path='/mybasicboardlog' element={<MyBasicBoardLog />} />
+               {/* basic 복약일지 / 글쓰기  */}
                <Route path='/mybasicboardlogwrite' element={<MyBasicBoardLogWrite />} />
+               {/* basic 복약일지 / 상세보기  */}
                <Route path='/mybasicboardlogdetail' element={<MyBasicBoardLogDetail />} />
+               {/* basic 복약일지 / 수정하기  */}
                <Route path='/mybasicboardlogedit' element={<MyBasicBoardLogEdit />} />
-
+               {/* basic 진료기록 / 메인  */}
                <Route path='/mybasicboardrecords' element={<MyBasicBoardRecords />} />
+               {/* basic 진료기록 / 글쓰기  */}
                <Route path='/mybasicboardrecordswrite' element={<MyBasicBoardRecordsWrite />} />
+               {/* basic 진료기록 / 상세보기  */}
                <Route path='/mybasicboardrecordsdetail' element={<MyBasicBoardRecordsDetail />} />
 
-               {/* 마이페이지 pro */}
+               {/* pro 마이페이지 */}
                <Route path='/mypromain' element={<MyProMain />} />
+               {/* pro 회원정보  */}
                <Route path='/myprouserinfo' element={<MyProUserInfo />} />
+               {/* pro 게시판 / 전문가와의 상담 */}
                <Route path='/myproboardcounsel' element={<MyProBoardCounsel />} />
+               {/* pro 게시판 / 내 상담내역 */}
                <Route path='/myproboardcounselmy' element={<MyProBoardCounselMy />} />
+               {/* pro 게시판 / 운영진에게 문의 */}
                <Route path='/myproboardinquiry' element={<MyProBoardInquiry />} />
             </Routes>
 

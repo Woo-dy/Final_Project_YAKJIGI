@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
 import commons from '../../styles/common.module.css';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 function MinquiryList(props) {
    const [fileName, setFileName] = useState('');
+   const { mainTitle, subTitle } = useDocumentTitle();
 
    const handleFileChange = (event) => {
       const file = event.target.files[0]; // 선택된 파일
@@ -16,8 +18,8 @@ function MinquiryList(props) {
    return (
       <>
          <div className={commons.container__box__title}>
-            <h2 className={commons.main_title}>운영진에게 문의</h2>
-            <p className={commons.sub_title}>도심 공원에서 만나는  자연과 지속가능성</p>
+            <h2 className={commons.main_title}>{mainTitle}</h2>
+            <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
          <div>
