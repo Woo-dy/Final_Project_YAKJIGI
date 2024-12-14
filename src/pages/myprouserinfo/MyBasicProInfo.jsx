@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import styles from '../../styles/mypage/mymain.module.css';
-// import info from '../../styles/mypage/mybasicuserinfo.module.css';
+// import info from '../../styles/mypage/myuserinfo.module.css';
 
-function MyBasicUserInfo(props) {
+function MyBasicProInfo(props) {
    const location = useLocation();
    const [isScrolled, setIsScrolled] = useState(false);
 
@@ -69,11 +69,11 @@ function MyBasicUserInfo(props) {
 
          <div className={mycommons.my__container} style={{margin:"60px auto 120px"}}>
             <div style={{width:"100%", height:"3000px", backgroundColor:"#ddd"}}>
-               내용입니다.
+               게시판 내용입니다.
             </div>
          </div>
       </>
    );
 }
 
-export default MyBasicUserInfo;
+export default MyBasicProInfo;

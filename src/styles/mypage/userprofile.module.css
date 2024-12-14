@@ -57,11 +57,21 @@ ul.my_btn button {
    background-color: transparent;
    border: 1px solid #ddd;
    border-radius: 20px;
-   color: #555;
    cursor: pointer;
+   box-sizing: border-box;
 }
 
-ul.my_btn button:hover {
+ul.my_btn button a {
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   line-height: 40px;
+   border-radius: 20px;
+   color: #555;
+   box-sizing: border-box;
+}
+
+ul.my_btn button:hover a {
    border: 1px solid var(--MainColor);
    color: var(--MainColor);
    transition: all 0.3s;

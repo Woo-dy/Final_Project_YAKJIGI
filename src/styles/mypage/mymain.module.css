@@ -43,6 +43,7 @@ nav.mypage_nav ul li {
    color: #555;
    box-sizing: border-box;
    cursor: pointer;
+   border-right: 1px solid #bbb;
 }
 
 .home a {
@@ -88,12 +89,17 @@ nav.mypage_nav ul li {
    text-align: left;
 }
 
-.dropdownContent p {
+.dropdownContent p a {
    color: #333;
    padding: 16px 16px;
    text-decoration: none;
    display: block;
    cursor: pointer;
+}
+
+.dropdownContent p:hover a {
+   color: var(--MainColor);
+   transition: all 0.3s;
 }
 
 .dropdown:hover .dropdownContent,
@@ -126,6 +132,11 @@ nav.mypage_nav ul li {
    font-weight: 500;
 }
 
+.dropdownMenu a.activate {
+   color: var(--MainColor);
+   font-weight: 500;
+}
+
 
 /* 게시판 탭 메뉴 */
 .my__board__tabmenu {
@@ -140,9 +151,10 @@ nav.mypage_nav ul li {
 
 .my__board__tabmenu ul li {
    width: 50%;
-   height: 40px;
-   line-height: 40px;
+   height: 50px;
+   line-height: 50px;
    border: 1px solid #ddd;
+   font-size: 18px;
 }
 
 .my__board__tabmenu ul li a {

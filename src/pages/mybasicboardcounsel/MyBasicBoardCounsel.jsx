@@ -1,34 +1,12 @@
-import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import commons from '../../styles/common.module.css';
 import mycommons from '../../styles/mycommon.module.css';
 import styles from '../../styles/mypage/mymain.module.css';
+import MyBasicMenu from '../../components/MyBasicMenu';
 // import info from '../../styles/mypage/mybasicboardcounsel.module.css';
 
 function MyBasicBoardCounsel(props) {
    const location = useLocation();
-   const [isScrolled, setIsScrolled] = useState(false);
-
-   useEffect(() => {
-   // 스크롤 이벤트 핸들러
-   const handleScroll = () => {
-      if (window.scrollY > 0) {
-         setIsScrolled(true);
-      } else {
-         setIsScrolled(false);
-      }
-   };
-
-   // 윈도우 크기가 0보다 클 때 스크롤 이벤트 등록
-   if (window.innerWidth > 0) {
-      window.addEventListener("scroll", handleScroll);
-   }
-
-   // 컴포넌트 언마운트 시 이벤트 제거
-   return () => {
-      window.removeEventListener("scroll", handleScroll);
-   };
-   }, []); // 빈 배열로 한 번만 실행
 
    return (
       <>
@@ -37,35 +15,9 @@ function MyBasicBoardCounsel(props) {
             <p className={commons.sub_title}>약지기에서의 나의 기록들을 확인하세요</p>
          </div>
 
-         <nav className={`${styles.mypage_nav} ${isScrolled ? styles.bg_on : ""}`}>
-            <ul>
-               <li className={styles.home}>
-                  <Link to="/mybasicmain" className={`${styles.link} ${location.pathname === '/mybasicmain' ? styles.text_active : ''}`}>
-                     <span class="material-symbols-outlined">home</span>
-                  </Link>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>
-                     <Link to="/mybasicinfo" className={`${styles.link} ${location.pathname === '/mybasicinfo' ? styles.textActive : ''}`}>
-                        회원정보
-                     </Link>
-                  </div>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>
-                     <Link to="/mybasicboardcounsel" className={`${styles.link} ${location.pathname === '/mybasicboardcounsel' ? styles.textActive : ''}`}>
-                        게시판
-                     </Link>
-                  </div>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>복약일지</div>
-               </li>
-               <li className={styles.dropdown}>
-                  <div className={styles.dropdownMenu}>진료기록</div>
-               </li>
-            </ul>
-         </nav>
+         {/* 마이 페이지 메뉴 */}
+         <MyBasicMenu />
+
 
          <div className={styles.my__board__tabmenu}>
             <ul>

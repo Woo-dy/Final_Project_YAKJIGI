@@ -41,12 +41,19 @@ import Privacy from './pages/privacy/Privacy';
 import TermsOfUse from './pages/termsofuse/TermsOfUse';
 import ScrollToTop from './components/ScrollToTop';
 import { useEffect } from 'react';
-import MyProMain from './pages/mypagepro/MyProMain';
-import MyBasicMain from './pages/mypagebasic/MyBasicMain';
-import MyBasicUserInfo from './pages/mypagebasicuserinfo/MyBasicUserInfo';
-import MyBasicProInfo from './pages/mypageprouserinfo/MyBasicProInfo';
+import MyProMain from './pages/mypromain/MyProMain';
+import MyBasicMain from './pages/mybasicmain/MyBasicMain';
+import MyBasicUserInfo from './pages/mybasicuserinfo/MyBasicUserInfo';
+import MyBasicProInfo from './pages/myprouserinfo/MyBasicProInfo';
 import MyBasicBoardCounsel from './pages/mybasicboardcounsel/MyBasicBoardCounsel';
 import MyBasicBoardInquiry from './pages/mybasicboardinquiry/MyBasicBoardInquiry';
+import MyBasicBoardRecords from './pages/mybasicboardrecords/MyBasicBoardRecords';
+import MyBasicBoardLog from './pages/mybasicboardlog/MyBasicBoardLog';
+import MyBasicBoardLogWrite from './pages/mybasicboardlogwrite/MyBasicBoardLogWrite';
+import MyBasicBoardLogDetail from './pages/mybasicboardlogdetail/MyBasicBoardLogDetail';
+import MyBasicBoardLogEdit from './pages/mybasicboardlogedit/MyBasicBoardLogEdit';
+import MyBasicBoardRecordsWrite from './pages/mybasicboardrecordswrite/MyBasicBoardRecordsWrite';
+import MyBasicBoardRecordsDetail from './pages/mybasicboardrecordsdetail/MyBasicBoardRecordsDetail';
 
 function App() {
    useEffect(() => {
@@ -92,9 +99,18 @@ function App() {
                {/* 마이페이지 basic */}
                <Route path='/mybasicmain' element={<MyBasicMain />} />
                {/* 회원정보 보기/수정 */}
-               <Route path='/mybasicinfo' element={<MyBasicUserInfo />} />
+               <Route path='/mybasicuserinfo' element={<MyBasicUserInfo />} />
                <Route path='/mybasicboardcounsel' element={<MyBasicBoardCounsel />} />
                <Route path='/mybasicboardinquiry' element={<MyBasicBoardInquiry />} />
+
+               <Route path='/mybasicboardlog' element={<MyBasicBoardLog />} />
+               <Route path='/mybasicboardlogwrite' element={<MyBasicBoardLogWrite />} />
+               <Route path='/mybasicboardlogdetail' element={<MyBasicBoardLogDetail />} />
+               <Route path='/mybasicboardlogedit' element={<MyBasicBoardLogEdit />} />
+
+               <Route path='/mybasicboardrecords' element={<MyBasicBoardRecords />} />
+               <Route path='/mybasicboardrecordswrite' element={<MyBasicBoardRecordsWrite />} />
+               <Route path='/mybasicboardrecordsdetail' element={<MyBasicBoardRecordsDetail />} />
 
                {/* 마이페이지 pro */}
                <Route path='/mypromain' element={<MyProMain />} />

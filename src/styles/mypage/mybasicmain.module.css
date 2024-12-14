@@ -28,13 +28,17 @@
 
 .my__container__list li div.my__list__title button {
    background-color: transparent;
+}
+
+.my__container__list li div.my__list__title button a {
    font-size: 16px;
    font-weight: 500;
    display: flex;
    cursor: pointer;
+   color: #333;
 }
 
-.my__container__list li div.my__list__title button:hover {
+.my__container__list li div.my__list__title button:hover a {
    color: var(--MainColor);
    transition: all 0.3;
 }

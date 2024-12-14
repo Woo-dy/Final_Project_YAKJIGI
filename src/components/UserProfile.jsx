@@ -2,6 +2,7 @@ import React from 'react';
 
 import profile from '../styles/mypage/userprofile.module.css';
 import NumberCounter from "./NumberCounter";
+import { Link } from 'react-router-dom';
 
 function UserProfile(props) {
    return (
@@ -21,10 +22,9 @@ function UserProfile(props) {
 
                         <ul className={profile.my_btn}>
                            <li>
-                              <button>회원정보</button>
-                           </li>
-                           <li>
-                              <button>내 프로필</button>
+                              <button>
+                                 <Link to="/mybasicuserinfo">회원정보</Link>
+                              </button>
                            </li>
                         </ul>
                      </div>
