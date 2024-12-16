@@ -1,0 +1,28 @@
+/* 개인정보처리방침 */
+.textleft {
+   text-align: left;
+}
+
+.text_layout {
+	margin-top: 30px;
+}
+
+.text_layout p {
+	line-height: 26px;
+	margin-bottom: 20px;
+	word-break: keep-all;
+}
+
+.text_mg0 {
+	margin-bottom: 6px !important;
+	font-weight: 600;
+	color: #222;
+}
+
+
+.text_b {
+	font-weight: 600;
+   font-size: 18px !important;
+	margin-bottom: 10px;
+	color: #222;
+}

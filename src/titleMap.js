@@ -43,6 +43,14 @@ const titleMap = {
          mainTitle: '폐의약품 수거함 찾기',
          subTitle: '도심 공원에서 만나는 자연과 지속가능성',
    },
+   '/privacy': {
+         mainTitle: '개인정보처리방침',
+   },
+   '/termsofuse': {
+         mainTitle: '이용약관',
+   },
+
+   
 
 
    // 마이 페이지 basic

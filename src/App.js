@@ -19,7 +19,6 @@ import AOS from 'aos';
 import 'swiper/swiper-bundle.css';
 import 'aos/dist/aos.css';
 
-
 import '../node_modules/aos/dist/aos.css';
 
 import Sub101 from './pages/sub101/Sub101';
@@ -57,6 +56,9 @@ import MyProUserInfo from './pages/myprouserinfo/MyProUserInfo';
 import MyProBoardCounsel from './pages/myproboardcounsel/MyProBoardCounsel';
 import MyProBoardCounselMy from './pages/myproboardcounselmy/MyProBoardCounselMy';
 import MyProBoardInquiry from './pages/myproboardinquiry/MyProBoardInquiry';
+import Login from './pages/account/Login';
+import Join from './pages/account/Join';
+import NoticeWrite from './pages/noticewrite/NoticeWrite';
 
 function App() {
    useEffect(() => {
@@ -92,13 +94,22 @@ function App() {
                <Route path='/sub301' element={<Sub301 />} />
                <Route path='/sub302' element={<Sub302 />} />
                <Route path='/sub303' element={<Sub303 />} />
-               {/* 게시판 */}
+
+               
+
+               {/* 공지사항 게시판 */}
                <Route path='/noticelist' element={<NoticeList />} />
+               <Route path='/noticewrite' element={<NoticeWrite />} />
+               {/* 게시판 */}
                <Route path='/faqlist' element={<FaqList />} />
                <Route path='/qnalist' element={<QnaList />} />
                <Route path='/minquiry' element={<MinquiryList />} />
                <Route path='/privacy' element={<Privacy />} />
                <Route path='/termsofuse' element={<TermsOfUse />} />
+
+               {/* Account 로그인 */}
+               <Route path='/login' element={<Login />} />
+               <Route path='/join' element={<Join />} />
 
                {/* basic 마이페이지 */}
                <Route path='/mybasicmain' element={<MyBasicMain />} />

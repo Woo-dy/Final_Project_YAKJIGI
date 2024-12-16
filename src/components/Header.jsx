@@ -107,8 +107,8 @@ function Header(props) {
             <div className={`${isScrolled ? 'main__global__menu__none' : 'main__global__menu'}`}>
                <ul>
                   <li>
-                     <Link>로그인</Link>
-                     <Link>회원가입</Link>
+                     <Link to="/login">로그인</Link>
+                     <Link to="/join">회원가입</Link>
                      <Link to="/mybasicmain">마이(basic)</Link>
                      <Link to="/mypromain">마이(pro)</Link>
                      <Link to="/noticelist">공지사항</Link>

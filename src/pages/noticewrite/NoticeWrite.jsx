@@ -1,11 +1,11 @@
-import React from 'react';
+import Editor from '../../components/Editor';
 
 import commons from '../../styles/common.module.css';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
-import { Link } from 'react-router-dom';
 
-function NoticeList(props) {
+function NoticeWrite(props) {
    const { mainTitle, subTitle } = useDocumentTitle();
+
 
    return (
       <>
@@ -13,13 +13,12 @@ function NoticeList(props) {
             <h2 className={commons.main_title}>{mainTitle}</h2>
             <p className={commons.sub_title}>{subTitle}</p>
          </div>
+         
          <div>
-            <button>
-               <Link to="/noticewrite">글쓰기</Link>
-            </button>
+            <Editor />
          </div>
       </>
    );
 }
 
-export default NoticeList;
+export default NoticeWrite;

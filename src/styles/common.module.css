@@ -120,6 +120,21 @@ footer {
 
 /* ============= input ============= */
 
+/* input date */
+
+.bir {
+	margin: 10px 0;
+	position: relative;
+}
+
+.bir span {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	color: #333;
+}
+
 /* search design */
 .common_search_div {
    position: relative;
