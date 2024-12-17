@@ -118,6 +118,29 @@ footer {
 
 
 
+/* ============= ck에디터  높이 조정 ============= */
+.ckeditor {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.ckEditorEditable {
+   min-height: 300px; /* 최소 높이 */
+   max-height: 500px; /* 최대 높이 */
+   overflow-y: auto;  /* 스크롤 활성화 */
+   padding: 10px; /* 내부 여백 */
+   border: 1px solid #ccc; /* 테두리 */
+   box-sizing: border-box; /* 박스 크기 조정 */
+
+   /* 폰트와 줄 간격 설정 */
+   font-family: Arial, sans-serif; /* 기본 폰트 */
+   font-size: 16px; /* 폰트 크기 */
+   line-height: 1.6; /* 줄 간격 */
+}
+/* ============= ck에디터  높이 조정 ============= */
+
+
 /* ============= input ============= */
 
 /* input date */
