@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-button:hover {
+button {
 	cursor: pointer;
 }
 
@@ -8,11 +8,12 @@ body {
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
-.idfind_container {
+.pwfind_container {
 	width: 100%;
 	max-width: 1320px;
-	margin: 0px auto;
+	margin: 50px auto;
 	text-align: center;
+	padding: 30px 0;
 }
 
 input {
@@ -24,40 +25,41 @@ input {
 	justify-content: space-between;
 }
 
-.user_id {
+.input_id {
 	width: 500px;
 	height: 46px;
 	background-color: #ffffff;
-	color: #555;
-	border: 1px solid #aaa;
+	color: #00a38b;
+	border: 1px solid #00a38b;
 	border-radius: 5px;
 	margin: 15px 0;
 	font-size: 16px;
+}
+
+.input_id:hover {
 	cursor: pointer;
 }
 
-.user_id:hover {
-	border: 1px solid var(--MainColor);
-	color: var(--MainColor);
-   transition: all 0.3s;
-}
-
 .box {
-   width: 100%;
-	max-width: 500px;
-   min-height: 300px;
+	width: 500px;
 	text-align: left;
-	margin: 120px auto;
+	padding: 30px 0px;
+	margin: 50px auto;
 }
 
 .idinput {
 	width: 500px;
 	height: 46px;
 	text-align: left;
-	margin: 20px 0;
+	margin-top: 20px;
 	font-size: 16px;
 	padding: 0px;
 	border-bottom: 1px solid #cccccc;
+}
+
+input::placeholder {
+	color: #cccccc;
+	font-size: 16px;
 }
 
 input:focus {  
@@ -66,14 +68,11 @@ input:focus {
    outline: none; /* 기본 outline 제거 */
 }
 
-input::placeholder {
-	color: #cccccc;
-	font-size: 16px;
-}
-
 .h3 {
 	font-weight: 700;
+	margin-top: 30px;
 	font-size: 20px;
+	line-height: 30px;
 }
 
 
@@ -100,7 +99,7 @@ input::placeholder {
 }
 
 .go {
-	width: calc(50% - 7.5px);
+	width: calc(50% - 5px);
 	height: 46px;
 	line-height: 46px;
 	border-radius: 5px;
@@ -111,11 +110,28 @@ input::placeholder {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 560px) {
-	.box {
+input:focus {outline: none;}
+
+@media screen and (max-width: 1380px) {
+	.pwfind_container {
 		width: 90%;
 	}
-	.user_id, .idinput {
+}
+
+@media screen and (max-width: 560px) {
+	.box {
+		width: 89.2%;
+	}
+	.idinput {
 		width: 100%;
 	}
+
+	.input_id {
+		width: 100%;
+	}
+
+   .go {
+      margin: 0;
+      width: 150px;
+   }
 }

@@ -59,6 +59,15 @@ import MyProBoardInquiry from './pages/myproboardinquiry/MyProBoardInquiry';
 import Login from './pages/account/Login';
 import Join from './pages/account/Join';
 import NoticeWrite from './pages/noticewrite/NoticeWrite';
+import IdFind from './pages/account/IdFind';
+import PwFind from './pages/account/PwFind';
+import IdFindOk from './pages/account/IdFindOk';
+import PwFindOk from './pages/account/PwFindOk';
+import Success from './pages/account/Success';
+import PwSuccess from './pages/account/PwSuccess';
+import EmailPw from './pages/account/EmailPw';
+import EmailJoin from './pages/account/EmailJoin';
+import EmailId from './pages/account/EmailId';
 
 function App() {
    useEffect(() => {
@@ -110,6 +119,19 @@ function App() {
                {/* Account 로그인 */}
                <Route path='/login' element={<Login />} />
                <Route path='/join' element={<Join />} />
+               <Route path='/idfind' element={<IdFind />} />
+               <Route path='/idfindok' element={<IdFindOk />} />
+               <Route path='/pwfind' element={<PwFind />} />
+               <Route path='/pwfindok' element={<PwFindOk />} />
+
+               <Route path='/success' element={<Success />} />
+               <Route path='/pwsuccess' element={<PwSuccess />} />
+               <Route path='/emailpw' element={<EmailPw />} />
+               <Route path='/emailjoin' element={<EmailJoin />} />
+               <Route path='/emailid' element={<EmailId />} />
+
+               
+
 
                {/* basic 마이페이지 */}
                <Route path='/mybasicmain' element={<MyBasicMain />} />

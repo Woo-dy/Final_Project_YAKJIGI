@@ -20,8 +20,8 @@ function Login(props) {
                   <button className={styles.loginbtn} onclick="submit()">로그인</button>
                </form>
                <div className={styles.three}>
-                  <Link to="/idFind" className={styles.tmp}>아이디 찾기</Link>
-                  <Link to="/pwFind" className={styles.tmp}>비밀번호 찾기</Link> 
+                  <Link to="/idfind" className={styles.tmp}>아이디 찾기</Link>
+                  <Link to="/pwfind" className={styles.tmp}>비밀번호 찾기</Link> 
                   <Link to="/join" className={styles.tmp}>회원가입</Link>
                </div>
                <div style={{padding:"20px 0px"}}>

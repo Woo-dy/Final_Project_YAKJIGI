@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.titletxt {
+   margin-bottom: 30px;
+   font-weight: bolder;
+   font-size: 20px;
+}
+
+.idfind_container {
+   width: 100%;
+	max-width: 500px;
+   min-height: 300px;
+	text-align: left;
+	margin: 120px auto;
+}
+
+.idfind_container h2 {
+   border-top: 2px solid #000;
+   border-bottom: 1px solid #ddd;
+   padding: 16px 10px;
+   font-size: 16px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+button {
+   border: none;
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+.idfindok {
+   width: 100%;
+   max-width: 768px;
+   margin: 0 auto;
+   padding-top: 50px;
+}
+
+.check {
+   font-size: 100px;
+   color: #00a38b;
+}
+
+.success {
+   margin: 23px auto;
+}
+
+.success p {
+   font-size: 32px;
+   color: #00a38b;
+}
+
+#username {
+   font-size: 24px;
+}
+
+.infobox {
+   width: 768px;
+   padding: 25px 15px;
+   background-color: #f7f7f7;
+   text-align: center;
+   margin: 30px 0;
+   line-height: 16px;
+}
+
+.infobox p {
+   font-size: 16px;
+}
+
+.infoup {
+   color: #ff5500;
+}
+
+.infoup:hover {
+   cursor: pointer;
+}
+
+.gobutton {
+	display: flex;
+	justify-content: space-between;
+}
+
+.join {
+	border: 1px solid #b8c1ff;
+	color: #7688ff;
+}
+
+.join:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.main {
+	border: 1px solid #cccccc;
+	color: #555;
+}
+
+.main:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.go {
+	width: calc(50% - 7.5px);
+	height: 46px;
+	line-height: 46px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	background: transparent;
+	cursor: pointer;
+}
+
+.table{
+	width: 100%;
+	table-layout: fixed;
+   margin-bottom: 20px;
+}
+
+.table th {
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #ddd;
+	padding : 15px 0px;
+	text-align: center;
+	font-weight: 500;
+	color: #333;
+}
+
+.table th:first-child {width: 20%;}
+.table th:last-child {width: 80%;}
+
+.table td {
+	border-bottom: 1px solid #ddd;
+	padding : 15px 0px;
+	text-align: center;
+	color: #555;
+}
+
+
+
+input:focus {outline: none;}
+
+
+@media screen and (max-width: 768px) {
+   .idfindok {
+      width: 100%;
+   }
+
+   .gobutton {
+      width: 100%;
+   }
+
+   .infobox {
+      width: 100%;
+   }
+
+   .table {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .idfind_container {
+      width: 90%;
+   }
+
+   .infobox p {
+      font-size: 14px;
+   }
+
+   .username {
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 420px) {
+   .infobox p {
+      font-size: 13px;
+   }
+
+   .username {
+      font-size: 18px;
+   }
+}
