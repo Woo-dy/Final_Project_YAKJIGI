@@ -1,19 +1,9 @@
-import React, { useState } from 'react';
-
 import commons from '../../styles/common.module.css';
+import styles from '../../styles/minquiry/minquiry.module.css';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
 
 function MinquiryList(props) {
-   const [fileName, setFileName] = useState('');
    const { mainTitle, subTitle } = useDocumentTitle();
-
-   const handleFileChange = (event) => {
-      const file = event.target.files[0]; // 선택된 파일
-
-      if (file) {
-         setFileName(file.name); // 파일 이름을 상태에 저장
-      }
-   };
 
    return (
       <>
@@ -22,77 +12,136 @@ function MinquiryList(props) {
             <p className={commons.sub_title}>{subTitle}</p>
          </div>
 
-         <div>
-            <ul className={commons.input__container}>
+         
+         <div className={commons.common__boradsearch__container}>   
+            <ul className={commons.common__boradsearch__ul}>
+               <li>총 <span>16</span>건</li>
                <li>
-                  <ul className={commons.input__list__container}>
-                     <li>
-                        input text <span>*</span>
-                     </li>
-                     <li>
-                        <input type="text" name="title" placeholder='내용입니다.' className={commons.board__input__text} />
-                     </li>
-                  </ul>
-               </li>
-               
-               <li>
-                  <ul className={commons.input__list__container}>
-                     <li>
-                        input search <span>*</span>
-                     </li>
-                     <li>
-                        <input type="text" name="title" placeholder='내용입니다.' className={commons.board__input__text} />
-                        <button className={commons.btn__search}>검색</button>
-                     </li>
-                  </ul>
-               </li>
-
-               
-               
-               <li>
-                  <ul className={commons.input__list__container}>
-                     <li>
-                        input search <span>*</span>
-                     </li>
-                     <li>
-                        <div className={commons.filebox}>
-                              <input
-                                 className={commons.uploadName}
-                                 value={fileName}
-                                 placeholder="파일찾기를 클릭해서 첨부파일을 등록해주세요."
-                                 readOnly
-                              />
-                              <label htmlFor="file">파일찾기</label>
-                              <input
-                                 type="file"
-                                 id="file"
-                                 name="file_name"
-                                 onChange={handleFileChange} // 파일 변경 시 핸들러 호출
-                              />
-                        </div>
-                     </li>
-                  </ul>
+                  <form action="">
+                     <div className={commons.common__searchbar__box}>
+                        <input type="text" className={commons.common__search__input} placeholder="검색어를 입력해주세요" />
+                        <span className="material-icons">search</span>
+                     </div>
+                  </form>
                </li>
             </ul>
-         </div>
+         </div> 
 
-         <div className={commons.btn__center__container}>
-            <ul>
-               <li>
-                  <button className={commons.bth_regist}>수정</button>
-                  <button className={commons.bth_cancle}>취소</button>
-               </li>
-            </ul>
-         </div>
+         <div className={styles.table_container}>
+            <ul className={styles.contents_box}>
+               <li className={styles.textcenter}>
+                     <div className={styles.table}>
+                        <table className={styles.inquiry_table}>
+                           <thead>
+                                 <tr>
+                                    <th>No</th>
+                                    <th>제목</th>
+                                    <th>처리상태</th>
+                                    <th>등록일</th>
+                                 </tr>
+                           </thead>
+                           <tbody>
+                                 <tr>
+                                    <td>10</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_waiting}>
+                                             답변대기
+                                       </div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr>
+                                 <tr>
+                                    <td>9</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_waiting}>
+                                             답변대기
+                                       </div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>8</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_waiting}>
+                                             답변대기
+                                       </div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>7</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_waiting}>
+                                             답변대기
+                                       </div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>6</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_waiting}>
+                                             답변대기
+                                       </div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>5</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_completed}>답변완료</div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>4</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_completed}>답변완료</div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>3</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_completed}>답변완료</div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>2</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_completed}>답변완료</div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr><tr>
+                                    <td>1</td>
+                                    <td><p>제목입니다</p></td>
+                                    <td>
+                                       <div className={styles.status_completed}>답변완료</div>
+                                    </td>
+                                    <td>2024.00.00</td>
+                                 </tr>
+                           </tbody>
+                        </table>
+                     </div>
 
-         <div className={commons.btn__side__container}>
-            <ul>
-               <li>
-                  <button className={commons.bth_list}>목록</button>
-               </li>
-               <li>
-                  <button className={commons.bth_regist}>수정</button>
-                  <button className={commons.bth_cancle}>취소</button>
+                     {/* paging 영역 start */}
+                     <div>
+                        <ul className={commons.paging_num_ul}>
+                           <li className="material-icons prev">keyboard_double_arrow_left</li>
+                           <li className="material-icons prev">chevron_left</li>
+                           <li className={commons.active}>1</li>
+                           <li>2</li>
+                           <li>3</li>
+                           <li>4</li>
+                           <li>5</li>
+                           <li className="material-icons next">chevron_right</li>
+                           <li className="material-icons next">keyboard_double_arrow_right</li>
+                        </ul>
+                     </div>
+                     {/* paging 영역 end */}
                </li>
             </ul>
          </div>

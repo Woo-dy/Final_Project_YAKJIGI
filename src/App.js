@@ -33,6 +33,8 @@ import Sub301 from './pages/sub301/Sub301';
 import Sub302 from './pages/sub302/Sub302';
 import Sub303 from './pages/sub303/Sub303';
 import NoticeList from './pages/notice/NoticeList';
+import NoticeListVer1 from './pages/notice/NoticeListVer1';
+import NoticeDetail from './pages/notice/NoticeDetail';
 import FaqList from './pages/faq/FaqList';
 import QnaList from './pages/qna/QnaList';
 import MinquiryList from './pages/minquiry/MinquiryList';
@@ -108,7 +110,10 @@ function App() {
 
                {/* 공지사항 게시판 */}
                <Route path='/noticelist' element={<NoticeList />} />
+               <Route path='/noticelistver1' element={<NoticeListVer1 />} />
                <Route path='/noticewrite' element={<NoticeWrite />} />
+               <Route path='/noticedetail/:id' element={<NoticeDetail />} />
+
                {/* 게시판 */}
                <Route path='/faqlist' element={<FaqList />} />
                <Route path='/qnalist' element={<QnaList />} />

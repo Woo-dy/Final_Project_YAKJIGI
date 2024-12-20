@@ -1,16 +1,16 @@
-.sub403__container__box {
+.qnalist__container__box {
    width: 100%;
    max-width: 1320px;
    margin: 0 auto 120px auto;
 }
 
-.sub403__container__profile {
+.qnalist__container__profile {
    width: 100%;
    max-width: 1320px;
    margin-bottom: 60px;
 }
 
-.sub403__main__title {
+.qnalist__main__title {
    padding-top: 10px;
    font-size: 40px;
    font-weight: 600;
@@ -19,14 +19,14 @@
    color: var(--FontMainColor);
 }
 
-.sub403__sub__title {
+.qnalist__sub__title {
    font-size: 20px;
    line-height: 36px;
    margin-bottom: 54px;
    color: var(--FontSubColor);
 }
 
-.sub403__contents__title {
+.qnalist__contents__title {
    font-size: 26px;
    font-weight: 600;
    line-height: 38px;
@@ -36,7 +36,7 @@
 }
 
 /* 슬라이드 영역 스타일 */
-.sub403__container__profile  > .swiperbg {
+.qnalist__container__profile  > .swiperbg {
    height: 240px;
    padding-bottom: 20px;
 }
@@ -49,7 +49,7 @@
    line-height: 26px;
 }
 
-.sub403__profile__box {
+.qnalist__profile__box {
    width: 162px;
    height: 240px;
    box-sizing: border-box;
@@ -90,7 +90,7 @@
    color: var(--FontSubColor);
 }
 
-.sub403__profile__image {
+.qnalist__profile__image {
    width: 100%; /* 고정된 너비 */
    height: 100%; /* 고정된 높이 */
    object-fit: cover; /* 비율 유지 및 이미지 영역 채우기 */
@@ -99,25 +99,25 @@
    left: 0;
 }
 
-.sub403__profile__box ul {
+.qnalist__profile__box ul {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.sub403__profile__logo__box {
+.qnalist__profile__logo__box {
    width: 100%;
 }
 
-.sub403__profile__logo {
+.qnalist__profile__logo {
    width: 37px;
    height: 37px;
    object-fit: cover;
 }
 
 /* 슬라이드 영역 버튼 스타일 */
-.sub403__container__profile .prev,
-.sub403__container__profile .next {
+.qnalist__container__profile .prev,
+.qnalist__container__profile .next {
    width: 42px;
    height: 42px;
    border: 2px solid #333;
@@ -136,8 +136,8 @@
    cursor: pointer;
 }
 
-.sub403__container__profile .prev:hover,
-.sub403__container__profile .next:hover {
+.qnalist__container__profile .prev:hover,
+.qnalist__container__profile .next:hover {
    background-color: var(--MainColor);
    color: #fff;
    border-color: var(--MainColor);
@@ -145,34 +145,34 @@
    opacity: 1.0;
 }
 
-.sub403__container__profile .prev::after,
-.sub403__container__profile .next::after {
+.qnalist__container__profile .prev::after,
+.qnalist__container__profile .next::after {
    content: none;
 }
 
-.sub403__container__profile .prev {
+.qnalist__container__profile .prev {
    left: 0;
 }
 
-.sub403__container__profile .next {
+.qnalist__container__profile .next {
    right: 0;
 }
 
 /* 검색바 영역 스타일 */
-.sub403__search__div {
+.qnalist__search__div {
    display: flex;
    align-items: center; /* 세로 정렬을 맞춤 */
    position: relative;
 }
 
 /* 입력 창 부모 요소에 position: relative 설정 */
-.sub403__search__div {
+.qnalist__search__div {
    position: relative;
    width: 300px;  /* 필요에 따라 너비 설정 */
 }
 
 /* 입력창 스타일 */
-.sub403__search__div input {
+.qnalist__search__div input {
    width: 100%;  /* input 너비 설정 */
    height: 46px; /* 높이 설정 */
    border-radius: 5px;
@@ -183,7 +183,7 @@
 }
 
 
-.sub403__search__div button {
+.qnalist__search__div button {
    position: absolute;
    right: 0; /* 오른쪽에 위치 */
    top: 50%;
@@ -201,64 +201,67 @@
 }
 
 /* 버튼 hover 시 스타일 */
-.sub403__search__div button:hover {
+.qnalist__search__div button:hover {
    background-color: var(--MainColorDark); /* hover 시 색 변화 */
 }
 
 /* 테이블 영역 스타일 */
-.sub403__container__list__table {
+.qnalist__container__list__table {
    width: 100%;
    max-width: 1320px;
    margin-top: 12px;
 }
 
-.sub403__list_table {
+.qnalist__list_table {
    border-collapse: collapse;
    width: 100%;
    border-top: 2px solid #000;
 }
 
-.sub403__list_table thead tr {
+.qnalist__list_table thead tr {
    background-color: #F8F8F8;
    border-bottom: 1px solid #ddd;
 }
 
-.sub403__list_table thead tr th {
-   height: 50px;
+.qnalist__list_table thead tr th {
+   height: 82px;
    vertical-align: middle;
-   font-size: 16px;
+   font-size: 18px;
+   font-weight: 500;
    color: #333;
+   box-sizing: border-box;
 }
 
-.sub403__list_table tbody tr {
+.qnalist__list_table tbody tr {
    cursor: pointer;
    border-bottom: 1px solid #ddd;
 }
 
-.sub403__list_table tbody tr:hover {
+.qnalist__list_table tbody tr:hover {
    background-color: #fdfdfd;
 }
 
-.sub403__list_table tbody tr td {
-   height: 72px;
+.qnalist__list_table tbody tr td {
+   height: 82px;
    vertical-align: middle;
-   font-size: 16px;
+   font-size: 18px;
    color: #333;
    border-bottom: 1px solid #ddd;
    box-sizing: border-box;
    padding: 0 10px;
+   box-sizing: border-box;
 }
 
-.sub403__list_table tbody tr td:nth-child(1) {
+.qnalist__list_table tbody tr td:nth-child(1) {
    width: 100px;
 }
 
-.sub403__list_table tbody tr td:nth-child(2) {
+.qnalist__list_table tbody tr td:nth-child(2) {
    width: calc(100% - 900px);
    text-align: left;
 }
 
-.sub403__list_table tbody tr td:nth-child(2) p {
+.qnalist__list_table tbody tr td:nth-child(2) p {
    overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
@@ -266,27 +269,24 @@
    -webkit-box-orient: vertical;
 }
 
-.sub403__list_table tbody tr:hover td:nth-child(2) p {
+.qnalist__list_table tbody tr:hover td:nth-child(2) p {
    color: #4553AD;
    font-weight: 500;
    transition: all 0.3s;
 }
 
-.sub403__list_table tbody tr td:nth-child(3) {
+.qnalist__list_table tbody tr td:nth-child(3) {
    width: 160px;
 }
 
-.sub403__list_table tbody tr td:nth-child(4) {
+.qnalist__list_table tbody tr td:nth-child(4) {
    width: 160px;
 }
 
-.sub403__status_waiting {
-   border: 1px solid #555;
-   /* 회색 테두리 */
-   color: #555;
-   /* 회색 글씨 */
-   display: inline-block;
-   /* 테두리를 감싸기 위한 블록화 */
+.qnalist__status_waiting {
+   border: 1px solid #555; /* 회색 테두리 */
+   color: #555; /* 회색 글씨 */
+   display: inline-block; /* 테두리를 감싸기 위한 블록화 */
    width: 100px;
    height: 36px;
    line-height: 36px;
@@ -295,13 +295,10 @@
    font-size: 16px; /* 텍스트 크기 */
 }
 
-.sub403__status_completed {
-   border: 1px solid #4553AD;
-   /* 파란색 테두리 */
-   color: #4553AD;
-   /* 파란색 글씨 */
-   display: inline-block;
-   /* 테두리를 감싸기 위한 블록화 */
+.qnalist__status_completed {
+   border: 1px solid #4553AD; /* 파란색 테두리 */
+   color: #4553AD; /* 파란색 글씨 */
+   display: inline-block; /* 테두리를 감싸기 위한 블록화 */
    width: 100px;
    height: 36px;
    line-height: 36px;
@@ -311,13 +308,13 @@
 }
 
 /* 테이블 바닥글 스타일 (전체 데이터가 없다면) */
-.sub403__container__list__table .empty-message {
+.qnalist__container__list__table .empty-message {
    text-align: center;
    padding: 20px;
    color: #888;
 }
 
-.sub403__inquiry__number {
+.qnalist__inquiry__number {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -326,11 +323,11 @@
    font-size: 16px;
 }
 
-.sub403__inquiry__number li span {
+.qnalist__inquiry__number li span {
    color: var(--MainColor);
 }
 
-.sub403__inquiry__number li:last-child select.search_category {
+.qnalist__inquiry__number li:last-child select.search_category {
    border: 1px solid #ddd;
    height: 36px;
    color: #333;
@@ -382,28 +379,29 @@
 /* 반응형 디자인 */
 
 @media screen and (max-width: 1380px) {
-   .sub403__container__box {
+   .qnalist__container__box {
       width: 90%;
    }
 
-   .sub403__container__profile {
+   .qnalist__container__profile {
       width: 100%;
       margin: 0 auto;
    }
 }
 
 @media screen and (max-width: 1000px) {
-   .sub403__main_title {
-      font-size: 36px;
-      line-height: 50px;
+   .qnalist__list_table thead tr th {
+      height: auto;
+      padding: 20px 0;
    }
 
-   .sub403__sub_title {
-      font-size: 18px;
-      line-height: 34px;
+   .qnalist__list_table tbody tr td {
+      height: auto;
+      padding: 20px 0;
+      font-size: 16px;
    }
 
-   .sub403__inquiry__number {
+   .qnalist__inquiry__number {
       font-size: 16px;
       display: flex;
       flex-direction: row;
@@ -415,78 +413,91 @@
 
 @media screen and (max-width: 768px) {
 
-   .sub403__main_title {
+   .qnalist__main_title {
       font-size: 32px;
       line-height: 46px;
       margin-bottom: 2px;
    }
 
-   .sub403__sub_title {
+   .qnalist__sub_title {
       font-size: 18px;
       line-height: 34px;
    }
 
-   .sub403__inquiry__number {
+   .qnalist__inquiry__number {
       font-size: 16px;
       margin-bottom: 25px;
    }
 
-   .sub403__list_table tbody tr td:nth-child(1) {
+   .qnalist__list_table tbody tr td:nth-child(1) {
       width: 80px;
    }
 
-   .sub403__list_table tbody tr td:nth-child(2) {
-      width: calc(100% - 350px);
+   .qnalist__list_table tbody tr td:nth-child(2) {
+      width: calc(100% - 300px);
       text-align: left;
    }
 
-   .sub403__list_table tbody tr td:nth-child(3) {
-      width: 90px;
+   .qnalist__list_table tbody tr td:nth-child(3) {
+      width: 110px;
    }
 
-   .sub403__list_table tbody tr td:nth-child(4) {
-      width: 90px;
+   .qnalist__list_table tbody tr td:nth-child(4) {
+      width: 110px;
+   }
+
+   .qnalist__status_waiting {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      font-size: 14px;
+   }
+
+   .qnalist__status_completed {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      font-size: 14px;
    }
 }
 
 @media screen and (max-width: 480px) {
 
-   .sub403__main_title {
+   .qnalist__main_title {
       font-size: 26px;
       line-height: 38px;
       margin-bottom: 0px;
    }
 
-   .sub403__sub_title {
+   .qnalist__sub_title {
       font-size: 16px;
       line-height: 34px;
    }
 
-   .sub403__inquiry__number {
-      font-size: 14px;
-      line-height: 26px;
+   .qnalist__inquiry__number {
       margin-bottom: 10px;
    }
 
-   .sub403__list_table tbody tr td {
-      font-size: 14px;
-      line-height: 26px;
-   }
-
-   .sub403__list_table tbody tr td:nth-child(1) {
+   .qnalist__list_table tbody tr td:nth-child(1) {
       width: 80px;
    }
 
-   .sub403__list_table tbody tr td:nth-child(2) {
-      width: calc(100% - 350px);
+   .qnalist__list_table tbody tr td:nth-child(2) {
+      width: calc(100% - 170px);
       text-align: left;
    }
 
-   .sub403__list_table tbody tr td:nth-child(3) {
+   .qnalist__list_table tbody tr td:nth-child(3) {
       width: 90px;
    }
 
-   .sub403__list_table tbody tr td:nth-child(4) {
-      width: 90px;
+   .qnalist__list_table thead tr th:nth-child(4) {
+      display: none;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(4) {
+      display: none;
    }
 }

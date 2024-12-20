@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+.sub103_container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.Sub103 {
+   text-align: center;
+   padding: 40px 0px;
+}
+
+.contents_description {
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   word-break: keep-all;
+}
+
+.text_section p {
+   font-size: 1rem;
+   line-height: 1.6;
+   color: #777;
+   margin: 0 auto;
+   max-width: 700px;
+}
+
+.image_section {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   gap: 20px;
+   align-items: center;
+   flex-direction: row;
+   position: relative;
+   overflow-x: auto; /* 가로 스크롤을 자동으로 생성 */
+   overflow-y: hidden; /* 세로 스크롤을 숨김 */
+   white-space: nowrap; /* 내용이 한 줄로 가로로 펼쳐지게 */
+}
+
+/* 스크롤바의 기본 크기 */
+.image_section::-webkit-scrollbar {
+width: 12px; /* 가로 스크롤바의 높이 */
+height: 12px; /* 세로 스크롤바의 너비 */
+}
+
+/* 스크롤바의 배경 */
+.image_section::-webkit-scrollbar-track {
+background: #f1f1f1; /* 스크롤바의 배경색 */
+border-radius: 10px;
+}
+
+/* 스크롤바의 막대 (thumb) */
+.image_section::-webkit-scrollbar-thumb {
+background: rgba(0, 0, 0, 0.4); /* 스크롤바의 색 */
+border-radius: 10px;
+}
+
+/* 스크롤바를 hover했을 때 색상 변경 */
+.image_section::-webkit-scrollbar-thumb:hover {
+background: rgba(0, 0, 0, 0.7); /* hover 시 색상 */
+}
+
+
+.image_container {
+position: relative;
+display: inline-block; /* 이미지가 가로로 이어질 수 있도록 */
+min-width: 800px;
+height: 600px; /* 이미지의 높이를 고정 */
+overflow: hidden;
+}
+
+.image_container img {
+width: 800px;
+height: 600px; /* 이미지의 높이를 고정 */
+object-fit: cover;
+}
+
+.scroll_message {
+display: none;
+position: absolute;
+top: 95%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 15px;
+color: #fff;
+background-color: rgba(0, 0, 0, 0.3);
+padding: 10px 20px;
+/*border-radius: 5px;*/
+}
+
+.sub103__images__content {
+   width: 100%;
+   max-width: 1320px;
+   margin: 30px auto;
+}
+
+.sub103__images__content img {
+   width: 100%;
+}
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) {
+   .sub103_container {
+      width: 90%;
+      padding: 120px 0;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+
+   .contents_title {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .contents_description {
+      font-size: 18px;
+      line-height: 34px;
+   }
+}
+
+/* ========== 768px 기준 / 이미지 가로스크롤 ========== */
+@media screen and (max-width: 768px) {
+
+   .image_container {
+      width: auto;
+   }
+
+   .image_container img {
+      width: auto;
+      max-width: 100%;
+   }
+
+   .scroll_message {
+      display: block;
+   }
+
+   .contents_description {
+      font-size: 16px;
+      line-height: 34px;
+   }
+}
+
+
+/* ========== 480px 기준 / 이미지 가로스크롤 ========== */
+@media screen and (max-width: 480px) {
+   .contents_description {
+      font-size: 14px;
+      line-height: 26px;
+   }
+}

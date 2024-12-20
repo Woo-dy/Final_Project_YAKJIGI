@@ -50,23 +50,22 @@ function FaqList(props) {
             <h2 className={commons.main_title}>{mainTitle}</h2>
             <p className={commons.sub_title}>{subTitle}</p>
          </div>
-
-         <div className={styles.faq__container}>
-            <div className={styles.faq__header}>
-               <ul>
-                  <li>
-                     <span className={styles.faq__total}>전체 19건</span>
-                  </li>
-                  <li>
+         
+         <div className={commons.common__boradsearch__container}>   
+            <ul className={commons.common__boradsearch__ul}>
+               <li>총 <span>16</span>건</li>
+               <li>
+                  <form action="">
                      <div className={commons.common__searchbar__box}>
                         <input type="text" className={commons.common__search__input} placeholder="검색어를 입력해주세요" />
                         <span className="material-icons">search</span>
                      </div>
-                  </li>
-               </ul>
+                  </form>
+               </li>
+            </ul>
+         </div> 
 
-               
-            </div>
+         <div className={styles.faq__container}>
             <div className={styles.faq__list}>
                {faqData.map((item, index) => (
                <div key={index} className={styles.faq__item}>

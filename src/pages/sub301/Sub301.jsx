@@ -16,21 +16,15 @@ function Sub301(props) {
          </div>
          
          {/* 검색바 */}
-         <ul className={styles.sub_search_container}>
-            <li className={styles.sub_search}>
-               <div className={styles.cearch_box}>
-                     <p className={styles.sub_search_text}>초성 검색</p>
-                     <div className={styles.sub_search_div}>
-                        <form name={styles.sub301__form} action="/">
-                        <input
-                           type="text"
-                           name=""
-                           id=""
-                           placeholder="지역명을 입력하세요 (예시 : 동대문, 일산)"
-                        />
-                        <button className="material-icons">search</button>
-                     </form>
-                     </div>
+         <ul className={commons.common_search_container}>
+            <li>
+               <p>초성 검색</p>
+                  
+               <div className={commons.common_search_div}>
+                  <form name="" action="/">
+                     <input type="text" name="" id="" placeholder='지역명을 입력하세요 (예시 : 동대문, 일산)' />
+                     <button className="material-icons">search</button>
+                  </form>
                </div>
             </li>
          </ul>
@@ -43,6 +37,13 @@ function Sub301(props) {
                         <li>총 <span>236</span>개의 결과가 있습니다.</li>
                      </ul>
                   </div>
+
+                  <div className={styles.table_guide}>
+                     <div className={styles.guide}>
+                        좌우로 드래그 해주세요.
+                     </div>
+                  </div>
+
                   <div className={styles.table}>
                      <table className={styles.status_table}>
                            <thead>

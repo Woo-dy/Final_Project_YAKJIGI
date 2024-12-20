@@ -5,35 +5,38 @@
    color: var(--MainBlack);
    text-align: left;
    word-break: keep-all;
-   margin-left: 15px;
-   margin-right: 15px;
 }
 
-.divwrite{
-   background-image: url('/public/images/main_slide_1.jpg');
-   background-color: #bbb;
+.content_container {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto 120px auto;
 }
 
-.titles{
-   padding-top: 80px;
+.img_section {
+   width: calc(50% - 15px);
+   height: 650px;
+   background-image: url('/public/images/main_slide_2.jpg');
+   box-sizing: border-box;
+   padding: 120px 0;
 }
 
-.maintitle{
-   font-size: 40px;
-   line-height: 60px;
+.img_section p {
+   
 }
 
-.content_container{
+.content_containe {
    margin: auto;
    width: 80%;
 }
 
-.subtitle{
+.subtitle {
    font-size: 20px;
+   color: #555;
+   line-height: 32px;
 }
 
-.contents{
-   padding-top: 40px;
+.contents {
 }
 
 .submain{
@@ -45,42 +48,38 @@
    background-color: #f0f0f0;
 }
 
-.section_contain{
+.section_contain {
    margin: auto;
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-between;
    width: 100%;
 }
 
-.section_contain{
+.section_contain {
    padding-top: 80px;
 }
 
-.image_section{
-   position: relative;
+.image_section {
    width: calc(50% - 15px);
-   margin-left: 15px;
-   margin-right: 15px;
-   height: 500px;
-   background-image: url('/public/images/main_slide_1.jpg');
-   margin-bottom: 20px;
-   
+   height: 650px;
+   background-image: url('/public/images/main_slide_3.jpg');
+   box-sizing: border-box;
+   padding: 120px 0;
 }
-.image_icon{
-   position: absolute;
-   left: 50%;
-   top: 20%;
-   transform: translate(-50%, 0);
-   width: 100px;
+
+.image_icon {
+   width: 140px;
+   height: 140px;
    border-radius: 50%;
 }
-.content_container{
-   max-width: 1320px;
-   width: 100%;
-   margin: 0 auto;
-   background-color: #bbb;
+
+@media screen and (max-width: 1380px) {
+   .content_container {
+      width: 90%;
+   }
 }
+
 @media screen and (max-width: 1024px) {
    .content_container{
       width: 90%;
@@ -95,12 +94,7 @@
       width: 100%;
    }
 }
-@media screen and (min-width: 1024px) {
-   .contents{
-      width: 1020px;
-   }
-   
-}
+
 @media screen and (max-width: 768px) {
    .contents{
       width: 85%;

@@ -263,26 +263,10 @@ ul.sub_search_container li.sub_search .sub_search_div input:focus {
    width: 300px;
 }
 
-
-/* .guide {
-   border-top: 1px solid #ddd;
-   border-bottom: 1px solid #ddd;
-   background-color: #f8f8f8;
-   margin: 20px auto;
-   padding: 15px 10px;
-   width: calc(100% - 60px);
-   max-width: 1320px;
-   margin: revert-layer;
-} */
-
-.table {
-   margin-top: 12px;
-}
-
 .result_bar {
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    margin-bottom: 50px;
    font-size: 28px;
@@ -301,6 +285,21 @@ ul.sub_search_container li.sub_search .sub_search_div input:focus {
    font-size: 14px;
    box-sizing: border-box;
    padding: 0 0px 0 5px ;
+}
+
+.table_guide {
+   display: none;
+}
+
+.guide {
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+   background-color: #f8f8f8;
+   box-sizing: border-box;
+   margin: 20px auto;
+   padding: 15px 10px;
+   width: 100%;
+   max-width: 1320px;
 }
 
 
@@ -368,6 +367,11 @@ ul.sub_search_container li.sub_search .sub_search_div input:focus {
       width: 140px;
    }
 
+   .status_table thead tr th {
+      height: auto;
+      padding: 20px 0;
+   }
+
    .status_table tbody tr td {
       height: auto;
       padding: 20px 0;
@@ -392,6 +396,21 @@ ul.sub_search_container li.sub_search .sub_search_div input:focus {
 }
 /* ========== 768px 기준 ========== */
 @media screen and (max-width: 768px) {
+   .table_guide{
+      display: block;
+   }
+
+   .table {
+      overflow-x: scroll;
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+   }
+
+   .table  .status_table {
+      width: 1100px;
+   }
+
    .sub_container2, .sub_container {
       padding: 100px 0;
    }
@@ -479,16 +498,7 @@ ul.sub_search_container li.sub_search .sub_search_div input:focus {
       font-size: 20px;
       line-height: 32px;
    }
-   .result_bar {
-      font-size: 14px;
-      line-height: 26px;
-      margin-bottom: 10px;
-   }
 
-   .status_table tbody tr td {
-      font-size: 14px;
-      line-height: 26px;
-   }
 
    .status_table tbody tr td:nth-child(1) {
       width: 150px;

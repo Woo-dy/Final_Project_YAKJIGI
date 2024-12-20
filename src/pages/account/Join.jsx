@@ -462,7 +462,7 @@ function Join(props) {
                      className={`${styles.joinbtn} ${styles.width100}`} 
                      onClick={joinTry} // joinTry 함수 호출
                      disabled={!isFormValid} // 버튼 활성화 상태
-                     style={{ backgroundColor: isFormValid ? "#007BFF" : "#CCCCCC", color: 
+                     style={{ backgroundColor: isFormValid ? "#4553AD" : "#CCCCCC", color: 
                         isFormValid ? "#FFFFFF" : "#666666" }} // 배경색 및 텍스트 색 변경
                   >
                      회원가입

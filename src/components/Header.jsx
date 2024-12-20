@@ -120,7 +120,7 @@ function Header(props) {
                   <div className="top_menu_bat">
                      <div className="logo_container">
                         <Link to="/">
-                           <h1 id="logo_img" className={`logo_sub ${isScrolled ? 'logo_sub_b2' : ''}`}>
+                           <h1 id="logo_img" className={`logo_sub ${isScrolled || isHovered ? 'logo_sub_b2' : ''}`}>
                         </h1>
                         </Link>
                      </div>

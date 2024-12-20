@@ -159,6 +159,30 @@ footer {
 }
 
 /* search design */
+.common_search_container {
+   background-color: #f7f7f7;
+}
+
+.common_search_container > li {
+   width: 100%;
+   max-width: 1320px;
+   padding: 100px 0;
+   margin: 0 auto;
+}
+
+.common_search_container > li > p {
+   font-size: 18px;
+   line-height: 38px;
+   font-weight: 500;
+   text-align: left;
+   margin-bottom: 25px;
+}
+
+.common_search_container > li > p:nth-child(n+2) {
+   margin-top: 50px;
+}
+
+
 .common_search_div {
    position: relative;
 }
@@ -190,10 +214,30 @@ footer {
    font-size: 18px;
 }
 
+.common_search_div input[type="text"]::placeholder {
+   font-size: 18px;
+}
+
 .common_search_div input:focus {  
    border-color:var(--MainColor);
    border: 2px solid var(--MainColor);
    outline: none;
+}
+
+.common_search_select {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto 0px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: 20px;
+   color: var(--FontSubColor);
+   word-break: keep-all;
+}
+
+.common_search_select div.common_search_select_box {
+   width: calc(33% - 15px);
 }
 
 
@@ -295,6 +339,31 @@ button.btn__search:hover {
    top: 50%;
    transform: translateY(-50%);
    right: 10px;
+}
+
+/* board search container */
+.common__boradsearch__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+ul.common__boradsearch__ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 16px;
+}
+
+ul.common__boradsearch__ul li:first-child {
+   font-size: 16px;
+   color: var(--MainBlack);
+}
+
+ul.common__boradsearch__ul li:first-child span {
+   font-weight: 500;
+   color: var(--MainColor);
 }
 
 /* input type=file style */
@@ -413,6 +482,9 @@ button.btn__search:hover {
    border: 0;
 }
 
+
+
+
 /* paging_number */
 .paging_num_ul {
    display: flex;
@@ -460,6 +532,25 @@ button.btn__search:hover {
 /* paging_number */
 
 
+
+
+/* 테이블 가로 스크롤 가이드 - 보이기기 */ 
+.table_guide {
+   display: none;
+}
+
+.guide {
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+   background-color: #f8f8f8;
+   box-sizing: border-box;
+   margin: 0px auto 20px auto;
+   padding: 15px 10px;
+   width: 100%;
+   max-width: 1320px;
+   text-align: center;
+}
+
 /* ========== 1380px 기준 ========== */
 @media screen and (max-width: 1380px) { 
    .container__box  {
@@ -472,10 +563,15 @@ button.btn__search:hover {
       margin: 0 auto 60px auto;
    }
 
+   .common_search_container > li {
+      width: 90%;
+   }
+
    /* ============= 버리는 영역 (임의 확인 용도) ============= */
    .input__container,
    .btn__center__container,
-   .btn__side__container {
+   .btn__side__container,
+   .common__boradsearch__container {
       width: 90%;
    }
 
@@ -535,6 +631,11 @@ button.btn__search:hover {
    .bth_cancle {
       font-size: 18px;
    }
+
+   /* search design */
+   .common_search_container > li {
+      padding: 80px 0;
+   }
 }
 
 
@@ -562,6 +663,7 @@ button.btn__search:hover {
    .container__box__title p.sub_title {
       font-size: 18px;
       line-height: 34px;
+      margin-bottom: 30px;
    }
 
    .input__list__container {
@@ -627,6 +729,12 @@ button.btn__search:hover {
       border-radius: 30px;
       font-size: 18px;
    }
+
+   .common_search_container > li > p {
+      font-size: 16px;
+      line-height: 36px;
+      margin-bottom: 25px;
+   }
    
    /* paging_number */
    .paging_num_ul {
@@ -653,6 +761,16 @@ button.btn__search:hover {
    .common__search__input {
       width: 250px;
       font-size: 16px;
+   }
+
+   /* 테이블 가로 스크롤 가이드 - 보이기기 */
+   .table_guide {
+      display: block;
+   }
+
+   /* search design */
+   .common_search_container > li {
+      padding: 80px 0;
    }
 }
 
@@ -681,6 +799,7 @@ button.btn__search:hover {
    .container__box__title p.sub_title {
       font-size: 16px;
       line-height: 28px;
+      margin-bottom: 30px;
    }
 
    .board__input__text {

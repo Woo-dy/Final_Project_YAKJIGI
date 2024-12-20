@@ -134,7 +134,7 @@ qnaboard.paths.forEach(path => {
 const minquiryboard = {
    common: {
       mainTitle: '운영진에게 문의',
-      subTitle: '도심 공원에서 만나는 자연과 지속가능성',
+      subTitle: '문의내용을 남겨주시면 순차적으로 확인하여 답변해드리겠습니다',
    },
    paths: ['/minquiry', 
          '/minquirywrite', 

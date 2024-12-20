@@ -3,11 +3,15 @@ import { useLocation } from 'react-router-dom';
 
 function SubTopImages(props) {
    const location = useLocation();
+   const noticegroupPaths = ['/noticelist', '/noticelistver1', '/noticedetail'];
+
 
    // 현재 경로에 따라 배경 이미지 설정
    const getBackgroundImage = () => {
       if (location.pathname.startsWith('/my')) {
          return 'url(./images/main/bg_service3.png)'; // 모든 '/my'로 시작하는 페이지
+      } else if (noticegroupPaths.includes(location.pathname)) {
+         return 'url(./images/main/bg_service5.png)'; // 모든 '/my'로 시작하는 페이지
       } else {
          switch (location.pathname) {
             case '/sub101':
