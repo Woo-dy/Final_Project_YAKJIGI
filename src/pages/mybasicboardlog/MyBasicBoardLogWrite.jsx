@@ -5,6 +5,7 @@ import styles from '../../styles/mypage/mybasicboardlogupdate.module.css';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
 import { useEffect, useRef, useState } from 'react';
 import DatePicker from 'react-datepicker';
+import Editor from '../../components/Editor';
 // import info from '../../styles/mypage/mybasicuserinfo.module.css';
 
 function MyBasicBoardLogWrite(props) {
@@ -340,7 +341,7 @@ function MyBasicBoardLogWrite(props) {
                   기타 내용
                </li>
                <li className={boardlog.boardlog__contents}>
-                  에디터 추후 추가
+                  <Editor />
                </li>
                <li className={boardlog.boardlog__title}>
                   사진 추가

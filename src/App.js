@@ -2,7 +2,6 @@ import "./styles/main/head.css";
 import "./styles/main/menu.css";
 import './styles/main/container.css';
 import './styles/main/footer.css';
-import './App.css';
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

@@ -148,6 +148,7 @@ body {
    margin: 60px auto;
    font-size: 28px;
    color: var(--FontSubColor);
+   text-align: center;
 }
 
 .result_section .result_text span {

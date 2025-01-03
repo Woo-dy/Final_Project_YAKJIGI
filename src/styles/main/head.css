@@ -301,6 +301,7 @@ background: #fff;
    margin-top: 20px;
    display: inline-block;
    word-break: keep-all;
+   font-style: normal;
 }
 
 .menubar2 .menu_title div.button {

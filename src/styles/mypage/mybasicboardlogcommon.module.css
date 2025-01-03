@@ -192,6 +192,11 @@
    padding: 0 10px;
 }
 
+.write__search input:focus {
+   border-radius: 0;
+   border-bottom: 1px solid var(--MainColor);
+}
+
 .write__search__modalbtn {
    background-color: #333;
    color: #ddd;
@@ -214,6 +219,11 @@
    border-radius: 5px;
    border: 1px solid #ddd;
    padding: 0 10px;
+}
+
+.write__search2 input:focus {
+   border-radius: 0;
+   border-bottom: 1px solid var(--MainColor);
 }
 
 .write__search__modalbtn2 {
@@ -422,7 +432,14 @@ button.material-icons {
    border-radius: 5px;
    cursor: pointer;
    color: #ffffff;
-   margin: 16px 0px 0 0px;
+   margin: 16px auto 0;
+   display: block;
+}
+
+.confirmbtn:hover {
+   background-color: var(--MainColor);
+   transition: all 0.3s;
+   color: var(--MainWhite);
 }
 /* 모달창 끝 */
 

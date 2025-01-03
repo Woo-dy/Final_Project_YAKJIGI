@@ -11,6 +11,7 @@
    line-height: 80px;
    font-weight: 600;
    margin-bottom: 30px;
+   text-align: center;
 }
 
 .main__medicine__Life h3.main__description {
@@ -19,6 +20,7 @@
    color: #555555;
    word-break: keep-all;
    margin-bottom: 60px;
+   text-align: center;
 }
 
 .main__medicine__Life .main__medicine__Life__contents {

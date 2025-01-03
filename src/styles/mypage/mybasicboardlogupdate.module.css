@@ -218,10 +218,16 @@
 
 .table {
    margin-top: 20px;
-   overflow: auto;
    max-height: 280px;
+   overflow: auto;
    border-top: 2px solid #000;
+   border-bottom: 1px solid #ddd;
 }
+
+.table table {
+   border-collapse: collapse;
+}
+
 
 .statusupdate__table thead tr {
    background-color: #F8F8F8;
@@ -252,7 +258,6 @@
    font-size: 16px;
    color: #333;
    border-bottom: 1px solid #ddd;
-   padding: 0 10px;
 }
 
 .statusupdate__table thead tr th:nth-child(1) {

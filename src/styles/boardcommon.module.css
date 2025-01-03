@@ -25,6 +25,7 @@
    color: #333;
    border-radius: 5px;
    cursor: pointer;
+   text-align: center;
 }
 
 .board_button_box > ul > li > a:hover {    
