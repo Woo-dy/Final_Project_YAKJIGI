@@ -1,0 +1,512 @@
+.qnalist__container__box {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto 120px auto;
+}
+
+.qnalist__container__profile {
+   width: 100%;
+   max-width: 1320px;
+   margin-bottom: 60px;
+}
+
+.qnalist__main__title {
+   padding-top: 10px;
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 54px;
+   margin-bottom: 6px;
+   color: var(--FontMainColor);
+}
+
+.qnalist__sub__title {
+   font-size: 20px;
+   line-height: 36px;
+   margin-bottom: 54px;
+   color: var(--FontSubColor);
+}
+
+.qnalist__contents__title {
+   font-size: 26px;
+   font-weight: 600;
+   line-height: 38px;
+   color: var(--FontMainColor);
+   text-align: left;
+   margin-bottom: 30px;
+}
+
+/* 슬라이드 영역 스타일 */
+.qnalist__container__profile  > .swiperbg {
+   height: 240px;
+   padding-bottom: 20px;
+}
+
+.swiper-backface-hidden .swiper-slide {
+   width: 195px;
+   height: 246px;
+   background-color: #ffffff;
+   font-size: 20px;
+   line-height: 26px;
+}
+
+.qnalist__profile__box {
+   width: 162px;
+   height: 240px;
+   box-sizing: border-box;
+   border-radius: 10px;
+   border: 1px solid #ddd;
+   box-shadow: 5px 10px 10px rgba(170, 170, 170, 0.25);
+   padding-bottom: 60px;
+   overflow:  hidden;
+   position: relative;
+}
+
+.profile__text__box {
+   width: 90%;
+   padding: 14px 10px;
+   font-size: 18px;
+   color: var(--FontMainColor);
+   box-sizing: border-box;
+   border: 1px solid #ddd;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 10px;
+   background-color: #ffffff;
+   border-radius: 5px;
+   text-align: left;
+}
+
+.profile__text__box p {
+   margin-bottom: 2px;
+   font-size: 18px;
+   font-weight: 600;
+   color: var(--FontMainColor);
+}
+
+.profile__text__box em {
+   font-size: 14px;
+   font-weight: 400;
+   color: var(--FontSubColor);
+}
+
+.qnalist__profile__image {
+   width: 100%; /* 고정된 너비 */
+   height: 100%; /* 고정된 높이 */
+   object-fit: cover; /* 비율 유지 및 이미지 영역 채우기 */
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.qnalist__profile__box ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.qnalist__profile__logo__box {
+   width: 100%;
+}
+
+.qnalist__profile__logo__box span {
+   font-size: 24px;
+   border: 1px solid var(--MainColor);
+   color: var(--MainColor);
+   border-radius: 50%;
+   padding: 3px;
+}
+
+.qnalist__profile__logo {
+   width: 37px;
+   height: 37px;
+   object-fit: cover;
+}
+
+/* 슬라이드 영역 버튼 스타일 */
+.qnalist__container__profile .prev,
+.qnalist__container__profile .next {
+   width: 42px;
+   height: 42px;
+   border: 2px solid #333;
+   border-radius: 50%;
+   outline: none;
+   color: #333;
+   opacity: .5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   margin: auto;
+   z-index: 1;
+   cursor: pointer;
+}
+
+.qnalist__container__profile .prev:hover,
+.qnalist__container__profile .next:hover {
+   background-color: var(--MainColor);
+   color: #fff;
+   border-color: var(--MainColor);
+   transition: all 0.3s;
+   opacity: 1.0;
+}
+
+.qnalist__container__profile .prev::after,
+.qnalist__container__profile .next::after {
+   content: none;
+}
+
+.qnalist__container__profile .prev {
+   left: 0;
+}
+
+.qnalist__container__profile .next {
+   right: 0;
+}
+
+/* 검색바 영역 스타일 */
+.qnalist__search__div {
+   display: flex;
+   align-items: center; /* 세로 정렬을 맞춤 */
+   position: relative;
+}
+
+/* 입력 창 부모 요소에 position: relative 설정 */
+.qnalist__search__div {
+   position: relative;
+   width: 300px;  /* 필요에 따라 너비 설정 */
+}
+
+/* 입력창 스타일 */
+.qnalist__search__div input {
+   width: 100%;  /* input 너비 설정 */
+   height: 46px; /* 높이 설정 */
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   font-size: 16px;
+   padding: 10px; /* 여백 설정 */
+   box-sizing: border-box;
+}
+
+
+.qnalist__search__div button {
+   position: absolute;
+   right: 0; /* 오른쪽에 위치 */
+   top: 50%;
+   transform: translateY(-50%); /* 수직으로 정확히 중앙 정렬 */
+   height: 36px; /* 버튼 높이 input과 동일하게 맞춤 */
+   width: 36px; /* 버튼 크기 */
+   padding: 0; /* 여백 제거 */
+   background-color: transparent; /* 배경색 없애기 */
+   border: none; /* 테두리 제거 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #333; /* 검은색 돋보기 아이콘 */
+   cursor: pointer; /* 커서 스타일 */
+}
+
+/* 버튼 hover 시 스타일 */
+.qnalist__search__div button:hover {
+   background-color: var(--MainColorDark); /* hover 시 색 변화 */
+}
+
+/* 테이블 영역 스타일 */
+.qnalist__container__list__table {
+   width: 100%;
+   max-width: 1320px;
+   margin-top: 12px;
+}
+
+.qnalist__list_table {
+   border-collapse: collapse;
+   width: 100%;
+   border-top: 2px solid #000;
+}
+
+.qnalist__list_table thead tr {
+   background-color: #F8F8F8;
+   border-bottom: 1px solid #ddd;
+}
+
+.qnalist__list_table thead tr th {
+   height: 82px;
+   vertical-align: middle;
+   font-size: 18px;
+   font-weight: 500;
+   color: #333;
+   box-sizing: border-box;
+}
+
+.qnalist__list_table tbody tr {
+   cursor: pointer;
+   border-bottom: 1px solid #ddd;
+}
+
+.qnalist__list_table tbody tr:hover {
+   background-color: #fdfdfd;
+}
+
+.qnalist__list_table tbody tr td {
+   height: 82px;
+   vertical-align: middle;
+   font-size: 18px;
+   color: #333;
+   border-bottom: 1px solid #ddd;
+   box-sizing: border-box;
+   padding: 0 10px;
+   box-sizing: border-box;
+}
+
+.qnalist__list_table tbody tr td:nth-child(1) {
+   width: 100px;
+}
+
+.qnalist__list_table tbody tr td:nth-child(2) {
+   width: calc(100% - 900px);
+   text-align: left;
+}
+
+.qnalist__list_table tbody tr td:nth-child(2) p {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* 몇 줄인지 조정하는 역할 (현재: 1줄)*/
+   -webkit-box-orient: vertical;
+   font-weight: 500;
+}
+
+.qnalist__list_table tbody tr:hover td:nth-child(2) p {
+   color: #4553AD;
+   font-weight: 500;
+   transition: all 0.3s;
+}
+
+.qnalist__list_table tbody tr td:nth-child(3) {
+   width: 160px;
+}
+
+.qnalist__list_table tbody tr td:nth-child(4) {
+   width: 160px;
+}
+
+.qnalist__status_waiting {
+   border: 1px solid #555; /* 회색 테두리 */
+   color: #555; /* 회색 글씨 */
+   display: inline-block; /* 테두리를 감싸기 위한 블록화 */
+   width: 100px;
+   height: 36px;
+   line-height: 36px;
+   border-radius: 18px; /* 타원형 테두리 */
+   text-align: center; /* 텍스트 가운데 정렬 */
+   font-size: 16px; /* 텍스트 크기 */
+}
+
+.qnalist__status_completed {
+   border: 1px solid #4553AD; /* 파란색 테두리 */
+   color: #4553AD; /* 파란색 글씨 */
+   display: inline-block; /* 테두리를 감싸기 위한 블록화 */
+   width: 100px;
+   height: 36px;
+   line-height: 36px;
+   border-radius: 18px; /* 타원형 테두리 */
+   text-align: center; /* 텍스트 가운데 정렬 */
+   font-size: 16px; /* 텍스트 크기 */
+}
+
+/* 테이블 바닥글 스타일 (전체 데이터가 없다면) */
+.qnalist__container__list__table .empty-message {
+   text-align: center;
+   padding: 20px;
+   color: #888;
+}
+
+.qnalist__inquiry__number {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 16px;
+   font-size: 16px;
+}
+
+.qnalist__inquiry__number li span {
+   color: var(--MainColor);
+}
+
+.qnalist__inquiry__number li:last-child select.search_category {
+   border: 1px solid #ddd;
+   height: 36px;
+   color: #333;
+   border-radius: 5px;
+   width: 120px;
+   font-size: 14px;
+   box-sizing: border-box;
+   padding: 0 0px 0 5px;
+}
+
+
+/* paging_number */
+.paging_num_ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 60px;
+   margin-bottom: 0px;
+}
+
+.paging_num_ul li {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 1px solid #ddd;
+   color: #555;
+   margin: 0 5px;
+   cursor: pointer;
+}
+
+.paging_num_ul li.prev,
+.paging_num_ul li.next {
+   padding: 0;
+}
+
+.paging_num_ul li:hover {
+   border: 1px solid #111;
+   color: #111;
+}
+
+.paging_num_ul li.active {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 1px solid #111;
+}
+
+/* 반응형 디자인 */
+
+@media screen and (max-width: 1380px) {
+   .qnalist__container__box {
+      width: 90%;
+   }
+
+   .qnalist__container__profile {
+      width: 100%;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .qnalist__list_table thead tr th {
+      height: auto;
+      padding: 20px 0;
+   }
+
+   .qnalist__list_table tbody tr td {
+      height: auto;
+      padding: 20px 0;
+      font-size: 16px;
+   }
+
+   .qnalist__inquiry__number {
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+   .qnalist__main_title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 2px;
+   }
+
+   .qnalist__sub_title {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .qnalist__inquiry__number {
+      font-size: 16px;
+      margin-bottom: 25px;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(1) {
+      width: 80px;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(2) {
+      width: calc(100% - 300px);
+      text-align: left;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(3) {
+      width: 110px;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(4) {
+      width: 110px;
+   }
+
+   .qnalist__status_waiting {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      font-size: 14px;
+   }
+
+   .qnalist__status_completed {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 15px;
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+
+   .qnalist__main_title {
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 0px;
+   }
+
+   .qnalist__sub_title {
+      font-size: 16px;
+      line-height: 34px;
+   }
+
+   .qnalist__inquiry__number {
+      margin-bottom: 10px;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(1) {
+      width: 80px;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(2) {
+      width: calc(100% - 170px);
+      text-align: left;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(3) {
+      width: 90px;
+   }
+
+   .qnalist__list_table thead tr th:nth-child(4) {
+      display: none;
+   }
+
+   .qnalist__list_table tbody tr td:nth-child(4) {
+      display: none;
+   }
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.emailchk_container {
+	width: 100%;
+	max-width: 500px;
+	display: block;
+   
+	text-align: left;
+   min-height: 300px;
+	margin: 120px auto;
+}
+
+input {
+	border: none;
+}
+
+.emid_form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* send_btn에 대한 스타일 */
+.send_btn {
+	width: 100%;
+	max-width: 500px;
+	height: 46px;
+	background-color: #ffffff;
+	color: #555;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.send_btn:hover {
+	color: var(--MainColor);
+	border: 1px solid var(--MainColor);
+   transition: all 0.3s;
+}
+
+.authNumber {
+	width: 500px;
+	height: 46px;
+	text-align: left;
+	font-size: 16px;
+	padding: 0px;
+   margin: 0 0 16px;
+	border-bottom: 1px solid #cccccc;
+}
+
+input::placeholder {
+	color: #cccccc;
+	font-size: 16px;
+}
+
+.h3 {
+	text-align: left;
+	line-height: 30px;
+	word-break: keep-all;
+
+   margin-bottom: 30px;
+   font-weight: 600;
+   font-size: 20px;
+   text-align: left;
+}
+
+input:focus {outline: none;}
+
+@media screen and (max-width: 560px) {
+	.emailchk_container {
+		width: 90%;
+	}
+	.send_btn, .authNumber {
+		width: 100%;
+	}
+}

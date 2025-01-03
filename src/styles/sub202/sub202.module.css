@@ -1,0 +1,265 @@
+.contents {
+   width: 100%;
+   text-align: left;
+   max-width: 1320px;
+   padding: 100px 0;
+}
+
+.submain {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   background-color: #f0f0f0;
+   margin-bottom: 50px;
+}
+
+.section_contain {
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+}
+
+.section_contain {
+   padding-top: 80px;
+}
+
+.search_bar {
+   width: 100%;
+   height: 50px;
+   margin-bottom: 50px;
+   border-radius: 25px;
+   border: none;
+   font-size: 18px;
+   padding-left: 20px;
+}
+
+.search_icon {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   background-color: #333; 
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   color: #fff;
+}
+
+.search_text {
+   font-size: 18px;
+   font-weight: 500;
+   text-align: left;
+   margin-bottom: 25px;
+}
+
+.content_container{
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.sub202__result {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 120px auto;
+}
+
+.API_section {
+   width: 100%;
+   max-width: 1320px;
+   height: 600px;
+   margin: 60px auto 0 auto;
+   background-color: #ddd;
+}
+
+.titlecount {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.countnum {
+   font-size: 16px;
+   text-align: right;
+   margin-top: 72px;
+}
+
+.search_box {
+   width: 100%;   
+   min-height: 60px;
+   border-radius: 40px;
+   background-color: #fff;
+   box-sizing: border-box;
+}       
+.search_div {
+   position: relative;
+}
+
+.box_true {
+   background-color: #4553AD;
+   color:#fff;
+   border: 1px solid #ddd;
+}
+
+.box_false {
+   background-color: #fff;
+   border: 1px solid #ddd;
+}
+
+.search_check {
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   max-width: 1320px;
+   margin: 0px auto 50px auto;
+}
+
+.box_true:hover {
+   cursor: pointer;
+}
+
+.box_false:hover {
+   cursor: pointer;
+}
+
+.search_icon:hover {
+   cursor: pointer;
+}
+
+.h3tag {
+   font-size: 26px;
+   margin-bottom: 20px;
+   font-weight: 500;
+}
+
+.medi_result01{
+   text-align: left;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.medi_table{
+   text-align: center;
+}
+
+.medi_table table {
+   width: 100%;
+   border-collapse: collapse;
+   border-top: 2px solid #000;
+}
+
+.medi_table table thead tr {
+   background-color: #F8F8F8;
+}
+
+.medi_table table thead tr th {
+   font-weight: 500;
+   color: var(--MainBlack);
+   font-size: 18px;
+   height: 60px;
+}
+
+.medi_table table thead tr th:first-child {
+   width: 200px;
+}
+
+.medi_table table thead tr th:last-child {
+   width: calc(100% - 200px);
+}
+
+.medi_table table tbody tr td:last-child {
+   padding: 12px 16px;
+   text-align: left;
+   box-sizing: border-box;
+   font-size: 18px;
+}
+
+.tablecell {
+   border: 1px solid #ddd;
+   font-size: 18px;
+   line-height: 32px;
+   word-break: keep-all;
+   vertical-align: middle;
+}
+   
+   
+@media screen and (max-width: 1380px) {
+   .content_container,
+   .sub202__result {
+      width: 90%;
+   }
+
+   .contents {
+      width: 90%;
+   }
+
+   .search_bar {
+      width: 90%;
+   }
+}
+@media screen and (max-width: 1000px) {
+   .search_check {
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .search_box {
+      width: 30%;
+   }
+
+   .medi_table table thead tr th {
+      height: auto;
+      padding: 20px 0;
+      line-height: normal;
+   }
+
+   .tablecell {
+      font-size: 16px;
+      line-height: 32px;
+   }
+
+   .medi_table table tbody tr td:last-child {
+      padding: 12px 16px;
+      font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .section_contain{
+      flex-direction: column;
+      align-items: center;
+   }
+
+   
+
+   .medi_table {
+      overflow-x: scroll;
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+   }
+
+   .medi_table table {
+      width: 1100px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .search_check {
+      gap: 15px;
+      margin: 0px auto 50px auto;
+   }
+
+   .search_box {
+      width: calc(50% - 7.5px);
+   }
+}
+
+@media screen and (max-width: 480px) {
+
+}

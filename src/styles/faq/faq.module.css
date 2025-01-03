@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Material Icons 및 Outlined 스타일을 @import로 추가 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+body {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+.faq__header {
+   margin-bottom: 16px;
+}
+
+.faq__header ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.faq__total {
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.faq__search {
+   width: 300px;
+   font-size: 16px;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #DDDDDD;
+   position: relative;
+   color: #CCCCCC;
+   padding: 10px 0;
+}
+
+.faq__searchicon {
+   right: 10px; 
+   font-size: 20px;
+   cursor: pointer;
+   position: absolute;
+   top: 50%; 
+   transform: translateY(-50%); 
+}
+
+.faq__searchbar{
+   position: relative;
+}
+
+.faq__container {
+   padding: 0px 0 120px;
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.faq__title {
+   text-align: center;
+   font-size: 40px;
+   font-weight: 800;
+   margin-bottom: 12px;
+}
+
+.faq__subtitle1 {
+   text-align: center;
+   font-size: 20px;
+   margin-bottom: 102px;
+   font-weight: 400;
+   color: #555555;
+}
+
+.faq__list {
+   list-style-type: none;
+}
+
+.faq__list > div:first-child {
+   border-top: 2px solid #000;
+}
+
+.faq__question {
+   font-size: 20px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: color 0.3s ease;
+   border-bottom: 1px solid #DDDDDD;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   line-height: 40px;
+   padding: 20px 20px 20px 30px;
+   word-break: keep-all;
+   text-align: left;
+}
+
+.faq__question:hover {
+   color: #007bff;
+}
+
+.faq__question.first-question {
+   border-top: 1px solid black;
+}
+
+.faq__answer {
+   text-align: left;
+   font-size: 16px;
+   font-weight: 500;
+   align-content: center;
+   color: #757575;
+   padding: 30px 30px;
+   background: #fafafa;
+   border-bottom: 1px solid #ddd;
+   line-height: 32px;
+}
+
+
+
+
+.faq__page {
+   text-align: center;
+   margin-top: 60px;
+   font-size: 16px;
+   width: 100%;
+}
+
+.faq__pageLink {
+   display: inline-block;
+   margin: 0 1px;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   border: 1px solid #ddd;
+   cursor: pointer;
+}
+
+.faq__pageLink:hover {
+   border: 1px solid #333;
+}
+
+.faq__pageLink:hover { 
+   border: 1px solid #333;
+   transition: all 0.3s;
+} 
+
+
+
+/* 반응형 */
+@media screen and (max-width: 1380px) {
+   .faq__container {
+      width: 90%;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .faq__title {
+      font-size: 36px;
+      line-height: 50px;
+   }
+   .faq__subtitle1 {
+      font-size: 18px;
+      line-height: 34px;
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .faq__title {
+      margin-bottom: 2px;
+   }
+   .faq__subtitle1 {
+      font-size: 16px;
+      line-height: 32px;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .faq__title {
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 0px;
+   }
+   .faq__subtitle1 {
+      font-size: 16px;
+      line-height: 28px;
+   }
+   .faq__question {
+      font-size: 20px;
+      line-height: 32px;
+   }
+   .faq__answer {
+      font-size: 14px;
+      line-height: 26px;
+   }
+} 

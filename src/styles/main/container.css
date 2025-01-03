@@ -1,0 +1,237 @@
+/* 안전한 의약생활 */
+.main__medicine__Life {
+   width: 100%;
+   /* height: 100vh; */
+   padding: 200px 0;
+   box-sizing: border-box;
+}
+
+.main__medicine__Life h2.main__title {
+   font-size: 60px;
+   line-height: 80px;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.main__medicine__Life h3.main__description {
+   font-size: 24px;
+   font-weight: 400;
+   color: #555555;
+   word-break: keep-all;
+   margin-bottom: 60px;
+}
+
+.main__medicine__Life .main__medicine__Life__contents {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li {
+   width: 33.3%;
+   height: 426px;
+   cursor: pointer;
+   transition: transform 0.3s ease; /* 변환 시간과 효과를 지정 */
+}
+
+.main__medicine__Life .main__medicine__Life__contents li:hover {
+   transform: translateY(-10px);
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.main__medicine__Life .main__medicine__Life__contents li:not(:hover) {
+   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; /* 내려올 때의 속도 */
+}
+
+.main__medicine__Life .main__medicine__Life__contents li img {
+   width: 100%;
+   height: 240px;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li div.icon {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   box-sizing: border-box;
+   background-color: #F9FBFF;
+   border: 5px solid #fff;
+   margin: -50px auto 30px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li div.icon img {
+   width: auto;
+   height: auto;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li p {
+   font-size: 24px;
+   font-weight: 500;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li:hover p {
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.main__medicine__Life .main__medicine__Life__contents li em {
+   font-size: 20px;
+   line-height: 32px;
+   word-break: keep-all;
+   font-weight: 400;
+   color: #555;
+   margin-bottom: 20px;
+}
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) {
+   .main__medicine__Life .main__medicine__Life__contents {
+      width: 100%;
+   }
+}   
+
+/* ========== 1200px 기준 ========== */
+@media screen and (max-width: 1320px) {
+   .main__medicine__Life {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents li {
+      width: 33.3%;
+      height: 466px;
+      margin-bottom: 30px;
+   }
+
+   .main__medicine__Life h2.main__title {
+      font-size: 50px;
+      line-height: 62px;
+   }
+
+   .main__medicine__Life h3.main__description {
+      font-size: 20px;
+      margin-bottom: 60px;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .main__medicine__Life {
+      width: 90%;
+      margin: 0 auto;
+      padding: 120px 0 0px 0;
+      box-sizing: border-box;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents {
+         width: 100%;
+         flex-direction: column;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents li {
+      width: 100%;
+      height: 426px;
+      margin-bottom: 30px;
+   }
+   
+   .main__medicine__Life h2.main__title {
+      font-size: 40px;
+      line-height: 52px;
+      margin-bottom: 16px;
+      word-break: keep-all;
+   }
+
+   .main__medicine__Life h3.main__description {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 60px;
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .main__medicine__Life {
+      width: 90%;
+      margin: 0 auto;
+      padding: 150px 0;
+      box-sizing: border-box;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents {
+         gap: 0px;
+         width: 100%;
+         flex-direction: column;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents li {
+      width: 100%;
+      height: 426px;
+      margin-bottom: 30px;
+   }
+   
+   .main__medicine__Life h2.main__title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 16px;
+      word-break: keep-all;
+   }
+
+   .main__medicine__Life h2.main__title br {
+      display: none;
+   }
+
+   .main__medicine__Life h3.main__description {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 30px;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .main__medicine__Life {
+      width: 90%;
+      margin: 0 auto;
+      padding: 80px 0;
+      box-sizing: border-box;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents {
+         gap: 0px;
+         width: 100%;
+         flex-direction: column;
+   }
+
+   .main__medicine__Life .main__medicine__Life__contents li {
+      width: 100%;
+      height: 426px;
+      margin-bottom: 30px;
+   }
+   
+   .main__medicine__Life h2.main__title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 16px;
+      word-break: keep-all;
+   }
+
+   .main__medicine__Life h2.main__title br {
+      display: none;
+   }
+
+   .main__medicine__Life h3.main__description {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 30px;
+   }
+}
+
+

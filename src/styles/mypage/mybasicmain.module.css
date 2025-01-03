@@ -1,0 +1,202 @@
+.my__container__list {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.my__container__list > li {
+   width: calc(50% - 15px);
+   text-align: left;
+}
+
+.my__container__list > li:nth-child(n+3) {
+   margin-top: 60px;
+}
+
+.my__container__list li div.my__list__title {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 12px;
+   border-bottom: 1px solid #000;
+}
+
+.my__container__list li div.my__list__title p {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.my__container__list li div.my__list__title button {
+   background-color: transparent;
+}
+
+.my__container__list li div.my__list__title button a {
+   font-size: 16px;
+   font-weight: 500;
+   display: flex;
+   cursor: pointer;
+   color: #333;
+}
+
+.my__container__list li div.my__list__title button:hover a {
+   color: var(--MainColor);
+   transition: all 0.3;
+}
+
+.my__container__list li div.my__list__title button span {
+   width: 16px;
+}
+
+/* 처방 내역 */
+.my__prescription {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+   height: 290px;
+}
+
+
+.my__prescription li {
+   width: calc(33.3% - 15px);
+   height: 100%;
+   background-color: cornflowerblue;
+   cursor: pointer;
+   display: flex;
+}
+
+.my__prescription li figure {
+   width: 100%;
+}
+
+.my__prescription li img {
+   width: 100%;
+   height: 100%;
+}
+
+/* 복약 일지 */
+.my__medication__log {
+   width: 100%;
+   height: 290px;
+   line-height: 290px;
+   text-align: center;
+   font-size: 18px;
+   background-color: #ddd;
+   margin-top: 20px;
+}
+
+/* 상담 내역 */
+.my__consultation table {
+   width: 100%;
+}
+
+.my__consultation table thead tr th {
+   text-align: center;
+   height: 46px;
+   border-bottom: 1px solid #ddd;
+   vertical-align: middle;
+   font-weight: 500;
+}
+
+.my__consultation table tbody tr td {
+   text-align: left;
+   height: 52px;
+   border-bottom: 1px solid #ddd;
+   vertical-align: middle;
+   padding: 0 15px;
+   cursor: pointer;
+}
+
+.my__consultation table tbody tr td:last-child {
+   text-align: center;
+}
+
+.my__consultation table tbody tr td p {
+   font-weight: 500;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* 몇 줄인지 조정하는 역할 (현재: 1줄)*/
+   -webkit-box-orient: vertical;
+   color: var(--MainBlack);
+}
+
+.my__consultation table tbody tr td span.my__wait {
+   width: 90px;
+   height: 32px;
+   line-height: 32px;
+   border-radius: 16px;
+   font-size: 14px;
+   border: 1px solid #555;
+   color: #555;
+   display: inline-block;
+   box-sizing: border-box;
+}
+
+.my__consultation table tbody tr:hover td {
+   background-color: #fdfdfd;
+   transition: all 0.3s;
+}
+
+.my__consultation table tbody tr:hover td p {
+   color: var(--MainColor);
+   color: #4553AD;
+   font-weight: 500;
+   transition: all 0.3s;
+}
+
+
+.my__consultation table tbody tr td span.my__complete {
+   width: 90px;
+   height: 32px;
+   line-height: 32px;
+   border-radius: 16px;
+   font-size: 14px;
+   border: 1px solid var(--MainColor);
+   color: var(--MainColor);
+   display: inline-block;
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+   .my__container__list {
+      flex-direction: column;
+   }
+
+   .my__prescription {
+         height: auto;
+   }
+
+   .my__container__list > li {
+      width: 100%;
+      margin-bottom: 60px;
+   }
+
+
+   .my__container__list > li:nth-child(n+3) {
+      margin-top: 0px;
+   }
+
+   .my__container__list > li:last-child {
+      margin-bottom: 0;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+   .my__consultation table tbody tr td span.my__wait {
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+   }
+
+   .my__consultation table tbody tr td span.my__complete {
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+   }
+}

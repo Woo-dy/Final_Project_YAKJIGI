@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+.mybasicboardrecordsdetail_container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.left_right_section {
+   display: flex;
+   gap: 30px;
+}
+
+.image_section {
+   flex: 1;
+   max-width: 645px;
+   max-height: 835px;
+   border: 1px solid #ddd; 
+   border-radius: 20px; 
+   overflow: hidden; 
+   display: flex;  /* 추가: flexbox 사용 */
+   justify-content: center;  /* 추가: 수평 중앙 정렬 */
+   align-items: center;  /* 추가: 수직 중앙 정렬 */
+}
+
+.image_section img {
+   width: 90%; 
+   height: auto;
+   display: block; 
+}
+
+.image {
+   width: 100%;
+   height: auto;
+}
+
+.form_section {
+   flex: 1;
+   max-width: 645px;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #ddd; 
+   border-radius: 20px; 
+   padding: 30px; 
+   box-sizing: border-box; 
+}
+
+
+
+.form_group {
+   display: flex;
+   justify-content: space-between; /* 좌우로 정렬 */
+   align-items: center; /* 수직 정렬 */
+   gap: 10px; /* 여백 추가 */
+}
+
+.form_group label {
+   margin-bottom: 5px;
+   font-weight: 600;
+   font-size: 16px;
+   flex: 1; 
+   text-align: left;
+}
+
+.form_group input,
+.form_group textarea {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   flex: 2; /* input은 오른쪽으로 정렬되게 flex 비율 추가 */
+}
+
+.form_table_container {
+   max-height: 240px;
+   overflow-y: auto;
+   border: 1px solid #ddd;
+}
+
+.rx_table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.rx_table thead th {
+   font-weight: bold;
+   position: sticky; 
+   top: 0; 
+   background-color: #F4F4F4; 
+   text-align: center; 
+   padding: 8px;
+}
+
+.rx_table td {
+   padding: 8px;
+   text-align: center;
+   border: 1px solid #ddd;
+}
+
+/* 기타 내용 섹션 */
+.form_group textarea {
+   height: 100px;
+   resize: none;
+}
+
+/* 버튼 영역 */
+.button_section {
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.button_section_01,
+.button_section_02 {
+   display: flex;
+   gap: 10px;
+}
+
+.button_section_01{
+   display: flex;
+   justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.button_section_02{
+   display: flex;
+   justify-content: flex-end; /* 오른쪽 정렬 */
+   gap: 10px; /* 버튼 간 간격 */
+}
+
+.button {
+   padding: 10px 20px;
+   background-color: #333;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.button:hover {
+   background-color: #4553AD;
+}
+
+
+/* 공통 설정: flex 비율 동일 */
+.image_section, .form_section {
+   flex: 1; /* 동일한 비율 */
+   max-width: 50%; /* 동일한 최대 너비 (2개가 나란히 있을 경우) */
+}
+
+/* 반응형 스타일 */
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) {
+   .mybasicboardrecordsdetail_container {
+      width: 90%;
+      padding: 120px 0;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .left_right_section {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .image_section img {
+      width: auto;
+      max-width: 100%;
+   }
+
+   .image_section, .form_section {
+      max-width: 100%; /* 수직 배치 시 너비 100% */
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .mybasicboardrecordsdetail_container {
+      padding: 100px 0;
+   }
+
+   .image_section img {
+      width: auto;
+      max-width: 100%;
+   }
+
+   .button_section {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .mybasicboardrecordsdetail_container {
+      padding: 80px 0;
+   }
+
+   .button {
+      font-size: 14px;
+      padding: 8px 15px;
+   }
+}

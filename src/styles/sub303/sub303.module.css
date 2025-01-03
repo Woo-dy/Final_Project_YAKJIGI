@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Material Icons 및 Outlined 스타일을 @import로 추가 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+
+
+body {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+.Sub302__content_container {
+   width: 100%;
+   margin: 0 auto;
+   max-width: 1920px;
+}
+
+/* 헤더 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> ecc985e009c6f11b9246015ecba6eb12ced5a7e6
+.Sub302__content_header h1 {
+   padding: 50px 0 20px 0;
+   font-size: 40px;
+   line-height: 54px;
+   font-weight: 600;
+   color: var(--FontMainColor);
+}
+
+.Sub302__content_header p {
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   word-break: keep-all;
+}
+
+
+/* 필터 검색 창 */
+
+.Sub302__search_FieldContainer {
+   background-color: #F7F7F7;
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   padding: 100px 0;
+}
+
+.Sub302__mainField {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.Sub302__searchbarField {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.Sub302__filterField {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: 20px;
+   color: var(--FontSubColor);
+   word-break: keep-all;
+}
+
+.Sub302__mainField p {
+   text-align: left;
+   font-weight: 600;
+   padding: 0px 0px 25px 0px;
+}
+
+
+.Sub302__searchField p {
+   text-align: left;
+   font-weight: 600;
+   padding: 50px 0px 30px 10px;
+}
+
+.Sub302__selects {
+   width: calc(33% - 15px);
+}
+
+.Sub302__select1,
+.Sub302__select2,
+.Sub302__select3 {
+   width: 100%;
+   padding: 0 20px;
+   height: 80px;
+   font-size: 18px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   word-break: keep-all;
+   border-radius: 16px;
+   border: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Sub302__filterField p {
+   padding: 100px 0px 0px 15px;
+   text-align: left;
+}
+
+.Sub302__searchField {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.Sub302__search_container {
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+}
+
+.Sub302__search_input {
+   width: 100%;
+   background-color: var(--MainWhite);
+   border: none;
+   outline: none;
+   font-size: 18px;
+   border-radius: 50px;
+   height: 80px;
+   border-radius: 40px;
+   padding: 0 0 0 34px;
+   box-sizing: border-box;
+   border: 1px solid #ddd;
+   box-shadow: 5px 5px 5px rgba(221, 221, 221, 0.25);
+}
+
+
+.Sub302__search_input:focus {  
+   border-color:var(--MainColor);
+   border: 2px solid var(--MainColor);
+   outline: none;
+}
+
+.Sub302__search_input::placeholder {
+   color: #666;
+}
+
+.Sub302__search_button {
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   background-color: var(--MainBlack);
+   top: 0;
+   right: 0;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   border-radius: 50%;
+   transition: background-color 0.2s ease;
+   color: var(--MainWhite);
+}
+
+.Sub302__search_button:hover {
+   background-color: #f0f0f0;
+}
+
+.search_button svg {
+   color: #555;
+}
+
+/* 검색 결과 화면 */
+.Sub302__resultField {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   word-break: keep-all;
+}
+
+.Sub302__resultField p {
+   width: 100%;
+   padding: 60px 0;
+   font-size: 28px;
+   line-height: 38px;
+   word-break: keep-all;
+}
+
+.Sub302__resultField p span {
+   color: var(--MainColor);
+}
+
+.Sub302__map {
+   width: 100%;
+   height: 717px;
+   /* 임시값 */
+   background-color: #ddd;
+   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 1380px) {
+   .Sub302__resultField {
+      width: 90%;
+   }
+}
+
+@media screen and (max-width: 1320px) {
+   .Sub302__resultField,
+   .Sub302__mainField {
+      width: 90%;
+   }
+
+   .Sub302__content_header h1 {
+      font-size: 36px;
+      line-height: 50px;
+   }
+
+   .Sub302__content_header p {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .Sub302__mainField,
+   .Sub302__selects,
+   .Sub302__searchField,
+   .Sub302__search_container,
+   .Sub302__resultField {
+      font-size: 18px;
+      line-height: 34px;
+
+   }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+   .Sub302__search_FieldContainer {
+      padding: 80px 0;
+   }
+
+   .Sub302__mainField p {
+      padding: 0px 0px 10px 0px;
+   }
+
+   
+
+   .Sub302__resultField p {
+      padding: 60px 0;
+      font-size: 24px;
+      line-height: 36px;
+   }
+   
+
+   .Sub302__content_header h1 {
+      font-size: 36px;
+      line-height: 50px;
+   }
+
+   .Sub302__content_header p {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+
+   .Sub302__mainField,
+   .Sub302__search-container,
+   .Sub302__resultField {
+      font-size: 18px;
+      line-height: 34px;
+      width: 90%;
+   }
+
+   .Sub302__search_container {
+      width: 100%;
+   }
+
+}
+
+/* ========== 768px 기준 ========== */
+
+@media screen and (max-width: 768px) {
+   .Sub302__search_FieldContainer {
+      padding: 60px 0;
+   }
+
+   .Sub302__content_header h1 {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 2px;
+   }
+
+   .Sub302__content_header p {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   
+
+   .Sub302__resultField p {
+      padding: 60px 0;
+      font-size: 20px;
+      line-height: 32px;
+   }
+
+   
+   .Sub302__search_container {
+      font-size: 14px;
+      line-height: 26px;
+      width: 90%;
+   }
+   
+   .Sub302__searchField {
+      width: 100%;
+   }
+
+   .Sub302__filterField {
+      padding: 0px;
+   }
+
+   .Sub302__search_container {
+      width: 100%;
+   }
+
+
+}
+
+/* ========== 480px 기준 ========== */
+
+@media screen and (max-width: 480px) {
+   .Sub302__searchField,
+   .Sub302__mainField {
+      width: 90%;
+   }
+
+   .Sub302__filterField {
+      margin: 0 auto 30px;
+   }
+   
+   .Sub302__mainField p {
+      padding: 0px 0px 5px 0px;
+   }
+
+   .Sub302__content_header h1 {
+      font-size: 26px;
+      line-height: 38px;
+      margin-bottom: 0px;
+   }
+
+   .Sub302__content_header p {
+      font-size: 16px;
+      line-height: 28px;
+   }
+
+   .Sub302__filterField {
+      display: flex;
+      flex-direction: column;
+   }
+
+   select{
+      padding-bottom: 20px; /*  */
+   }
+
+   .Sub302__selects {
+      margin-bottom: 16px;
+   }
+
+
+   .Sub302__selects,
+   .Sub302__searchField,
+   .Sub302__search_container  {
+      font-size: 14px;
+      line-height: 26px;
+      width: 100%;
+   }
+
+   .Sub302__resultField {
+      width: 90%;
+   }
+
+   
+
+   
+
+   .Sub302__resultField p {
+      padding: 60px 0;
+      font-size: 18px;
+      line-height: 26px;
+   }
+
+   .Sub302__search_container {
+      width: 90%;
+   }
+
+   .Sub302__map {
+      height: 486px; /* 정사각형 */
+   }
+
+}

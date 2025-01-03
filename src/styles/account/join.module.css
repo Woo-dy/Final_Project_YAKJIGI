@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.join {
+	width:100%;
+	height: 70px;
+	background-color: #cccccc;
+}
+
+/* 카테고리 */
+.join_category {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.join_category li {
+	width: 50%;
+	padding: 15px 0;
+	text-align: center;
+	border: 1px solid #aaa;
+	cursor: pointer;
+}
+
+.join_category li:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+}
+
+.join_category li.activebtn {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+	font-weight: 500;
+}
+
+/* input type=file style */
+.filebox .uploadName {
+   width: calc(100% - 146px); /* 가로 크기 */
+   display: inline-block;
+   height: 42px;
+   font-size: 16px;
+   padding: 0 15px;
+   vertical-align: middle;
+   border: 1px solid #dddddd;
+   color: #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.filebox label {
+   width: 130px;
+   height: 42px;
+   border-radius: 5px;
+   display: inline-block;
+   padding: 0px 20px;
+   color: #fff;
+   vertical-align: middle;
+   background-color: #999999;
+   cursor: pointer;
+   height: 40px;
+   line-height: 40px;
+   margin-left: 16px;
+   box-sizing: border-box;
+   text-align: center;
+   font-size: 16px;
+}
+
+/* 기존 디자인 삭제 */
+.filebox input[type="file"] {
+   position: absolute;
+   width: 0;
+   height: 0;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.join_container {
+	width: 100%;
+	max-width: 1320px;
+	margin: 120px auto 120px auto;
+}
+
+.join_container input:focus {
+   border: none; /* 기존 테두리 제거 */
+   border-bottom: 1px solid var(--MainColor); /* 밑줄만 적용 */
+   outline: none; /* 기본 outline 제거 */
+}
+
+input {
+	border: none;
+	box-sizing: border-box;
+}
+
+.box {
+	width: 500px;
+	text-align: left;
+	margin: 0px auto;
+}
+
+.idflex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.joininput {
+	width: 500px;
+	height: 46px;
+	text-align: left;
+	margin: 5px 0 10px 0;
+	font-size: 16px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.uid {
+	width: calc(100% - 103px);
+}
+
+.id_chk {
+	width: 100px;
+	height: 46px;
+	border: 1px solid #dddddd;
+	margin: 0 0 0 16px;
+	padding: 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.id_chk:hover {
+	color: var(--MainColor);
+	border: 1px solid var(--MainColor);
+   transition: all 0.3s;
+}
+
+.pwtest {
+	font-size: 14px;
+}
+
+.jointxt {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.idchkresult {
+	font-size: 14px;
+}
+
+.attachmentresult {
+	font-size: 14px;
+	line-height: 20px;
+	display: inline-block;
+	margin-bottom: 12px;
+	color: var(--MainBlack);
+	word-break: keep-all;
+}
+
+.email {
+	width: 146px;
+	height: 46px;
+	text-align: left;
+	margin: 10px 0;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+.email::placeholder {
+	font-size: 14px;
+}
+
+.emailselect {
+	width: 140px;
+	height: 46px;
+	text-align: left;
+	margin: 10px 0px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 1px solid #cccccc;
+}
+
+.emailselect:hover {
+	cursor: pointer;
+}
+
+.emailsec {
+	width: 500px;
+}
+
+.star {
+	color: red;
+}
+
+.pwOK {
+	font-size: 12px;
+	color: red;
+}
+
+input::placeholder {
+	color: #cccccc;
+	font-size: 16px;
+}
+
+.h3 {
+	font-weight: 700;
+	margin-top: 30px;
+}
+
+.allchk {
+	width: 20px;
+	height: 20px;
+	margin: 18px 10px 18px 18px;
+	vertical-align: -5px;
+}
+
+.optionchk {
+	width: 16px;
+	height: 16px;
+	margin: 18px 10px 18px 18px;
+	vertical-align: -3px;
+}
+
+.option:hover {
+	cursor: pointer;
+}
+
+.option {
+	margin: 5px 0px 5px 0px;
+	width: 500px;
+	height: 56px;
+	background-color: #dddddd;
+	border-radius: 5px;
+}
+
+.optiondetail:hover {
+	cursor: pointer;
+}
+
+.optiondetail {
+	margin: 10px 0px 10px 0px;
+	width: 500px;
+	height: 48px;
+	background-color: #eeeeee;
+	border-radius: 5px;
+}
+
+.optiontxt {
+	line-height: 0;
+}
+
+.joinbtn {
+	border: none;
+	width: 500px;
+	height: 46px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 15px;
+	background-color: #999999;
+	color: #ffffff;
+}
+
+.joinbtn:hover {
+	cursor: pointer;
+}
+
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.com {
+	font-size: 14px;
+}
+
+.gen {
+	width: 500px;
+	height: 46px;
+	border-radius: 5px;
+	margin: 10px 0;
+	color: #555;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.gen label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+
+.gen label:nth-child(n+2) {
+	margin-left: 16px;
+}
+
+.gen label input {
+	margin-right: 6px;
+}
+
+.bir {
+	margin: 10px 0;
+	position: relative;
+}
+
+.bir > div {
+	width: 100% !important;
+}
+
+.bir span {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	color: #333;
+}
+
+.react-datepicker-wrapper {
+	width: 100% !important;
+}
+
+.birth {
+	width: 100%;
+	max-width: 500px;
+	height: 46px;
+	border-bottom: 1px solid #dddddd;
+	text-align: left;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #333;
+	font-size: 16px;
+}
+
+.birth ::placeholder {
+	color: #cccccc;
+}
+
+@media screen and (max-width: 1380px) {
+	.join_container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.box {
+		width: 100%;
+		padding: 0px 0;
+	}
+
+	.email {
+		width: 45%;
+	}
+
+	.emailback {
+		width: 45%;
+	}
+
+	.width100 {
+		width: 100%;
+	}
+
+	.gen {
+		width: 100%
+	}
+	
+	.emailselect {
+      width: 100%;
+      height: 46px;
+      text-align: left;
+      margin: 10px 0px;
+		padding: 0;
+      border-radius: 5px;
+      font-size: 16px;
+      border: 1px solid #cccccc;
+	}
+
+	.optiondetail {
+		font-size: 14px;
+	}
+
+	
+	.filebox .uploadName {
+		width: calc(100% - 116px); /* 가로 크기 */
+	}
+
+	.filebox label {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.id_chk {
+		width: 150px;
+		margin: 0 0 0 5px;
+		font-size: 14px;
+	}
+
+	.email::placeholder {
+		font-size: 14px;
+	}
+}

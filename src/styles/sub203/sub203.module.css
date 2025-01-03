@@ -1,0 +1,281 @@
+.contents {
+   padding-top: 40px;
+   width: 100%;
+   text-align: left;
+   max-width: 1320px;
+}
+
+.submain {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   background-color: #f0f0f0;
+}
+
+.section_contain {
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+}
+
+.section_contain {
+   padding-top: 80px;
+}
+
+.search_bar {
+   width: 100%;
+   height: 50px;
+   margin-bottom: 50px;
+   border-radius: 25px;
+   border: none;
+   font-size: 18px;
+   padding-left: 20px;
+}
+
+.search_text {
+   margin: 20px 0;
+}
+
+.search_icon {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   background-color: #333; 
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   color: #fff;
+} 
+
+.hrtag {
+   border: 1px solid #000;
+   margin-top: 20px;
+   margin-bottom: 0px  ;
+}
+
+.titlecount {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   border-bottom: 2px solid #000;
+   padding-bottom: 20px;
+}
+
+.h3tag {
+   font-size: 28px;
+   font-weight: 500;
+   margin-top: 60px;
+}
+
+.search_text {
+   font-size: 18px;
+}
+
+.content_container {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.API_section {
+   width: 100%;
+   max-width: 1320px;
+   background-color: #ddd;
+   height: 600px;
+   margin: 60px auto 120px auto;
+} 
+.medi_result01 {
+   text-align: left;
+   
+} 
+
+.medi_infos {
+   display: flex;
+   justify-content: flex-start;
+   border-bottom: 1px solid #ddd;
+   padding: 50px 0;
+} 
+
+
+.medi_infos > li:first-child {
+   width: 310px;
+   box-sizing: border-box;
+   padding-top: 10px;
+}
+
+.medi_infos > li:first-child > img {
+   width: 100%;
+   object-fit: cover;
+}
+
+.medi_infos > li:last-child {
+   width: calc(100% - 310px);
+   box-sizing: border-box;
+   padding-left: 30px;
+}
+
+.medi_contents {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.medi_title {
+   font-size: 20px;
+   font-weight: 500;
+   color: #333;
+   line-height: 36px;
+   margin-bottom: 36px;
+}
+
+.medi_info {
+   font-size: 16px;
+   color: #333;
+   line-height: 35px;  
+   font-weight: 500;
+   width: 110px;
+   box-sizing: border-box;
+}
+
+.medi_detail {
+   font-size: 16px;
+   color: #555;
+   line-height: 35px;
+   width: calc(100% - 110px);
+   box-sizing: border-box;
+   word-break: keep-all;
+}
+
+.medi_list {
+   display: flex;
+   max-height: 240px;
+   overflow-y: auto;
+   border-bottom: 1px solid #ddd;
+}
+
+.medi_div {
+   margin-left: 30px;
+}
+
+.medi_table td {
+   border: 1px solid #ddd;
+   font-size: 18px;
+   height: 60px;
+   vertical-align: middle;
+   min-width: 160px;
+   box-sizing: border-box;
+}
+
+.medi_table {
+   width: 100%;
+   text-align: center;
+   border-collapse: collapse;
+}
+
+.hrddd {
+   border-color: #ddd;
+}
+
+.countnum {
+   font-size: 16px;
+   text-align: right;
+   margin-top: 72px;
+}
+   
+@media screen and (max-width: 1380px) {
+   .content_container {
+      width: 90%;
+   }
+   .search_bar {
+      width: 90%;
+   }
+
+   .API_section {
+      width: 90%;
+   } 
+}
+@media screen and (max-width: 1000px) {
+   .medi_list {
+      width: 100%;    
+      overflow-x: auto;
+   }
+   
+}
+@media screen and (max-width: 768px) {
+   .section_contain {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .medi_detail {
+      margin-left: 0px;
+   }
+
+   .sub203_titlecount__Cn8NK {
+      display: flex
+   ;
+         justify-content: space-between;
+         width: 100%;
+         border-bottom: 2px solid #000;
+         padding-bottom: 20px;
+   }
+
+   .h3tag {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 60px;
+   }
+
+   .medi_infos {
+      padding: 30px 0;
+      flex-direction: column;
+   }
+
+   .medi_title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #333;
+      line-height: 36px;
+      margin: 16px 0;
+   }
+
+   .medi_infos > li:first-child {
+      width: 100%;
+      text-align: center;
+      max-width: 310px;
+      padding-top: 0px;
+   }
+
+   .medi_infos > li:last-child {
+      width: 100%;
+      padding-left: 0px;
+   }
+
+   .medi_table td {
+      border: 1px solid #ddd;
+      font-size: 16px;
+      height: 50px;
+      vertical-align: middle;
+      min-width: 160px;
+      box-sizing: border-box;
+   }
+
+   .sub203_medi_list__t\+ZIX {
+      max-height: 300px;
+      overflow-y: auto;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 120px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .medi_infos {
+      display: flex;
+      flex-direction: column;
+   }
+}

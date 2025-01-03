@@ -1,0 +1,374 @@
+* {
+   box-sizing: border-box;
+   font-family: 'NotoSans';
+}
+
+.info__container {
+   display: flex;
+   border-top: 2px solid #000;
+   border-bottom: 1px solid #ddd;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 60px auto 120px;
+}
+
+.info__container li {
+   border-bottom: 1px solid #ddd;
+}
+
+.info__container li.info__title:nth-child(odd) {
+   width: 170px;
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--MainBlack);
+   text-align: left;
+}
+
+.info__container li.info__content:nth-child(even) {
+   width: calc(100% - 170px);
+   text-align: left;
+   padding: 20px;
+}
+
+.info__container li.info__content__flex:nth-child(even) {
+   width: calc(100% - 170px);
+   text-align: left;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.info__container li.info__title__wide:nth-child(odd) {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--MainBlack);
+   text-align: left;
+   padding: 20px 0px;
+}
+
+.info__container li.info__content__wide:nth-child(even) {
+   width: 100%;
+   text-align: left;
+   padding: 20px 0px;
+}
+
+
+.titles {
+   padding-top: 80px;
+   margin-bottom: 30px;
+}
+
+.container {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.maintitle{ 
+   font-size: 35px;
+   line-height: 60px;
+   font-weight: bold;
+}
+
+.subtitle{
+   font-size: 20px;
+   color: #555;
+   line-height: 32px;
+}
+
+
+.input_section{
+   text-align: left;
+}
+
+.hrtag{
+   border: 1px solid #000;
+   margin: 20px 0;
+}
+   
+.input_title{
+   font-size: 18px;
+   font-weight: 500;
+   margin: 20px 0;
+   margin-right: 30px; 
+   display: inline-block;
+   width: 140px;
+   line-height: 40px;
+}
+
+.input_id {
+   width: 300px;
+   height: 40px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding-left: 8px;
+}
+
+.input_edit{
+   width: 130px;
+   height: 40px;
+   border: 1px solid #4553ad;
+   color: #4553ad;
+   background-color: #fff;
+   border-radius: 5px;
+   margin-left: 16px;
+   font-size: 16px;
+}
+
+.input_profile_div {
+   display: flex;
+   flex-direction: row;
+   align-items: left;
+}
+
+.input_info_div {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   margin-left: 20px;
+   line-height: 24px;
+}
+
+.input_image_div {
+   display: flex;  
+   flex-direction: row;
+   align-items: center;
+}
+
+.input_profile_image{
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+}
+
+.input_findfile{
+   background-color: #999;
+   color: #fff;
+   border: none;
+   width: 130px;
+   height: 40px;
+   border-radius: 5px;
+   margin-left: 16px;
+   font-size: 16px;
+   border: none;
+}
+
+.input_profile{
+   width: 500px;
+   height: 40px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding-left: 8px;
+}
+
+.input_profile_none{
+   display: none;
+}
+
+.input_file_find{
+   width: 130px;
+   height: 40px;
+   background-color: #999;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   margin-left: 16px;
+   font-size: 16px;
+}
+
+.input_label_div {
+   margin: 12px auto;
+   display: inline-block;
+}
+
+.input_label{
+   margin-right: 30px;
+}
+
+.input_radio{
+   margin-right: 10px;
+   font-size: 16px;
+   width: 16px;
+   height: 16px;
+}
+
+.input_span {
+   color: #555;
+   line-height: 28px;
+   word-break: keep-all;
+}
+
+.input_submit{
+   width: 130px;
+   height: 40px;
+   background-color: #333;
+   color: #fff;
+   border-radius: 5px;
+   margin-left: 16px;
+   font-size: 16px;
+   border: none;
+}
+
+.input_cancel{
+   width: 130px;
+   height: 40px;
+   border: 1px solid #ccc;
+   color: #555;
+   border-radius: 5px;
+   margin-left: 16px;
+   font-size: 16px;
+}   
+
+.input_submit_cancel{
+   display: inline-block;
+}
+
+
+@media screen and (max-width: 1380px) {
+   .container{
+      width: 90%;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .input_submit_cancel{
+      display: flex;
+      flex-direction: row;
+   }
+   .input_submit{
+      margin-left: 0;
+   }
+
+   .input_profile {
+      width: calc(100% - 146px);
+      max-width: 100%;
+   }
+
+   .input_submit_cancel {
+      margin-top: 12px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .info__container li {
+      border-bottom: 1px solid #ddd;
+   }
+   
+   .info__container li.info__title:nth-child(odd) {
+      width: 100%;
+      border-bottom: 0px solid #ddd;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 20px 0px 0px;
+   }
+   
+   .info__container li.info__content:nth-child(even) {
+      width: 100%;
+      padding: 20px 0px;
+   }
+   
+   .info__container li.info__content__flex:nth-child(even) {
+      width: 100%;
+      padding: 20px 0px;
+   }
+   
+   .info__container li.info__title__wide:nth-child(odd) {
+      width: 100%;
+      border-bottom: 0px solid #ddd;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 20px 0px;
+   }
+   
+   .info__container li.info__content__wide:nth-child(even) {
+      width: 100%;
+      padding: 20px 0px;
+   }
+
+   .input_info_div {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 20px 20px 0px;
+      line-height: 24px;
+   }
+
+   .input_info_div span {
+      margin: 0px 0px 6px 0px;
+   }
+
+   .info__container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .input_title{
+      display: block;
+      margin-bottom: 0px;
+   }
+
+   .input_id {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding-left: 8px;
+      margin-bottom: 10px;
+   }
+
+   .input_span {
+      display: block;
+      width: 100%;
+      margin-bottom: 12px;
+   }
+
+   .input_label_div {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+
+   .container li.info__content__flex:nth-child(even) {
+      width: 100%;
+      text-align: left;
+      padding: 20px 0px;
+      align-items: flex-start;
+      flex-direction: column;
+   }
+   .input_profile{
+      margin-bottom: 10px;
+   }
+
+   .input_profile_div {
+      flex-direction: column;
+   }
+
+   .input_file_find {
+      margin-left: 16px;
+   }
+   
+   .input_info_div {
+      margin-left: 0;
+   }
+
+   
+   .input_edit {
+      display: block;
+      margin-left: 0;
+   }
+
+   .input_cancel {
+      margin-right: 0;
+   }
+
+   .input_submit_cancel {
+      margin-top: 0px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+}

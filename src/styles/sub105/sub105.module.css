@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Material Icons 및 Outlined 스타일을 @import로 추가 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+
+body {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+
+.sub105__medlawcontainer {
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0px 0 120px 0;
+}
+
+.sub105__medlawtitle {
+   text-align: center;
+   font-size: 40px;
+   color: #111111;
+   font-weight: 600;
+}
+
+.sub105__medlawsubtitle {
+   text-align: center;
+   font-size: 20px;
+   font-weight: 400;
+   color: #555555;
+   margin-top: 6px;
+}
+
+.sub105__medlawcategories {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   color: #333333;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+
+.sub105__medlawcategorybtn {
+   width: 220px;
+   height: 60px;
+   font-size: 20px;
+   background-color: #FFFFFF;
+   border: 1px solid #DDDDDD;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.sub105__medlawcategorybtn:hover {
+   border-color: #4553AD;
+   color: #4553AD;
+}
+
+.sub105__medlawcategorybtn.active {
+   border-color: #4553AD;
+   color: #4553AD;
+}
+
+.sub105__medlawapicontent {
+   margin-top: 40px;
+   padding: 20px;
+   border: 1px solid #f70808;
+   background-color: #fafafa;
+   min-height: 200px;
+}
+
+.sub105__medlawapicontent pre {
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   font-size: 14px;
+   color: #333;
+}
+
+.lelitop {
+   margin-bottom: 16px;
+   text-align: left;
+}
+
+/* 대통령령에 들어가있는 API 표 css */
+/* .tbl8 thead tr th {
+   background-color: var(--MainColor);
+   height: 30px;
+   font-size: 16px;
+   vertical-align: middle;
+}
+
+.tbl8 tbody tr td {
+   height: 40px;
+   font-size: 16px;
+   vertical-align: middle;
+   border-bottom: 1px solid #ddd;
+}
+
+.tbl8 tbody tr td a {
+   color: var(--FontMainColor);
+   text-align: left;
+} */
+
+
+@media screen and (max-width: 1380px) {
+   .sub105__medlawcontainer {
+      width: 90%;
+      padding: 120px 0;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .sub105__medlawtitle {
+      font-size: 36px;
+      line-height: 50px;
+   }
+
+   .sub105__medlawsubtitle {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   /* .contents_title {
+       font-size: 28px;
+       line-height: 38px;
+    }
+    .contents_description {
+       font-size: 18px;
+       line-height: 34px;
+    } */
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .sub105__medlawcontainer {
+      padding: 100px 0;
+   }
+
+   .sub105__medlawtitle {
+      font-size: 32px;
+      line-height: 46px;
+   }
+
+   .sub105__medlawsubtitle {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .sub105__medlawcategories {
+      flex-wrap: wrap;
+      gap: 15px;
+   }
+
+   .sub105__medlawcategorybtn {
+      width: calc(45% - 15px);
+      height: 60px;
+      font-size: 18px;
+      background-color: #FFFFFF;
+      border: 1px solid #DDDDDD;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+   }
+
+   /* .contents_title {
+      font-size: 22px;
+      line-height: 34px;
+   }
+   .contents_description {
+      font-size: 18px;
+      line-height: 34px;
+   } */
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+.sub105__medlawcontainer {
+   padding: 80px 0;
+}
+
+.sub105__medlawtitle {
+   font-size: 26px;
+   line-height: 38px;
+   margin-bottom: 0px;
+}
+
+.sub105__medlawsubtitle {
+   font-size: 16px;
+   line-height: 28px;
+}
+
+.sub105__medlawcategorybtn{
+   font-size: 16px;
+}
+
+
+
+/* .contents_title {
+      font-size: 20px;
+      line-height: 32px;
+   } */
+/* .contents_description {
+      font-size: 14px;
+      line-height: 26px;
+   } */
+}

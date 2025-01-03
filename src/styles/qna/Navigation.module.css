@@ -1,0 +1,49 @@
+.Qna__slide .prev,
+.Qna__slide .next {
+   width: 42px;
+   height: 42px;
+   border: 2px solid #333;
+   border-radius: 50%;
+   outline: none;
+   color: #333;
+   opacity: .5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   z-index: 1;
+   cursor: pointer;
+}
+
+
+.Qna__slide .prev:hover,
+.Qna__slide .next:hover {
+   background-color: var(--MainColor);
+   color: #fff;
+   border-color: var(--MainColor);
+   transition: all 0.3s;
+   opacity: 1.0;
+}
+
+.Qna__slide .prev::after,
+.Qna__slide .next::after {
+   content: none;
+}
+
+.Qna__slide .prev {
+   left: 50px;
+}
+
+.Qna__slide .next {
+   right: 50px;
+}
+
+.Medicinenews__box {
+   background-color: #F9FBFF;
+   color: var(--FontMainColor);
+   box-sizing: border-box;
+   padding: 30px;
+}

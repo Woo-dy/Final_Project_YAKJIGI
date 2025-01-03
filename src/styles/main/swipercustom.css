@@ -1,0 +1,546 @@
+/* styles.css */
+.swiper-pagination-bullet {
+   background: red; /* 페이지네이션 색상 */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   color: blue; /* 네비게이션 버튼 색상 */
+}
+
+/* ============================================== */
+
+.main__Slider {
+   width: 100%;
+   /* height: calc(100vh - 80px); */
+   height: 800px;
+   background-color: #f9f9f9;
+   box-sizing: border-box;
+}
+
+.main__Slider .swiper {
+	width: 100%;
+   height: 100%;
+}
+
+.main__Slider .swiper-wrapper .swiper-slide {
+   background-color: #ddd;
+   text-align: center;
+   box-sizing: border-box;
+   padding: 30px;
+   text-align: left;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+} 
+
+.main__Slider .swiper-wrapper .swiper-slide .text_box {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.3) ;
+   padding: 30px;
+   box-sizing: border-box;
+}
+
+.main__Slider .swiper-wrapper .swiper-slide:hover .text_box {
+   background: rgba(0, 0, 0, 0.0) ;
+   transition: all 0.5s;
+}
+
+.main__Slider .swiper-wrapper .swiper-slide div {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.main__Slider .swiper-wrapper .swiper-slide div h2.swiper_title {
+   font-size: 60px;
+   line-height: 76px;
+   font-weight: 600;
+   color: #fff;
+   word-break: keep-all;
+   margin-bottom: 40px;
+}
+
+.main__Slider .swiper-wrapper .swiper-slide div p.swiper_contents {
+   font-size: 24px;
+   line-height: 36px;
+   font-weight: 400;
+   color: #fff;
+   word-break: keep-all;
+   margin-bottom: 60px;
+}
+
+.main__Slider .swiper-wrapper .swiper-slide div button {
+   width: 200px;
+   height: 50px;
+   box-sizing: border-box;
+   border: 1px solid #fff;
+   background-color: transparent;
+   border-radius: 30px;
+   font-size: 20px;
+   font-weight: 400;
+   color: #fff;
+   cursor: pointer;
+}
+
+.main__Slider .swiper-wrapper .swiper-slide div button a {
+   display: inline-block;
+   width: 100%;
+   height: 50px;
+   line-height: 50px;
+   border-radius: 30px;
+   color: var(--MainWhite);
+}
+
+.main__Slider .swiper-wrapper .swiper-slide div button:hover a {
+   background-color: #fff;
+   color: #333;
+   transition: all 0.3s;
+}
+
+
+.main__Slider .swiper .swiper-button-next,
+.main__Slider .swiper .swiper-button-prev {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #fff;
+	outline: none;
+	color: #fff;
+	opacity: 0.5;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+   transform: translate(0%, -50%);
+	margin: auto;
+	box-sizing: border-box;
+	z-index: 10;
+	border-radius: 50%;
+	background-color: transparent;
+	color: #fff;
+}
+
+.main__Slider .swiper .swiper-button-next:after, 
+.main__Slider .swiper .swiper-button-prev:after {display: none;}
+
+
+.main__Slider .swiper .swiper-button-prev:hover, 
+.main__Slider .swiper .swiper-button-next:hover {
+   background-color: var(--MainColor);
+   color: #fff;
+   border-color: var(--MainColor);
+   transition: all 0.3s;
+   opacity: 1.0;
+}
+
+.main__Slider .swiper .swiper-button-next div.material-icons,
+.main__Slider .swiper .swiper-button-prev div.material-icons {
+	font-size: 30px;
+}
+
+
+/* 실시간 검색어 */
+.main__Realtime__searchterms {
+   width: 1000px;
+   height: 80px;
+   line-height: 80px;
+   margin: -40px auto;
+   background-color:#fff;
+   position: relative;
+   z-index: 1;
+   border-radius: 40px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.main__Realtime__searchterms .swiper {
+	width: 100%;
+   height: 100%;
+   text-align: left;
+   padding: 0 50px;
+   font-size: 20px;
+   box-sizing: border-box;
+}
+
+.main__Realtime__searchterms .swiper .swiper-slide {
+   cursor: pointer;
+}
+
+.main__Realtime__searchterms .swiper .swiper-slide a {
+   color: #333;
+   font-weight: 400;
+}
+
+.main__Realtime__searchterms .swiper .swiper-slide:hover a {
+   color: #4553AD;
+   transition: all 0.3s;
+   font-weight: 500;
+}
+
+.main__Realtime__searchterms .main__Realtime__search__icon div {
+   font-size: 42px;
+   color: #000;
+   height: auto;
+   display: inline;
+   position: absolute;
+   top: 50%;
+   right: 40px;
+   transform: translate(0, -50%);
+}
+
+/* ========== 1200px 기준 ========== */
+@media screen and (max-width: 1320px) {
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 80px;
+      line-height: 80px;
+      margin: -40px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div {
+      width: 90%;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div h2.swiper_title {
+      font-size: 50px;
+      line-height: 66px;
+      font-weight: 600;
+      color: #fff;
+      word-break: keep-all;
+      margin-bottom: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div p.swiper_contents {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }   
+
+   .main__Slider .swiper-wrapper .swiper-slide div button {
+      width: 180px;
+      height: 50px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      background-color: transparent;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      cursor: pointer;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+   }
+
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 60px;
+      line-height: 60px;
+      margin: -30px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Realtime__searchterms .swiper {
+      padding: 0 30px;
+      font-size: 18px;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide {
+      width: 80%;
+   }
+}
+
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 80px;
+      line-height: 80px;
+      margin: -40px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div {
+      width: 90%;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div h2.swiper_title {
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 600;
+      color: #fff;
+      word-break: keep-all;
+      margin-bottom: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div p.swiper_contents {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }   
+
+   .main__Slider .swiper-wrapper .swiper-slide div button {
+      width: 180px;
+      height: 50px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      background-color: transparent;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      cursor: pointer;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+   }
+
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 60px;
+      line-height: 60px;
+      margin: -30px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Realtime__searchterms .swiper {
+      padding: 0 30px;
+      font-size: 18px;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide {
+      width: 80%;
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 80px;
+      line-height: 80px;
+      margin: -40px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div {
+      width: 90%;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div h2.swiper_title {
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 600;
+      color: #fff;
+      word-break: keep-all;
+      margin-bottom: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div p.swiper_contents {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }   
+
+   .main__Slider .swiper-wrapper .swiper-slide div button {
+      width: 180px;
+      height: 50px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      background-color: transparent;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      cursor: pointer;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+   }
+
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 60px;
+      line-height: 60px;
+      margin: -30px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Realtime__searchterms .swiper {
+      padding: 0 30px;
+      font-size: 18px;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide {
+      width: 80%;
+   }
+}
+
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 80px;
+      line-height: 80px;
+      margin: -40px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div {
+      width: 90%;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div h2.swiper_title {
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 600;
+      color: #fff;
+      word-break: keep-all;
+      margin-bottom: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }
+
+   .main__Slider .swiper-wrapper .swiper-slide div p.swiper_contents {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+   }   
+
+   .main__Slider .swiper-wrapper .swiper-slide div button {
+      width: 180px;
+      height: 50px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      background-color: transparent;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      cursor: pointer;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+   }
+
+   .main__Realtime__searchterms {
+      width: 90%;
+      height: 60px;
+      line-height: 60px;
+      margin: -30px auto;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   }
+
+   .main__Realtime__searchterms .swiper {
+      padding: 0 30px;
+      font-size: 18px;
+   }
+
+   .main__Realtime__searchterms .swiper .swiper-slide {
+      width: 80%;
+   }
+}

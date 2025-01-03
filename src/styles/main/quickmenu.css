@@ -1,0 +1,60 @@
+.common__menu {
+   filter: url('#shadowed-goo');
+   position: fixed;
+   right: 0%;
+   height: 150px;
+   box-sizing: border-box;
+   font-size: 20px;
+   text-align: left;
+   bottom: 0; /* 메뉴를 아래쪽에 위치시킵니다. */
+}
+
+.common__menu-item {
+   background: #00bcd4;
+   border-radius: 100%;
+   width: 80px;
+   height: 80px;
+   position: fixed;
+   right: 20px;
+   color: white;
+   text-align: center;
+   line-height: 80px;
+   transform: translate3d(0, 0, 0);
+   transition: transform ease-out 200ms;
+}
+
+.common__menu-open:checked ~ .common__menu-item {
+   transform: translateY(-100px); /* 메뉴 아이템을 위로 이동시킵니다. */
+}
+
+.common__menu-open-button {
+   /* 기존 스타일 유지 */
+   background: #00bcd4;
+   border-radius: 100%;
+   width: 80px;
+   height: 80px;
+   position: fixed;
+   right: 20px;
+   color: white;
+   text-align: center;
+   line-height: 80px;
+   transform: translate3d(0, 0, 0);
+   transition: transform ease-out 200ms;
+}
+
+.common__menu-open-button:hover {
+   /* 기존 스타일 유지 */
+}
+
+/* 햄버거 아이콘 애니메이션 */
+.common__menu-open:checked + .common__menu-open-button .common__hamburger-1 {
+   transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.common__menu-open:checked + .common__menu-open-button .common__hamburger-2 {
+   transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.common__menu-open:checked + .common__menu-open-button .common__hamburger-3 {
+   transform: translate3d(0, 0, 0) rotate(-45deg);
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+button {
+	border: none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.suc_container {
+	width: 100%;
+	max-width: 768px;
+	text-align: center;
+   min-height: 300px;
+	margin: 120px auto;
+}
+
+.check {
+	font-size: 100px;
+	color: var(--MainColor);
+}
+
+.success {
+	margin: 23px auto;
+}
+
+.success p {
+	font-size: 32px;
+	font-weight: 500;
+	color: var(--MainColor);
+}
+
+/* success 안의 p태그 */
+.success p {
+	font-size: 32px;
+	color: var(--MainColor);
+}
+
+.username {
+	font-size: 24px;
+   line-height: 34px;
+   word-break: keep-all;
+}
+
+.infobox {
+   width: 768px;
+   padding: 25px 20px;
+   background-color: #f7f7f7;
+   text-align: center;
+   margin: 30px 0;
+   line-height: 26px;
+   box-sizing: border-box;
+   word-break: keep-all;
+}
+
+.infobox p {
+	font-size: 16px;
+}
+
+.infoup {
+	color: #ff5500;
+}
+
+.infoup:hover{
+	cursor: pointer;
+}
+
+.tw.btn_success {
+	border-top: 1px solid #dddddd;
+	width: 768px;
+	padding-top: 50px;
+	height: 197px;
+}
+
+.btn_success:hover{
+	cursor: pointer;
+} 
+
+.btn_success {
+	width: 200px;
+	height: 46px;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 0 8px;
+}
+
+.login {
+	border: 1px solid #b8c1ff;
+	color: #7688ff;
+}
+
+.login:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.main {
+	border: 1px solid #cccccc;
+	color: #555;
+}
+
+.main:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.twobtn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.go {
+	width: calc(50% - 7.5px);
+	height: 46px;
+	line-height: 46px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	background: transparent;
+	cursor: pointer;
+}
+
+@media screen and (max-width:828px) {
+	.suc_container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	
+	.tw.btn_success {
+		width: 100%;
+	}
+	
+	.infobox {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:560px) {
+	.infobox p {
+		font-size: 14px;
+	}
+
+	.username {
+		font-size: 20px;
+	}
+
+	.btn_success {
+		margin: 0 4px;
+		width: 180px;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.infobox p {
+		font-size: 13px;
+	}
+
+	.username {
+		font-size: 18px;
+	}
+
+	.btn_success {
+		margin: 0;
+		width: 160px;
+	}
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+button:hover {
+	cursor: pointer;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.idfind_container {
+	width: 100%;
+	max-width: 1320px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+input {
+	border: none;
+}
+
+.gobutton {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user_id {
+	width: 500px;
+	height: 46px;
+	background-color: #ffffff;
+	color: #555;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	margin: 15px 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.user_id:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.box {
+   width: 100%;
+	max-width: 500px;
+   min-height: 300px;
+	text-align: left;
+	margin: 120px auto;
+}
+
+.idinput {
+	width: 500px;
+	height: 46px;
+	text-align: left;
+	margin: 20px 0;
+	font-size: 16px;
+	padding: 0px;
+	border-bottom: 1px solid #cccccc;
+}
+
+input:focus {  
+   border: none; /* 기존 테두리 제거 */
+   border-bottom: 1px solid var(--MainColor); /* 밑줄만 적용 */
+   outline: none; /* 기본 outline 제거 */
+}
+
+input::placeholder {
+	color: #cccccc;
+	font-size: 16px;
+}
+
+.h3 {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+.login {
+	border: 1px solid #b8c1ff;
+	color: #7688ff;
+}
+
+.login:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.main {
+	border: 1px solid #cccccc;
+	color: #555;
+}
+
+.main:hover {
+	border: 1px solid var(--MainColor);
+	color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.go {
+	width: calc(50% - 7.5px);
+	height: 46px;
+	line-height: 46px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	background: transparent;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+	.box {
+		width: 90%;
+	}
+	.user_id, .idinput {
+		width: 100%;
+	}
+}

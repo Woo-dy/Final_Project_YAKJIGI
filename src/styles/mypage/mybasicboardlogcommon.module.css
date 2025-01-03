@@ -1,0 +1,535 @@
+.boardlog__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 0 auto;
+   border: 1px solid #ddd;
+   padding: 40px;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+.boardlog__container ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.boardlog__ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.boardlog__container ul li,
+.boardlog__ul li {
+   border-bottom: 1px solid #ddd;
+}
+
+.boardlog__container ul li.boardlog__title:nth-child(odd),
+.boardlog__ul li.boardlog__title:nth-child(odd) {
+   width: 170px;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   font-weight: 600;
+   text-align: left;
+}
+
+.boardlog__container ul li.boardlog__contents:nth-child(even),
+.boardlog__ul li.boardlog__contents:nth-child(even) {
+   width: calc(100% - 170px);
+   text-align: left;
+   padding: 20px;
+}
+
+.boardlog__ul li.boardlog__title__wide {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   font-weight: 600;
+   text-align: left;
+   border-bottom: 0;
+   padding: 20px 0px 10px 0px;
+}
+
+
+
+.boardlog__ul li.boardlog__contents__wide {
+   width: 100%;
+   text-align: left;
+   padding: 10px 0px 20px 0px;
+}
+
+.boardlog__container ul li:nth-last-child(-n+2),
+.boardlog__ul li:nth-last-child(-n+2) {
+   border-bottom: 0px;
+}
+
+.boardlog__container ul li.boardlog__contents input[type="text"] {
+   width: 300px;
+   height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   font-size: 16px;
+   padding: 0 12px;
+}
+
+.boardlog__date__calendar {
+   position: relative;
+   width: 300px;
+}
+
+.boardlog__date__calendar > div {
+   width: 100%;
+}
+
+.boardlog__date__calendar .boardlog__date__calendar__input {
+   width: 100%;
+   height: 42px;
+}
+
+
+.boardlog__date__calendar input[type="file"] {
+   width: 100%;
+   height: 42px;
+   border-radius: 0px;
+   padding: 0 10px 0 0px;
+   border-bottom: 1px solid #ddd;
+   font-size: 16px;
+}
+
+.boardlog__date__calendar span {
+   position: absolute;
+   top: 9px;
+   right: 10px;
+}
+
+.boardlog__container ul li.boardlog__contents div div.react-datepicker-wrapper {
+   position: relative;
+}
+
+.react-datepicker__input-container input {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 42px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+}
+
+.write_button_box div {  
+   margin: 30px 0px 120px 0px;    
+   text-align: center;  
+}
+
+.write_button_box button.board_write {    
+   width: 100px;
+   height: 36px;
+   line-height: 36px;
+   font-size: 16px;
+   background-color: #333333;
+   border: 1px solid #555;
+   border-radius: 5px;    
+   cursor: pointer;
+   color:#ffffff;
+   margin: 0 5px;
+}
+
+.write_button_box button.board_write:hover {
+   background-color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.write_button_box button.board_cancle,
+.write_button_box input.cancle {    
+   width: 100px;
+   height: 36px;
+   line-height: 36px;
+   font-size: 16px;
+   background-color: #ffffff;
+   border: 1px solid #555;
+   border-radius: 5px;    
+   cursor: pointer;
+   color:#555;
+   margin: 0 5px;
+}
+
+.write_button_box button.board_cancle:hover {
+   border: 1px solid var(--MainColor);
+   color:var(--MainColor);
+   transition: all 0.3s;
+}
+
+/* 모달창 시작 */
+.write__search__container {
+   width: 100%;
+   display: flex;
+}
+
+.write__search__btn {
+   background-color: #333;
+   color: #ddd;
+   font-size: 16px;
+   border-radius: 5px;
+   width: 130px;
+   height: 42px;
+   margin-left: 16px;
+   cursor: pointer;
+}
+
+.write__search {
+   padding: 8px 0;
+}
+
+.write__search input {
+   width: calc(100% - 142px);
+   height: 36px;
+   font-size: 16px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   padding: 0 10px;
+}
+
+.write__search__modalbtn {
+   background-color: #333;
+   color: #ddd;
+   font-size: 16px;
+   border-radius: 5px;
+   width: 130px;
+   height: 36px;
+   cursor: pointer;
+   margin-left: 12px;
+}
+
+.write__search2 {
+   padding: 8px 0;
+}
+
+.write__search2 input {
+   width: calc(100% - 112px);
+   height: 36px;
+   font-size: 16px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   padding: 0 10px;
+}
+
+.write__search__modalbtn2 {
+   color: #333;
+   font-weight: 500;
+   font-size: 16px;
+   border-radius: 5px;
+   display: inline-block;
+   text-align: left;
+   width: 100px;
+   height: 36px;
+   line-height: 36px;
+   margin-right: 12px;
+}
+
+
+.write__modalContainer {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 2;
+}
+
+.write__modalContent__box {
+   background-color: #ffffff;
+   width: 800px;
+   height: 600px;
+   padding: 30px;
+   border-radius: 10px;
+}
+
+.write__modal__search {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 2px solid #000;
+   padding-bottom: 12px;
+}
+
+.write__modal__search2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+button.material-icons {
+   font-size: 24px;
+   font-weight: 300;
+}
+
+.write__modal__search > li {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.write__modal__search > li > button {
+   border: 0;
+   background-color: transparent; /* 배경 투명 */
+   color: #333;
+   font-size: 24px;
+   cursor: pointer;
+}
+
+.write__modal__search > li > button:hover {
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.write__modal__search2 input{
+   width: 100%;
+   height: 36px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   font-size: 14px;
+}
+
+.write__modal__search2 li:first-child {
+   width: calc(100% - 100px);
+}
+
+.write__modal__search2 li:last-child {
+   width: 100px;
+   margin-left: 16px;
+}
+
+
+
+.write__table {
+   width: 100%;
+   height: 400px;
+   overflow: auto;
+   border-bottom: 1px solid #ddd;
+}
+
+.write__table table {
+   width: 100%;
+}
+
+.write__modalContent__box table thead {
+   position: sticky;
+   top: 0;
+}
+
+/* 테이블 헤더 */
+.write__modalContent__box table thead tr {
+   background-color: #f4f4f4; /* 헤더 배경색 */
+   font-weight: bold; /* 글자 두껍게 */
+   text-align: center;
+   border-bottom: 1px solid #ddd; /* 헤더 밑에 테두리 */
+}
+
+.write__modalContent__box table thead th {
+   padding: 10px 15px; /* 헤더 셀에 여백 추가 */
+   color: #333; /* 글자 색 */
+   font-size: 16px; /* 글자 크기 */
+}
+
+/* 테이블 본문 */
+.write__modalContent__box table tbody tr {
+   text-align: center;
+   transition: background-color 0.3s ease; /* 마우스 오버 시 부드럽게 색 변화 */
+}
+
+.write__modalContent__box table tbody tr:hover {
+   background-color: #f0f0f0; /* 마우스 오버 시 배경색 */
+}
+
+/* 테이블 본문의 각 셀 */
+.write__modalContent__box table tbody td {
+   padding: 10px 15px; /* 셀에 여백 추가 */
+   border-bottom: 1px solid #eee; /* 셀 밑에 경계선 추가 */
+   color: #555; /* 글자 색 */
+   font-size: 16px; /* 글자 크기 */
+}
+
+/* 테이블 첫 번째 열에 스타일 추가 */
+.write__modalContent__box table tbody tr td:first-child {
+   font-weight: bold; /* 첫 번째 열 글자 두껍게 */
+   color: #333; 
+}
+
+/* 테이블 마지막 셀에 여백 추가 */
+.write__modalContent__box table tbody tr td:last-child {
+   padding-right: 20px; /* 오른쪽 여백 */
+}
+
+.write__modalContent__box table tbody tr td {
+   height: 36px;
+   box-sizing: border-box;
+   vertical-align: middle;
+   padding: 10px;
+   text-align: center;
+}
+
+.write__modalContent__box table thead th:nth-child(1) {
+   width: 60px;
+}
+
+.write__modalContent__box table thead th:nth-child(2) {
+   width: 60px;
+}
+
+.write__modalContent__box table tbody td:nth-child(2) {
+   line-height: 24px;
+}
+
+.write__modalContent__box table thead th:nth-child(3) {
+   width: calc(100% - 420px);
+   word-break: keep-all;
+}
+
+.write__modalContent__box table tbody td:nth-child(3) {
+   text-align: left;
+}
+
+.write__modalContent__box table thead th:nth-child(4) {
+   width: 150px;
+}
+
+.write__modalContent__box table thead th:nth-child(5) {
+   width: 150px;
+}
+
+
+
+.star {
+	color: red;
+}
+
+.confirmbtn {
+   width: 100px;
+   height: 36px;
+   line-height: 36px;
+   font-size: 16px;
+   background-color: #333333;
+   border: 1px solid #555;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #ffffff;
+   margin: 16px 0px 0 0px;
+}
+/* 모달창 끝 */
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) {
+   .boardlog__container {
+      width: 90%;
+   }
+}
+
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .boardlog__container {
+      width: 90%;
+      margin: 60px auto 0 auto;
+   }
+}
+
+/* ========== 860px 기준 ========== */
+@media screen and (max-width: 860px) {
+   .write__modalContent__box {
+      width: 90%;
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .boardlog__container {
+      width: 90%;
+      margin: 60px auto 0 auto;
+      padding: 25px;
+   }
+
+   .boardlog__container ul,
+   .boardlog__ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   .boardlog__container ul li.boardlog__title:nth-child(odd),
+   .boardlog__ul li.boardlog__title:nth-child(odd) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      padding: 15px 0px 0px 0px;
+      border-bottom: 0;
+   }
+   
+   .boardlog__container ul li.boardlog__contents:nth-child(even),
+   .boardlog__ul li.boardlog__contents:nth-child(even) {
+      width: 100%;
+      text-align: left;
+      padding: 15px 0px;
+   }
+
+   .boardlog__container ul li.boardlog__contents input[type="text"] {
+      width: 100%;
+      height: 42px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      padding: 0 12px;
+   }
+
+   .boardlog__date__calendar {
+      width: 100%;
+   }
+
+   .boardlog__date__calendar .react-datepicker-wrapper {
+      width: 100%;
+   }
+
+   .write__search__btn {
+      background-color: #333;
+      color: #ddd;
+      font-size: 16px;
+      border-radius: 5px;
+      width: 100px;
+      height: 42px;
+      margin-left: 16px;
+      cursor: pointer;
+   }
+
+   .write__modalContent__box table thead th,
+   .write__modalContent__box table tbody td {
+      font-size: 14px;
+      vertical-align: middle;
+      line-height: 24px;
+   }
+
+   .write__modalContent__box table thead th:last-child {
+      display: none;
+   }
+
+   .write__modalContent__box table tbody td:last-child {
+      display: none;
+   }
+}
+
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+
+}

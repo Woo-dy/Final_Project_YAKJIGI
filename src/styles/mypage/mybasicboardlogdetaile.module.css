@@ -1,0 +1,374 @@
+.detaile__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 0px auto;
+   border: 1px solid #ddd;
+   padding: 40px;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+.detaile__data__box ul{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.detaile__data__box ul li {
+   border-bottom: 1px solid #ddd;
+   padding: 20px 0;
+}
+
+.detaile__table__box ul li:nth-child(odd) {
+   font-size: 16px;
+   width: 170px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+}
+
+.detaile__data__box ul li:nth-child(even),
+.detaile__table__box ul li:nth-child(even),
+.detaile__content__box ul li:nth-child(even),
+.detaile__img__box ul li:nth-child(even) {
+   width: calc(100% - 170px);
+   text-align: left;
+}
+
+
+.detaile__table__box ul,
+.detaile__content__box ul,
+.detaile__img__box ul,
+.detaile__btn__box ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+.detaile__data__box em {
+   font-size: 16px;
+}
+
+.detaile__table__title {
+   width: 170px;
+   font-size: 16px;
+   font-weight: 600;
+   padding-right: 60px;
+   color: var(--MainBlack);
+   text-align: left;
+}
+
+.detaile__content__title {
+   font-size: 20px;
+   font-weight: 400;
+   padding-right: 60px;
+}
+
+.detaile__img__title {
+   padding-right: 60px;
+}
+
+.detaile__img__title p {
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.detail__img {
+   width: 100%;
+}
+
+.detaile__img__box2 {
+   display: flex;          /* 자식 요소를 가로로 나열 */
+   overflow-x: auto;      /* 가로 스크롤 가능 */
+   white-space: nowrap;   /* 줄 바꿈 방지 */
+}
+
+.detaile__img__item {
+   min-width: 240px;      /* 각 아이템의 최소 너비 */
+   margin-right: 25px;    /* 아이템 간의 간격 */
+   background-color: #F0F0F0; /* 배경색 */
+   padding: 10px;         /* 패딩 */
+   border: 1px solid #ccc; /* 테두리 */
+}
+
+.detaile__list__btn, .detaile__ok__btn {
+   width: 130px;
+   height: 42px;
+   line-height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   background-color: var(--MainBlack);
+   color: var(--MainWhite);
+   font-size: 20px;
+   font-weight: 400;
+   cursor: pointer;
+}
+
+.detaile__list__btn:hover, .detaile__ok__btn:hover {
+   background-color: var(--MainColor);
+   color: var(--MainWhite);
+   transition: all 0.3s;
+}
+
+.detaile__delete__btn {
+   width: 130px;
+   height: 42px;
+   line-height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #aaa;
+   background-color: transparent;
+   color: #666;
+   font-size: 20px;
+   font-weight: 400;
+   margin-left: 20px;
+   cursor: pointer;
+}
+
+.detaile__delete__btn:hover {
+   border: 1px solid var(--MainColor);
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+/* 테이블 CSS */
+
+.status__table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+.status__table thead {
+   position: sticky;
+   top: 0px;
+   margin: 0;
+}
+
+.table {
+   margin-top: 12px;
+   overflow: auto;
+   max-height: 280px;
+   border-top: 2px solid #000;
+}
+
+.status__table thead tr {
+   background-color: #F8F8F8;
+   border-bottom: 1px solid #ddd;
+}
+
+
+.status__table thead tr th {
+   height: 50px;
+   vertical-align: middle;
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--MainBlack);
+   text-align: center;
+}
+
+.status__table tbody tr {
+   border-bottom: 1px solid #ddd;
+}
+
+.status__table tbody tr:hover {
+   background-color: #fdfdfd;
+}
+
+.status__table tbody tr td {
+   height: 50px;
+   vertical-align: middle;
+   font-size: 16px;
+   color: #333;
+   border-bottom: 1px solid #ddd;
+}
+
+.status__table tbody tr td:nth-child(1) {
+   width: 200px;
+   text-align: center;
+}
+
+.status__table tbody tr td:nth-child(2) {
+   width: 100px;
+   padding: 0px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.status__table tbody tr td:nth-child(3) {
+   width: calc(100% - 300px);
+   padding: 0 0px 0 10px;
+   box-sizing: border-box;
+   line-height: 26px;
+   word-break: keep-all;
+}
+
+/* 반응형 */
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) { 
+   .detaile__container  {
+      width: 90%;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   /* 공통 상단 문구 */
+   .container__box {
+      padding-top: 120px;
+      margin: 0 auto 120px auto;
+   }
+   
+}
+
+.detaile__list__btn, .detaile__ok__btn {
+   font-size: 18px;
+}
+
+.detaile__delete__btn {
+   font-size: 18px;
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .detaile__container {
+      padding: 10px 30px;
+   }
+
+   .input__list__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+   }
+   
+   .detaile__list__btn, .detaile__ok__btn {
+      width: 100px;
+      font-size: 16px;
+   }
+      
+   .detaile__delete__btn {
+      width: 100px;
+      font-size: 16px;
+   }
+
+   .detaile__table__box ul li:nth-child(odd) {
+      font-size: 18px;
+      width: 100%;
+   }
+
+   .detaile__data__box ul li:nth-child(even),
+   .detaile__table__box ul li:nth-child(even),
+   .detaile__content__box ul li:nth-child(even),
+   .detaile__img__box ul li:nth-child(even) {
+      width: 100%;
+      text-align: left;
+   }
+
+   .detaile__data__box ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   .detaile__data__box ul li {
+      width: 100%;
+   }
+
+   
+   .status__table tbody tr td:nth-child(1) {
+      width: 140px;
+      text-align: center;
+   }
+
+   .status__table tbody tr td:nth-child(2) {
+      width: 100px;
+      box-sizing: border-box;
+   }
+
+   .status__table tbody tr td:nth-child(3) {
+      width: calc(100% - 240px);
+      padding: 0 0px 0 10px;
+      box-sizing: border-box;
+      line-height: 26px;
+      word-break: keep-all;
+   }
+
+   .status__table tbody tr td {
+      font-size: 14px;
+   }
+
+   .detaile__table__box ul li:nth-child(odd) {
+      font-size: 16px;
+      width: 100%;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+   }
+   
+   .detaile__table__title {
+      font-size: 16px;
+      padding-right: 60px;
+      text-align: left;
+   }
+   
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+
+   .detaile__list__btn, .detaile__ok__btn {
+      width: 70px;
+      font-size: 14px;
+   }
+   
+   .detaile__delete__btn {
+      width: 70px;
+      font-size: 14px;
+   }
+
+   .detaile__table__box ul,
+   .detaile__data__box ul,
+   .detaile__content__box ul,
+   .detaile__img__box ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .detaile__data__box ul li:nth-child(even),
+   .detaile__table__box ul li:nth-child(even),
+   .detaile__content__box ul li:nth-child(even),
+   .detaile__img__box ul li:nth-child(even) {
+      width: 100%;
+      text-align: left;
+      padding: 0 auto;
+   }
+
+   .detaile__data__box ul li, 
+   .detaile__table__box ul li, 
+   .detaile__content__box ul li {
+      padding: 20px 0;
+   }
+
+   .detaile__table__box table thead th, 
+   .detaile__table__box table tbody td {
+      font-size: 12px;
+      padding: 5px;
+      width: 30%;
+   }
+
+   .status_table tbody tr td:nth-child(1) {
+      width: 130px;
+   }
+   
+   .status_table tbody tr td:nth-child(2) {
+      width: calc(100% - 600px);
+      text-align: center;
+   }
+   
+   .status_table tbody tr td:nth-child(3) {
+      width: 300px;
+   }
+
+
+}

@@ -1,0 +1,461 @@
+.edit__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 0 auto;
+   border: 1px solid #ddd;
+   padding: 40px;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+.edit__container ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.edit__data__box ul li {
+   border-bottom: 1px solid #ddd;
+   padding: 20px 0;
+}
+
+.edit__data__box ul li:nth-child(odd) {
+   font-size: 16px;
+   width: 170px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+}
+
+.edit__data__box ul li:nth-child(even) {
+   width: calc(100% - 170px);
+   text-align: left;
+}
+
+
+.edit__table__box ul,
+.edit__content__box ul,
+.edit__img__box ul,
+.edit__btn__box ul,
+.edit__data__box ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+.edit__data__box em {
+   font-size: 16px;
+}
+
+.edit__table__title {
+   width: 170px;
+   font-size: 16px;
+   font-weight: 600;
+   padding-right: 60px;
+   color: var(--MainBlack);
+   text-align: left;
+   box-sizing: border-box;
+}
+
+.edit__content__title {
+   font-size: 20px;
+   font-weight: 400;
+   padding-right: 60px;
+}
+
+.edit__img__title {
+   font-size: 20px;
+   font-weight: 400;
+   padding-right: 60px;
+}
+
+.edit__img {
+   width: 100%;
+}
+
+.edit__img__box2 {
+   display: flex;          /* 자식 요소를 가로로 나열 */
+   overflow-x: auto;      /* 가로 스크롤 가능 */
+   white-space: nowrap;   /* 줄 바꿈 방지 */
+   padding-top: 15px;
+}
+
+.edit__img__item {
+   min-width: 240px;      
+   margin-right: 25px;    
+   background-color: #F0F0F0; 
+   padding: 10px;         
+   border: 1px solid #ccc; 
+   position: relative;
+   overflow: visible; /* 버튼이 경계를 넘어가도 보이도록 설정 */
+}
+
+/* input type=file style */
+.filebox .uploadName {
+   width: 500px; /* 가로 크기 */
+   display: inline-block;
+   height: 42px;
+   font-size: 16px;
+   padding: 0 15px;
+   vertical-align: middle;
+   border: 1px solid #dddddd;
+   color: #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.filebox {
+   display: flex;
+   margin: 20px 0 0 0;
+}
+
+.filebox label {
+   width: 130px;
+   height: 42px;
+   border-radius: 5px;
+   display: inline-block;
+   padding: 0px 20px;
+   color: #fff;
+   vertical-align: middle;
+   background-color: #999999;
+   cursor: pointer;
+   height: 40px;
+   line-height: 40px;
+   margin-left: 16px;
+   box-sizing: border-box;
+   text-align: center;
+   font-size: 16px;
+}
+
+/* 기존 디자인 삭제 */
+.filebox input[type="file"] {
+   position: absolute;
+   width: 0;
+   height: 0;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+}
+
+.edit__img__btn {
+   border-radius: 50%;
+   position: absolute;
+   background-color: #000;
+   color: #ffff;
+   width: 30px;
+   height: 30px;
+   top: -15px; /* 경계 밖으로 위치 */
+   right: -15px; /* 경계 밖으로 위치 */
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.edit_btn__box ul {
+   display: flex;
+   justify-content: center;
+}
+
+.edit__ok__btn {
+   width: 130px;
+   height: 42px;
+   line-height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   background-color: var(--MainBlack);
+   color: var(--MainWhite);
+   font-size: 20px;
+   font-weight: 400;
+   cursor: pointer;
+}
+
+.edit__ok__btn:hover {
+   background-color: var(--MainColor);
+   color: var(--MainWhite);
+   transition: all 0.3s;
+}
+
+.edit__no__btn {
+   width: 130px;
+   height: 42px;
+   line-height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #aaa;
+   background-color: transparent;
+   color: #666;
+   font-size: 20px;
+   font-weight: 400;
+   margin-left: 20px;
+   cursor: pointer;
+}
+
+.edit__no__btn:hover {
+   border: 1px solid var(--MainColor);
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+
+
+.edit_btn__box {
+   margin: 20px 0 120px;
+}
+
+/* 테이블 CSS */
+
+.statusupdate__table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+.statusupdate__table thead {
+   position: sticky;
+   top: 0px;
+   margin: 0;
+}
+
+.table {
+   margin-top: 20px;
+   overflow: auto;
+   max-height: 280px;
+   border-top: 2px solid #000;
+}
+
+.statusupdate__table thead tr {
+   background-color: #F8F8F8;
+   border-bottom: 1px solid #ddd;
+}
+
+
+.statusupdate__table thead tr th {
+   height: 50px;
+   vertical-align: middle;
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--MainBlack);
+   text-align: center;
+}
+
+.statusupdate__table tbody tr {
+   border-bottom: 1px solid #ddd;
+}
+
+.statusupdate__table tbody tr:hover {
+   background-color: #fdfdfd;
+}
+
+.statusupdate__table tbody tr td {
+   height: 50px;
+   vertical-align: middle;
+   font-size: 16px;
+   color: #333;
+   border-bottom: 1px solid #ddd;
+   padding: 0 10px;
+}
+
+.statusupdate__table thead tr th:nth-child(1) {
+   width: 200px;
+   text-align: center;
+   padding: 10px;
+   line-height: 26px;
+}
+
+.statusupdate__table thead tr th:nth-child(2) {
+   width: 100px;
+   padding: 0px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.statusupdate__table thead tr th:nth-child(3) {
+   width: calc(100% - 400px);
+   padding: 0 0px 0 10px;
+   box-sizing: border-box;
+   line-height: 26px;
+   word-break: keep-all;
+}
+
+.statusupdate__table thead tr th:nth-child(4) {
+   width: 100px;
+   padding: 0 0px 0 0px;
+   box-sizing: border-box;
+   line-height: 26px;
+   word-break: keep-all;
+}
+
+.statusupdate__table thead tr th:nth-child(4) span {
+   width: 60px;
+}
+
+.statusupdate__table tbody tr td button {
+   border-radius: 50%;
+   background-color: #000;
+   color: #ffff;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
+
+/* 반응형 */
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) { 
+   .edit__container  {
+      width: 90%;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+
+}
+
+.edit__ok__btn {
+   font-size: 18px;
+}
+
+.edit__no__btn {
+   font-size: 18px;
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .edit__container {
+      padding: 10px 30px;
+   }
+
+   .edit__ok__btn {
+      width: 100px;
+      font-size: 16px;
+   }
+         
+   .edit__no__btn {
+      width: 100px;
+      font-size: 16px;
+   }
+
+   .edit__data__box ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+   }
+
+   .edit__data__box ul li:nth-child(odd) {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      border-bottom: 0;
+   }
+
+   .edit__data__box ul li:nth-child(even),
+   .edit__table__box ul li:nth-child(even),
+   .edit__content__box ul li:nth-child(even),
+   .edit__img__box ul li:nth-child(even) {
+      width: 100%;
+   }
+
+   .statusupdate__table tbody tr td {
+      font-size: 14px;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .edit__ok__btn {
+      width: 70px;
+      font-size: 14px;
+   }
+
+   .edit__no__btn {
+      width: 70px;
+      font-size: 14px;
+   }
+
+   .edit__table__box ul,
+   .edit__data__box ul,
+   .edit__content__box ul,
+   .edit__img__box ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .edit__data__box ul li:nth-child(even),
+   .edit__table__box ul li:nth-child(even),
+   .edit__content__box ul li:nth-child(even),
+   .edit__img__box ul li:nth-child(even) {
+      width: calc(100%);
+      text-align: center;
+      padding: 0 auto;
+   }
+
+   .edit__data__box ul li, 
+   .edit__table__box ul li, 
+   .edit__content__box ul li {
+      padding: 20px 0;
+      border-bottom: none;
+   }
+
+   .edit__table__box table thead th, .edit__table__box table tbody td {
+      font-size: 12px;
+      padding: 5px;
+      width: 30%;
+   }
+
+   .status_table tbody tr td:nth-child(1) {
+      width: 130px;
+   }
+
+   .status_table tbody tr td:nth-child(2) {
+      width: calc(100% - 600px);
+      text-align: center;
+   }
+
+   .status_table tbody tr td:nth-child(3) {
+      width: 300px;
+   }
+
+   .uploadName:first-child {
+      width: calc(100% - 90px);
+   }
+
+   .uploadName div {
+      margin-left: 16px;
+      width: 90px;
+   }
+
+   .filebox .uploadName {
+      font-size: 14px;
+   }
+
+   .filebox > div {
+      align-items: center;
+   }
+
+   .filebox label {
+      width: 100px;
+      height: 42px;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 0px 20px;
+      color: #fff;
+      vertical-align: middle;
+      background-color: #999999;
+      cursor: pointer;
+      height: 40px;
+      line-height: 40px;
+      margin-left: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 16px;
+   }
+
+
+}

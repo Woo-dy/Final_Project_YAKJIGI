@@ -1,0 +1,42 @@
+.my__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 120px;
+}
+
+.my__profile__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+
+
+/* ========== 1380px 기준 ========== */
+@media screen and (max-width: 1380px) { 
+   .my__container {
+      width: 90%;
+   }
+
+   .my__profile__container {
+      width: 90%;
+   }
+}
+
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) { 
+   
+}
+
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) { 
+   
+}
+
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) { 
+   
+}

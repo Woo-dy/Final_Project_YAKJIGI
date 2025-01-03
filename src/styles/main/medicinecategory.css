@@ -1,0 +1,706 @@
+/* header */
+
+* {
+	vertical-align: top;
+   list-style: none;
+}
+
+html, body {
+	width: 100%;
+}
+
+.medicine__wrap {
+   position: relative;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+}
+
+.servicewrap {
+   position: relative;
+}
+
+.circlewrap {
+	position: relative;
+	z-index: 3;
+}
+
+.quick-menu {
+	position: fixed;
+	z-index: 4;
+}
+
+.medicine__wrap .servicewrap ul.topMent.chgMent li {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 100px 0;
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+}
+
+.medicine__wrap .servicewrap ul.topMent.chgMent li.active {
+   display: block;
+}
+
+
+.circle li a {
+   display: block;
+   text-align: center;
+   border-radius: 50%;
+   width: 120px;
+   height: 120px;
+   line-height: 100px;
+   color: #333;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.circle li a.on {
+   background: var(--MainColor);
+   color: #fff;
+   font-weight: 500;
+}
+
+.medicine__wrap .servicewrap {
+	height: 749px;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	background: #000;
+}
+
+.medicine__wrap .servicewrap p.title {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'oswald', sans-serif;
+	font-size: 50px;
+	font-weight: 600;
+	margin-top: -20px;
+	color: #fff;
+}
+.medicine__wrap .servicewrap p.title span{
+	display: inline-block;
+	padding-top: 10px;
+}
+.medicine__wrap .servicewrap p.txt {
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: -0.05em;
+	color: rgba(255,255,255,0.7);
+	font-weight: 300;
+}
+
+.medicine__wrap .servicewrap p.txt span {
+	font-size: 32px;
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 400;
+	opacity: 1;
+	color: #fff;
+}
+
+.medicine__wrap .servicewrap p.txt span::before {
+	width: 93px;
+	border-top: 1px solid #ffffff;
+	content: "";
+	display: block;
+	margin: 25px auto 25px;
+}
+
+.medicine__wrap .servicewrap ul.topMent.chgMent li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 100px 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-size: cover;
+}
+.medicine__wrap .servicewrap ul.topMent.chgMent li:nth-child(1) {
+	background: url("../../../public/images/main/medicinecategory01.jpg") no-repeat center center;
+}
+.medicine__wrap .servicewrap ul.topMent.chgMent li:nth-child(2) {
+	background: url("../../../public/images/main/medicinecategory02.jpg") no-repeat center center;
+}
+.medicine__wrap .servicewrap ul.topMent.chgMent li:nth-child(3) {
+	background: url("../../../public/images/main/medicinecategory03.jpg") no-repeat center center;
+}
+.medicine__wrap .servicewrap ul.topMent.chgMent li:nth-child(4) {
+	background: url("../../../public/images/main/medicinecategory04.jpg") no-repeat center center;
+}
+.medicine__wrap .servicewrap ul.topMent.chgMent li:nth-child(5) {
+	background: url("../../../public/images/main/medicinecategory05.jpg") no-repeat center center;
+}
+
+
+.topMent li {
+	display: none;
+}
+
+.topMent li.care {
+	display: block;
+}
+
+.medicine__wrap .servicewrap .circlewrap {
+	position: absolute;
+	bottom: 160px;
+	left: 50%;
+	width: 1000px;
+	height: 310px;
+	text-align: center;
+	margin-left: -500px;
+	z-index: 1;
+}
+
+.circle li {
+	width: 20%;
+}
+
+.circle li a {
+	display: inline-block;
+	width: 186px;
+	height: 186px; /* 높이를 자동으로 조정 */
+	word-break: keep-all;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+	position: absolute;
+	top: 0;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: -0.075em;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 36px;
+}
+
+.circle li a.on {
+   background: var(--MainColor);
+	width: 225px;
+	height: 225px;
+	line-height: 225px;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 36px;
+}
+
+
+
+.circle li:nth-child(1) a {
+   left: 0; /* 왼쪽 끝 */
+}
+
+.circle li:nth-child(2) a {
+   left: calc(20% - 15px); /* 20% 위치에서 약간 왼쪽으로 이동 */
+	top: 200px;
+}
+
+.circle li:nth-child(3) a {
+   left: calc(40% - 15px); /* 40% 위치에서 약간 왼쪽으로 이동 */
+}
+
+.circle li:nth-child(4) a {
+   left: calc(60% - 15px); /* 60% 위치에서 약간 왼쪽으로 이동 */
+	top: 200px;
+}
+
+.circle li:nth-child(5) a {
+   left: calc(80% - 15px); /* 80% 위치에서 약간 왼쪽으로 이동 */
+}
+
+.circle li:nth-child(1) a:after, .circle li:nth-child(3) a:before, .circle li:nth-child(3) a:after, .circle li:nth-child(5) a:before, .circle li:nth-child(5) a:after {
+	content: '';
+	display: block;
+	width: 80px;
+	height: 43px;
+	position: absolute;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+
+/* ========== 1320px 기준 ========== */
+@media screen and (max-width: 1320px) {
+	.medicine__wrap {
+		overflow: auto;
+	}
+
+	.medicine__wrap .servicewrap {
+		height: 750px;
+	}
+
+   .medicine__wrap .servicewrap p.title {
+      font-size: 50px;
+      line-height: 52px;
+      margin-bottom: 16px;
+		word-break: keep-all;
+   }
+
+
+	.medicine__wrap .servicewrap .circlewrap {
+		position: absolute;
+		bottom: 80px;
+      left: 50%;
+      width: 90%;
+      height: 390px;
+		text-align: center;
+		margin-left: 0;
+      margin: 0 auto;
+      transform: translate(-50%, -0%);
+		z-index: 1;
+	}
+
+	.medicine__wrap .servicewrap p.txt span {
+		font-size: 20px;
+		display: block;
+		margin-bottom: 5px;
+		font-weight: 400;
+		opacity: 1;
+		color: #fff;
+	}
+
+	.circle {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.circle li {
+		width: 33.3%;
+		display: flex ;
+		justify-content: center;
+	}
+
+	.circle li a {
+		display: inline-block;
+		width: 186px;
+		height: 186px; /* 높이를 자동으로 조정 */
+		word-break: keep-all;
+		border: 2px solid #fff;
+		border-radius: 100%;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+		position: static;
+		top: 0;
+		transition: all .3s ease;
+		-webkit-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		color: #fff;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: -0.075em;
+		font-weight: 300;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 36px;
+	}
+	
+	.circle li a.on {
+		background: var(--MainColor);
+		width: 240px;
+		height: 240px; /* 높이를 자동으로 조정 */
+		line-height: 240px;
+		z-index: 999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 36px;
+	}
+
+	.circle li:nth-child(2) a {
+		top: 200px;
+	}
+
+	.circle li:nth-child(4) a {
+		top: 200px;
+	}
+
+}
+
+/* ========== 1200px 기준 ========== */
+@media screen and (max-width: 1200px) {
+	.medicine__wrap {
+		overflow: auto;
+	}
+
+	.medicine__wrap .servicewrap {
+		height: 750px;
+	}
+
+   .medicine__wrap .servicewrap p.title {
+      font-size: 50px;
+      line-height: 52px;
+      margin-bottom: 16px;
+		word-break: keep-all;
+   }
+
+
+	.medicine__wrap .servicewrap .circlewrap {
+		position: absolute;
+		bottom: 80px;
+      left: 50%;
+      width: 90%;
+      height: 390px;
+		text-align: center;
+		margin-left: 0;
+      margin: 0 auto;
+      transform: translate(-50%, -0%);
+		z-index: 1;
+	}
+
+	.medicine__wrap .servicewrap p.txt span {
+		font-size: 20px;
+		display: block;
+		margin-bottom: 5px;
+		font-weight: 400;
+		opacity: 1;
+		color: #fff;
+	}
+
+	.circle {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.circle li {
+		width: 33.3%;
+		display: flex ;
+		justify-content: center;
+	}
+
+	.circle li a {
+		display: inline-block;
+		width: 186px;
+		height: 186px; /* 높이를 자동으로 조정 */
+		word-break: keep-all;
+		border: 2px solid #fff;
+		border-radius: 100%;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+		position: static;
+		top: 0;
+		transition: all .3s ease;
+		-webkit-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		color: #fff;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: -0.075em;
+		font-weight: 300;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 36px;
+	}
+	
+	.circle li a.on {
+		background: var(--MainColor);
+		width: 220px;
+		height: 220px; /* 높이를 자동으로 조정 */
+		line-height: 220px;
+		z-index: 999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 36px;
+	}
+
+	.circle li:nth-child(2) a {
+		top: 200px;
+	}
+
+	.circle li:nth-child(4) a {
+		top: 200px;
+	}
+
+}
+
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+	.medicine__wrap {
+		overflow: auto;
+	}
+
+
+	.medicine__wrap .servicewrap {
+		height: 750px;
+	}
+
+   .medicine__wrap .servicewrap p.title {
+      font-size: 40px;
+      line-height: 46px;
+      margin-bottom: 16px;
+		word-break: keep-all;
+   }
+
+
+	.medicine__wrap .servicewrap .circlewrap {
+		position: absolute;
+		bottom: 80px;
+      left: 50%;
+      width: 90%;
+      height: 390px;
+		text-align: center;
+		margin-left: 0;
+      margin: 0 auto;
+      transform: translate(-50%, -0%);
+		z-index: 1;
+	}
+
+	.circle {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.circle li {
+		width: 33.3%;
+		display: flex ;
+		justify-content: center;
+	}
+
+	.circle li a {
+		display: inline-block;
+		width: 186px;
+		height: 186px; /* 높이를 자동으로 조정 */
+		word-break: keep-all;
+		border: 2px solid #fff;
+		border-radius: 100%;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+		position: static;
+		top: 0;
+		transition: all .3s ease;
+		-webkit-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		color: #fff;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: -0.075em;
+		font-weight: 300;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 36px;
+	}
+	
+	.circle li a.on {
+		background: var(--MainColor);
+		width: 186px;
+		height: 186px; /* 높이를 자동으로 조정 */
+		line-height: 186px;
+		z-index: 999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 36px;
+	}
+
+	.circle li:nth-child(2) a {
+		top: 200px;
+	}
+
+	.circle li:nth-child(4) a {
+		top: 200px;
+	}
+
+}
+
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+	.medicine__wrap {
+		overflow: auto;
+	}
+
+
+	.medicine__wrap .servicewrap {
+		height: 600px;
+	}
+
+   .medicine__wrap .servicewrap p.title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 16px;
+		word-break: keep-all;
+   }
+
+   .medicine__wrap .servicewrap p.txt span {
+      font-size: 18px;
+		line-height: 28px;
+      margin-bottom: 24px;
+		word-break: keep-all;
+   }
+
+	.medicine__wrap .servicewrap .circlewrap {
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		width: 100%;
+		height: 260px;
+		text-align: center;
+		margin-left: 0;
+		z-index: 1;
+	}
+
+	.medicine__wrap .servicewrap ul.topMent.chgMent li {
+		position: static;
+		top: 0;
+		left: 0;
+		padding: 80px 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		background-size: cover;
+	}
+
+	.servicewrap div.in {
+		height: 100%;
+	}
+
+	.servicewrap div ul.topMent  {
+		height: 100%;
+	}
+
+	.circle li {
+		width: 100%;
+	}
+
+	.circle li a {
+		display: inline-block;
+		width: 60%;
+		height: 40px;
+		line-height: 40px;
+		white-space: ellipsis;
+		word-break: keep-all;
+		border: 1px solid #fff;
+		border-radius: 20px;
+		margin-bottom: 12px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+		position: static;
+		top: 0;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		letter-spacing: -0.075em;
+		font-weight: 300;
+		box-sizing: border-box;
+	}
+
+	.circle li a.on {
+		background: var(--MainColor);
+		width: 60%;
+		height: 40px;
+		line-height: 40px;
+		z-index: 999;
+		margin: 0 auto 12px;
+	}
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+	.medicine__wrap {
+		overflow: auto;
+	}
+
+	.medicine__wrap .servicewrap {
+		height: 600px;
+	}
+
+   .medicine__wrap .servicewrap p.title {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 16px;
+		word-break: keep-all;
+   }
+
+   .medicine__wrap .servicewrap p.txt span {
+      font-size: 18px;
+		line-height: 28px;
+      margin-bottom: 24px;
+		word-break: keep-all;
+   }
+
+	.medicine__wrap .servicewrap .circlewrap {
+		position: absolute;
+		bottom: 60px;
+		left: 50%;
+		width: 100%;
+		height: 310px;
+		text-align: center;
+		margin-left: 0;
+		z-index: 1;
+	}
+
+	.medicine__wrap .servicewrap ul.topMent.chgMent li {
+		position: static;
+		top: 0;
+		left: 0;
+		padding: 80px 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		background-size: cover;
+	}
+
+	.servicewrap div.in {
+		height: 100%;
+	}
+
+	.servicewrap div ul.topMent  {
+		height: 100%;
+	}
+
+	.circle li {
+		width: 100%;
+	}
+
+	.circle li a {
+		display: inline-block;
+		width: 90%;
+		height: 40px;
+		line-height: 40px;
+		white-space: ellipsis;
+		word-break: keep-all;
+		border: 1px solid #fff;
+		border-radius: 20px;
+		margin-bottom: 12px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+		position: static;
+		top: 0;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		letter-spacing: -0.075em;
+		font-weight: 300;
+		box-sizing: border-box;
+	}
+
+	.circle li a.on {
+		background: var(--MainColor);
+		width: 90%;
+		height: 40px;
+		line-height: 40px;
+		z-index: 999;
+	}
+}

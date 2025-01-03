@@ -1,0 +1,228 @@
+.sub101__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   background-color: #ddd;
+   padding: 120px 0;
+}
+
+.sub101__ttitle {
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 54px;
+   margin-top: 12px;
+   margin-bottom: 12px;
+   color: var(--FontMainColor);
+}
+
+.sub101__ccontent1 {
+   font-size: 20px;
+   color: var(--FontSubColor);
+   line-height: 36px;
+   margin-bottom: 60px;
+}
+
+.sub101__ccontent {
+   font-size: 20px;
+   color: var(--FontSubColor);
+   line-height: 36px;
+   word-break: keep-all; 
+   text-align: left;
+}
+
+.sub101__container2 {
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin: 0 auto;
+}
+
+.sub101__container2 ul li {
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin: 0 auto;
+   min-height: 450px;
+   display: flex;
+   align-items: center;
+}
+
+.sub101__container2 ul li div {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.sub101__container2 ul li:nth-child(1) {
+   background-image: url("/public/images/sub101/101_1.jpg");
+   background-position: center center;
+}
+
+.sub101__container2 ul li:nth-child(2) {
+   background-image: url("/public/images/sub101/101_2.jpg");
+   background-position: center center;
+}
+
+.sub101__container2 ul li:nth-child(3) {
+   background-image: url("/public/images/sub101/101_3.jpg");
+   background-position: center center;
+}
+
+.sub101__container2 ul li:nth-child(4) {
+   background-image: url("/public/images/sub101/101_4.jpg");
+   background-position: center center;
+}
+
+.sub101__text {
+   display: flex;
+   justify-content: space-between;
+}
+
+.sub101__title {
+   font-size: 32px;
+   font-weight: 600;
+   line-height: 42px;
+   color: var(--FontMainColor);
+   width: 250px;
+   text-align: left;
+   word-break: keep-all;
+}
+
+.sub101__title span {
+   display: block;
+   margin-bottom: 6px;
+   font-size: 26px;
+}
+
+.sub101__content {
+   width: calc(100% - 250px);
+   text-align: left;
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   word-break: keep-all; 
+   box-sizing: border-box;
+   padding: 48px 0 0 50px;
+   /* 띄어쓰기 기준으로 자동으로 글이 내려감 */
+}
+
+/* 반응형 디자인 */
+
+@media screen and (max-width: 1380px) {
+   .sub101__container {
+      width: 90%;
+      padding: 120px 0;
+   }
+
+   .sub101__container2 ul li div {
+      width: 90%;
+   }
+}
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .sub101__ttitle {
+      font-size: 36px;
+      line-height: 50px;
+   }
+
+   .sub101__ccontent1 {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .sub101__title {
+      font-size: 28px;
+      line-height: 38px;
+   }
+
+   .sub101__ccontent {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .sub101__content {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .sub101__container2 ul li {
+      background-size: cover;
+   }
+}
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .sub101__container {
+      padding: 100px 0;
+   }
+
+   .sub101__ttitle {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 2px;
+   }
+
+   .sub101__ccontent1 {
+      font-size: 18px;
+      line-height: 34px;
+   }
+
+   .sub101__title {
+      font-size: 22px;
+      line-height: 34px;
+      margin-bottom: 12px;
+   }
+
+   .sub101__ccontent {
+      font-size: 16px;
+      line-height: 34px;
+   }
+
+   .sub101__text {
+      flex-direction: column;
+   }
+
+   .sub101__content {
+      width: 100%;
+      font-size: 16px;
+      padding: 0px 0 0 0px;
+   }
+
+   .sub101__container2 ul li {
+      padding: 80px 0;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .sub101__container {
+   padding: 80px 0;
+   }
+   .sub101__ttitle {
+   font-size: 26px;
+   line-height: 38px;
+   margin-bottom: 0px;
+   }
+
+   .sub101__ccontent1 {
+      font-size: 16px;
+      line-height: 28px;
+   }
+
+   .sub101__title {
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+   .sub101__content {
+      font-size: 14px;
+      line-height: 26px;
+      color: var(--FontSubColor);
+      word-break: keep-all;
+   }
+
+   .sub101__ccontent {
+      font-size: 14px;
+      line-height: 26px;
+   }
+}
+

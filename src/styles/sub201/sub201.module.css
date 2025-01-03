@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+.sub201_container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.Sub201 {
+   text-align: center;
+   padding: 40px 0px;
+}
+
+.text_section {
+   justify-content: center;
+   align-items: center;
+   margin: 0px auto;
+}
+
+.main_title {
+   font-size: 40px;
+   line-height: 54px;
+   font-weight: 600;
+   margin-top: 120px;
+   margin-bottom: 12px;
+   color: var(--FontMainColor);
+   align-items: center;
+}
+
+.sub_title {
+   font-size: 20px;
+   line-height: 36px;
+   color: var(--FontSubColor);
+   align-items: center;
+}
+
+.search_section {
+   margin: 0px auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #F7F7F7;
+   margin-top: 50px;
+}
+.search_stock{
+   max-width: 1320px;
+   text-align: left;
+   width: 100%; /* 조절 */
+}
+.search_text{
+   margin-top: 50px;
+   text-align: left; /* 조절 */
+}
+
+.search_bar {
+   gap: 10px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 100%;
+   height: 80px;
+   align-items: center; /* 조절 */
+   justify-content: center; /* 조절 */
+}
+
+.search_bar input {
+   padding: 10px 15px;
+   width: 100%; /* 조절 */
+   max-width: 1320px;
+   height: 50px;
+   border: 1px solid white;
+   border-radius: 25px;
+   box-sizing: border-box; /* 조절 */
+}
+
+.search_bar button {
+   padding: 10px 15px;
+   border: none;
+   background-color: #333;
+   color: white;
+   cursor: pointer;
+   border-radius: 25px;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+}
+
+.search_div{
+   position: relative;
+   width: 100%; /* 조절 */
+   max-width: 1320px; /* 조절 */
+}
+
+.search_letter_filter {
+   width: 100%; 
+   max-width: 1320px; 
+}
+
+.search_letter_filter > ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.search_letter_filter > ul > li {
+   width: 80px;
+}
+
+/* 버튼 기본 스타일 */
+.search_letter_filter button {
+   border: 1px solid white;
+   background: white;
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 16px;
+   color: black;
+}
+
+
+
+/* 클릭된 버튼 (active 상태) */
+.search_letter_filter button.active {
+   background-color: #4553AD;
+   color: white;
+   border: 1px solid #4553AD;
+}
+
+
+.result_section {
+   margin: 0px auto 120px;
+   width: 100%; 
+   max-width: 1320px; 
+}
+
+.result_section .result_text {
+   margin: 60px auto;
+   font-size: 28px;
+   color: var(--FontSubColor);
+}
+
+.result_section .result_text span {
+   color: var(--MainColor);
+   font-weight: 500;
+}
+
+.results_grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px; /* 아이템 간 간격 추가 */
+   justify-items: center; /* 추가: grid 아이템 가운데 정렬 */ 
+}
+
+.result_item {
+   text-align: center;
+}
+
+.result_item > img {
+   width: 100%; /* 이미지 너비 100%로 조정 */
+   height: auto; /* 높이 자동 조정 */
+   object-fit: contain; /* contain으로 변경하여 이미지 비율 유지 */
+   margin-bottom: 20px;
+}
+
+.result_item > p.sub201__product__name {
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--FontMainColor);
+}
+
+.result_item > p.sub201__volume {
+   margin-top: 6px;
+   margin-bottom: 20px;
+   color: var(--FontSubColor);
+   line-height: 30px;
+}
+
+.pagination {
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+   margin-top: 20px;
+}
+
+.pagination button {
+   padding: 5px 10px;
+   border: 1px solid #ccc;
+   background: white;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+/* paging_number */
+.paging_num_ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 60px;
+}
+
+.paging_num_ul li {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 1px solid #ddd;
+   color: #555;
+   margin: 0 5px;
+   cursor: pointer;
+}
+
+.paging_num_ul li.prev,
+.paging_num_ul li.next {
+   padding: 0;
+}
+
+.paging_num_ul li:hover {
+   border: 1px solid #111;
+   color: #111;
+}
+
+.paging_num_ul li.active {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: 1px solid #111;
+}
+
+/* paging_number */
+
+
+/* media query */
+
+/* ========== 1380px 기준 ========== */
+
+@media screen and (max-width: 1380px) {
+   .text_section {
+      width: 90%;
+      padding: 120px 0;
+      align-items: center;
+   }
+
+   .search_stock {
+      width: 90%;
+   }
+
+   .results_grid {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .result_section {
+      width: 90%;
+      padding: 120px 0;
+   }
+
+   .search_letter_filter > ul {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+   }
+
+   .search_letter_filter > ul > li {
+      width: 14.28571428571429%;
+   }
+
+   .search_letter_filter > ul > li:nth-child(n+7) {
+      margin-top: 0px;
+   }
+
+   .search_letter_filter > ul > li:nth-child(n+8) {
+      margin-top: 20px;
+   }
+} 
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .results_grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .result_item {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 10px;
+   }
+
+   .search_letter_filter > ul > li {
+      width: 14.28571428571429%;
+   }
+
+   .search_letter_filter > ul > li:nth-child(n+7) {
+      margin-top: 0px;
+   }
+
+   .search_letter_filter > ul > li:nth-child(n+8) {
+      margin-top: 20px;
+   }
+
+   .search_letter_filter button {
+      width: 75px;
+      height: 75px;
+   }
+}
+
+   /* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .search_bar button {
+      right: 0px;
+   }
+
+   .result_item {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 10px;
+   }
+
+   .results_grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .search_letter_filter > ul > li {
+      width: 20%;
+   }
+
+   .search_letter_filter > ul > li:nth-child(n+6) {
+      margin-top: 20px;
+   }
+
+   .search_letter_filter button {
+      width: 65px;
+      height: 65px;
+   }
+
+   
+
+   .result_item > p.sub201__volume {
+      margin-bottom: 0px;
+   }
+}
+
+   /* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .search_bar button {
+      right: 0px;
+   }
+
+   .result_item img {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 10px;
+   }
+
+   .results_grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .search_letter_filter > ul > li {
+      width: 20%;
+   }
+
+   .search_letter_filter > ul > li:nth-child(n+6) {
+      margin-top: 15px;
+   }
+
+   .search_letter_filter button {
+      width: 50px;
+      height: 50px;
+   }
+}

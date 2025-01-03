@@ -1,0 +1,52 @@
+.joinselect__container {
+   width: 100%;
+   max-width: 1000px;
+   margin: 60px auto 120px auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.joinselect__container li {
+   width: calc(50% - 15px);
+   box-sizing: border-box;
+   border: 2px solid #ddd;
+   padding: 100px 0;
+   cursor: pointer;
+   border-radius: 5px;
+   box-shadow: 5px 5px 5px rgba(170, 170, 170, 0.3);
+}
+
+.joinselect__container li span {
+   font-size: 60px;
+   font-weight: 100; /* 가능한 최소값으로 설정 */
+   width: 120px;
+   height: 120px;
+   line-height: 120px;
+   background-color: #ddd;
+   color: #fff;
+   margin-bottom: 20px;
+   border-radius: 50%;
+}
+
+.joinselect__container li p {
+   font-size: 24px;
+   font-weight: 500;
+}
+
+.joinselect__container li:hover {
+   transform: translateY(-20px);
+   border: 2px solid var(--MainColor);
+   transition: all 0.3s;
+}
+
+.joinselect__container li:hover span {
+   background-color: var(--MainColor);
+   border: 3px solid var(--MainColor);
+   color: var(--MainWhite);
+   transition: all 0.3s;
+}
+
+.joinselect__container li:hover p {
+   color: var(--MainColor);
+   transition: all 0.3s;
+}

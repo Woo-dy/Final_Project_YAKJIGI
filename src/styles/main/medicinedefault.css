@@ -1,0 +1,446 @@
+.Main__stickycontainer {
+   position: relative;
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+   background-color: var(--MainWhite);
+   height: 2482px;
+}
+
+.Main__textcontents {
+   width : 350px;
+   height: 400px;
+   position: sticky;
+   top: 200px;
+   left: 0;
+   background-color: var(--MainTransform);
+   z-index: 1;
+}
+
+.Main__textcontents h2 {
+   font-size: 60px;
+   font-weight: 600;
+   line-height: 72px;
+   color: var(--FontMainColor);
+   text-align: left;
+   margin-bottom: 20px;
+   word-break: keep-all;
+}
+
+.Main__textcontents span {
+   font-size: 24px;
+   line-height: 36px;
+   word-break: keep-all;
+   color: var(--FontSubColor);
+   text-align: left;
+   display: block;
+}
+
+.Main__image__contents {
+   width : 1000px;
+   height: 100%;
+   background-color: var(--MainWhite);
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 0;
+   display: flex;
+   justify-content: center;
+}
+
+.Main__imgbox01 {
+   width: 384px;
+   height: 628px;
+   background-color: #fff;
+   position: absolute;
+   left: 0;
+   top: 100px;
+}
+
+.Main__imgbox02 {
+   width: 340px;
+   height: 532px;
+   background-color: #fff;
+   position: absolute;
+   right: 0;
+   top: 450px;
+}
+
+.Main__imgbox03 {
+   width: 720px;
+   height: 440px;
+   background-color: #fff;
+   position: absolute;
+   top: 1100px;
+}
+
+.Main__imgbox04 {
+   width: 384px;
+   height: 384px;
+   background-color: #fff;
+   position: absolute;
+   left: 0;
+   top: 1650px;
+}
+
+.Main__imgbox05 {
+   width: 340px;
+   height: 532px;
+   background-color: #fff;
+   position: absolute;
+   right: 0;
+   top: 1750px;
+}
+
+.Main__imgbox_contents a {
+   display: block;
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.Main__imgbox_contents a:before{
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+   background: var(--MainColor);
+   content: "";
+   opacity: 0;
+   transition: all 0.2s;
+}
+
+.Main__imgbox_contents a:hover:before{
+   opacity:0.86;
+}
+
+.Main__imgbox_contents .info{
+   position: absolute;
+   top: 0;
+   left: 45px;
+   z-index: 20;
+   opacity: 0;
+   transition: all 0.3s;
+   text-align: left;
+   width: calc(100% - 90px);
+}
+
+.Main__imgbox_contents a:hover .info{
+   transform: translateY(45px);
+   opacity: 1;
+}
+
+.Main__imgbox_contents .info h3 {
+   margin-bottom: 8px;
+   font-size: 24px;
+   color: #fff;
+   font-weight: normal;
+}
+
+.Main__imgbox_contents .info span {
+   font-size: 14px;
+   line-height: 24px;
+   color: #fff;
+   word-break: keep-all;
+}
+
+.Main__imgbox_contents img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center; /* 이미지를 중앙에 배치 */
+}   
+
+/* ========== 1200px 기준 ========== */
+@media screen and (max-width: 1200px) {
+   .Main__stickycontainer {
+      width: 90%;
+      height: 2482px;
+   }
+
+   .Main__textcontents h2 {
+      font-size: 50px;
+      line-height: 62px;
+   }
+   
+   .Main__textcontents span {
+      font-size: 20px;
+      line-height: 32px;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .Main__stickycontainer {
+      margin: 0 auto 80px;
+      height: 2802px;
+   }
+
+   .Main__textcontents {
+      padding: 120px 0 30px 0;
+      width: 100%;
+      top: 30px;
+      margin: 0 auto;
+      height: auto;
+   }
+
+   .Main__textcontents h2 {
+      font-size: 40px;
+      line-height: 46px;
+      margin-bottom: 16px;
+      word-break: keep-all;
+   }
+
+   .Main__textcontents span {
+      font-size: 18px;
+   }
+
+   .Main__image__contents {
+      width: 100%;
+      height: 100%;
+      background-color: var(--MainWhite);
+      z-index: 0;
+      flex-direction: column;
+      position: relative;
+      margin: 0 auto;
+   }
+   
+   .Main__image__contents div:last-child {
+      margin-bottom: 0px;
+   }
+
+   .Main__imgbox_contents .info{
+      position: absolute;
+      top: 0;
+      left: 30px;
+      z-index: 20;
+      opacity: 0;
+      transition: all 0.3s;
+      text-align: left;
+      width: calc(100% - 60px);
+   }
+   
+   .Main__imgbox_contents a:hover .info{
+      transform: translateY(32px);
+      opacity: 1;
+   }
+
+   .Main__imgbox01 {
+      top: 0px;
+      height: 428px;
+   }
+
+   .Main__imgbox02 {
+      top: 550px;
+      height: 428px;
+   }
+
+   .Main__imgbox03 {
+      width: 100%;
+      height: 440px;
+      background-color: #fff;
+      position: absolute;
+      top: 1035px;
+   }
+
+   .Main__imgbox04 {
+      width: 384px;
+      height: 384px;
+   }
+
+   .Main__imgbox05 {
+      width: 340px;
+      height: 432px;
+      background-color: #fff;
+      position: absolute;
+      right: 0;
+      top: 2100px;
+   }
+
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .Main__stickycontainer {
+      margin: 0 auto 80px;
+      height: 2802px;
+   }
+
+   .Main__textcontents {
+      padding: 80px 0 30px 0;
+      width: 100%;
+      top: 30px;
+      margin: 0 auto;
+      height: auto;
+   }
+
+   .Main__textcontents h2 {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 16px;
+      word-break: keep-all;
+   }
+
+   .Main__textcontents span {
+      font-size: 18px;
+   }
+
+   .Main__image__contents {
+      width: 100%;
+      height: 100%;
+      background-color: var(--MainWhite);
+      z-index: 0;
+      flex-direction: column;
+      position: relative;
+      margin: 0 auto;
+   }
+   
+   .Main__image__contents div:last-child {
+      margin-bottom: 0px;
+   }
+
+   .Main__imgbox_contents .info{
+      position: absolute;
+      top: 0;
+      left: 30px;
+      z-index: 20;
+      opacity: 0;
+      transition: all 0.3s;
+      text-align: left;
+      width: calc(100% - 60px);
+   }
+   
+   .Main__imgbox_contents a:hover .info{
+      transform: translateY(32px);
+      opacity: 1;
+   }
+
+   .Main__imgbox01 {
+      top: 60px;
+      height: 428px;
+   }
+
+   .Main__imgbox02 {
+      top: 550px;
+      height: 428px;
+   }
+
+   .Main__imgbox03 {
+      width: 100%;
+      height: 440px;
+      background-color: #fff;
+      position: absolute;
+      top: 1035px;
+   }
+
+   .Main__imgbox04 {
+      width: 384px;
+      height: 384px;
+   }
+
+   .Main__imgbox05 {
+      width: 340px;
+      height: 432px;
+      background-color: #fff;
+      position: absolute;
+      right: 0;
+      top: 2100px;
+   }
+
+}
+
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .Main__stickycontainer {
+      margin: 0 auto 80px;
+      height: auto;
+   }
+
+   .Main__textcontents {
+      padding: 80px 0 30px 0;
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+      position: static;
+   }
+
+   
+   
+   .Main__textcontents h2 {
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 16px;
+      word-break: keep-all;
+      text-align: center;
+   }
+
+   .Main__textcontents span {
+      font-size: 18px;
+      text-align: center;
+   }
+
+   .Main__image__contents {
+      width: 100%;
+      height: 100%;
+      background-color: var(--MainWhite);
+      position: static;
+      z-index: 0;
+      flex-direction: column;
+   }
+
+   .Main__image__contents div {
+      position: static;
+      margin: 0 auto 30px;
+   }
+   
+   .Main__image__contents div:last-child {
+      margin-bottom: 0px;
+   }
+
+   .Main__imgbox_contents .info{
+      position: absolute;
+      top: 0;
+      left: 30px;
+      z-index: 20;
+      opacity: 0;
+      transition: all 0.3s;
+      text-align: left;
+      width: calc(100% - 60px);
+   }
+   
+   .Main__imgbox_contents a:hover .info{
+      transform: translateY(32px);
+      opacity: 1;
+   }
+
+   .Main__imgbox01 {
+      width: 100%;
+      height: 280px;
+   }
+
+   .Main__imgbox02 {
+      width: 100%;
+      height: 280px;
+   }
+
+   .Main__imgbox03 {
+      width: 100%;
+      height: 280px;
+   }
+
+   .Main__imgbox04 {
+      width: 100%;
+      height: 280px;
+   }
+
+   .Main__imgbox05 {
+      width: 100%;
+      height: 280px;
+   }
+
+}

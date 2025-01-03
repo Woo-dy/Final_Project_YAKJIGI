@@ -1,0 +1,802 @@
+[
+    {
+        "item_name": "가스디알정50밀리그램(디메크로틴산마그네슘)",
+        "entp_name": "일동제약(주)",
+        "item_seq": "200808876",
+        "chart": "녹색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300104",
+        "drug_shape": "원형",
+        "class_name": "기타의 소화기관용약",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "페라트라정2.5밀리그램(레트로졸)",
+        "entp_name": "(주)유한양행",
+        "item_seq": "200808877",
+        "chart": "어두운 황색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300107",
+        "drug_shape": "원형",
+        "class_name": "항악성종양제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "졸뎀속붕정(졸피뎀타르타르산염)",
+        "entp_name": "보령제약(주)",
+        "item_seq": "200808948",
+        "chart": "흰색의 원형 구강붕해정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300128",
+        "drug_shape": "원형",
+        "class_name": "최면진정제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "가스프렌정(모사프리드시트르산염이수화물)",
+        "entp_name": "경동제약(주)",
+        "item_seq": "200809076",
+        "chart": "분할선을 가진 흰색의 장방형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300143",
+        "drug_shape": "장방형",
+        "class_name": "기타의 소화기관용약",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "바르탄정(발사르탄)",
+        "entp_name": "(주)휴온스",
+        "item_seq": "200809361",
+        "chart": "엷은 적색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300155",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "리피논정80밀리그램(아토르바스타틴칼슘삼수화물)",
+        "entp_name": "동아에스티(주)",
+        "item_seq": "200809402",
+        "chart": "이 약은 흰색의 타원형 필름코팅정이다.",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300161",
+        "drug_shape": "타원형",
+        "class_name": "동맥경화용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "사르발탄정160밀리그램(발사르탄)",
+        "entp_name": "(주)서울제약",
+        "item_seq": "200809710",
+        "chart": "회색빛을 띠는 오렌지색의 타원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/153432591328100009",
+        "drug_shape": "타원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "가스베트정5밀리그램(모사프리드시트르산염수화물)",
+        "entp_name": "일동제약(주)",
+        "item_seq": "200809882",
+        "chart": "흰색의 장방형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154333330132500103",
+        "drug_shape": "장방형",
+        "class_name": "기타의 소화기관용약",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "아푸르탄정150밀리그램(이르베사르탄)",
+        "entp_name": "동아에스티(주)",
+        "item_seq": "200809883",
+        "chart": "흰색 또는 거의 흰색의 양쪽이 볼록한 타원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426403087300198",
+        "drug_shape": "타원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "발사르텔정80밀리그램(발사르탄)",
+        "entp_name": "주식회사제뉴원사이언스",
+        "item_seq": "200809909",
+        "chart": "분홍색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1OCNrLiTjPI",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "발사르텔정160밀리그램(발사르탄)",
+        "entp_name": "주식회사제뉴원사이언스",
+        "item_seq": "200809910",
+        "chart": "회색빛을 띠는 오렌지색의 타원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1NXa2J_Kd2y",
+        "drug_shape": "타원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "에스시탈정5밀리그램(에스시탈로프람옥살산염)",
+        "entp_name": "(주)종근당",
+        "item_seq": "200810125",
+        "chart": "흰색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700016",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "발산정80밀리그램(발사르탄)",
+        "entp_name": "유니메드제약(주)",
+        "item_seq": "200810314",
+        "chart": "엷은 적색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154298763309300033",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "가스리드정5mg(모사프리드시트르산염수화물)",
+        "entp_name": "(주)유한양행",
+        "item_seq": "200810338",
+        "chart": "분할선을 가진 흰색의 장방형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700025",
+        "drug_shape": "장방형",
+        "class_name": "기타의 소화기관용약",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "엑스반정80밀리그램(발사르탄)",
+        "entp_name": "삼진제약(주)",
+        "item_seq": "200810473",
+        "chart": "분홍색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/148665498867700136",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "뉴멘타민서방캡슐8밀리그램(갈란타민브롬화수소산염)",
+        "entp_name": "고려제약(주)",
+        "item_seq": "200810509",
+        "chart": "흰색 내지 거의 흰색의 서방코팅된 펠렛이 들어있는 불투명한 상·하 흰색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706776344700079",
+        "drug_shape": "장방형",
+        "class_name": "기타의 중추신경용약",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "발트렙정160밀리그램(발사르탄)",
+        "entp_name": "경동제약(주)",
+        "item_seq": "200810522",
+        "chart": "회색빛을 띠는 오렌지색의 타원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700046",
+        "drug_shape": "타원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "수로신디정(탐스로신염산염)",
+        "entp_name": "(주)에스트라",
+        "item_seq": "200810789",
+        "chart": "흰색의 원형 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700049",
+        "drug_shape": "원형",
+        "class_name": "기타의 비뇨생식기관 및 항문용약",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "로수로드정10밀리그램(로수바스타틴칼슘)",
+        "entp_name": "(주)종근당",
+        "item_seq": "200810870",
+        "chart": "분홍색의 원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706768099900035",
+        "drug_shape": "원형",
+        "class_name": "동맥경화용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "디오살탄정160밀리그램(발사르탄)",
+        "entp_name": "(주)유한양행",
+        "item_seq": "200811104",
+        "chart": "회색빛을 띠는 오렌지색의 타원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154298782012500025",
+        "drug_shape": "타원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "디오살탄정80밀리그램(발사르탄)",
+        "entp_name": "(주)유한양행",
+        "item_seq": "200811105",
+        "chart": "엷은 적색의 원형필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154298782012500031",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "칸데사르정8밀리그램(칸데사르탄실렉세틸)",
+        "entp_name": "(주)한독",
+        "item_seq": "200811403",
+        "chart": "양면이 볼록한 원형의 밝은 분홍색 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706776344800062",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "칸데사르정16밀리그램(칸데사르탄실렉세틸)",
+        "entp_name": "(주)에스트라",
+        "item_seq": "200811404",
+        "chart": "양면이 볼록한 원형의 분홍색 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706776344800068",
+        "drug_shape": "원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "디로탄정160mg(발사르탄)",
+        "entp_name": "이연제약(주)",
+        "item_seq": "200811619",
+        "chart": "회색빛을 띠는 오렌지색의 타원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700097",
+        "drug_shape": "타원형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "인케어정(옥수수불검화정량추출물)",
+        "entp_name": "(주)한국비엠아이",
+        "item_seq": "200811883",
+        "chart": "주황색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700117",
+        "drug_shape": "원형",
+        "class_name": "치과구강용약",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "제이코정",
+        "entp_name": "제이에스제약(주)",
+        "item_seq": "200811971",
+        "chart": "흰색의 장방형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/150834126208100152",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "깅코탄연질캡슐120밀리그램(은행엽건조엑스)",
+        "entp_name": "한국프라임제약(주)",
+        "item_seq": "200900018",
+        "chart": "암갈색의 유상내용물이 든 녹색의 타원형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1Mky9VD2vUV",
+        "drug_shape": "타원형",
+        "class_name": "기타의 순환계용약",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "리버풀350연질캡슐(밀크시슬열매건조엑스)",
+        "entp_name": "신일제약(주)",
+        "item_seq": "200900026",
+        "chart": "황갈색의 유상 내용물을 함유한 암적색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/146031286653200142",
+        "drug_shape": "타원형",
+        "class_name": "간장질환용제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "모니맥정(모니플루메이트)",
+        "entp_name": "맥널티제약(주)",
+        "item_seq": "200900193",
+        "chart": "크림색의 장방형 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700170",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "모니필정350밀리그램(모니플루메이트)",
+        "entp_name": "(주)테라젠이텍스",
+        "item_seq": "200900194",
+        "chart": "크림색의 장방형 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1NOwp2F6BNX",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "모니메르정(모니플루메이트)",
+        "entp_name": "알리코제약(주)",
+        "item_seq": "200900195",
+        "chart": "크림색의 타원형 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/152648520364900007",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "모니트정350밀리그램(모니플루메이트)",
+        "entp_name": "(주)하원제약",
+        "item_seq": "200900196",
+        "chart": "크림색의 타원형 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1O1A3H02Ph8",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "키비칼츄어블정",
+        "entp_name": "(유)한풍제약",
+        "item_seq": "200900242",
+        "chart": "분홍색의 씹어먹는 원형정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426407360700190",
+        "drug_shape": "원형",
+        "class_name": "혼합비타민제(비타민AD 혼합제제를 제외)",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "칸데사르플러스정16/12.5밀리그램",
+        "entp_name": "(주)한독",
+        "item_seq": "200900378",
+        "chart": "엷은 주황색의 장방형 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706776344800074",
+        "drug_shape": "장방형",
+        "class_name": "혈압강하제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "코프나캡슐",
+        "entp_name": "(주)휴온스생명과학",
+        "item_seq": "200900605",
+        "chart": "흰색분말이 든 상부 진한녹색, 하부 흰색의 경질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800014",
+        "drug_shape": "장방형",
+        "class_name": "진해거담제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "굿스펜연질캡슐(덱시부프로펜)",
+        "entp_name": "광동제약(주)",
+        "item_seq": "200900682",
+        "chart": "[내수용] 무색 내지 미색의 투명한 액상 내용물을 함유한 투명한 장방형 연질캡슐[수출용] 미황색의 투명한 유상내용물이 든 주황색의 투명한 타원형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1Oikd3yeYje",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "가스파플러스정",
+        "entp_name": "(주)일화",
+        "item_seq": "200900823",
+        "chart": "녹색 내지 연녹색의 원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800050",
+        "drug_shape": "원형",
+        "class_name": "소화성궤양용제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "마이칼디정",
+        "entp_name": "명문제약(주)",
+        "item_seq": "200900833",
+        "chart": "황갈색의 장방형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800053",
+        "drug_shape": "장방형",
+        "class_name": "칼슘제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "모빅캡슐7.5밀리그램(멜록시캄)",
+        "entp_name": "한국베링거인겔하임(주)",
+        "item_seq": "200900844",
+        "chart": "노란색 가루가 든 상,하 밝은 초록색 캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1Opnl07NLZB",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "모빅캡슐15밀리그램(멜록시캄)",
+        "entp_name": "한국베링거인겔하임(주)",
+        "item_seq": "200900845",
+        "chart": "노란색 가루가 든 상부 밝은 초록색, 하부 노란색 캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1Oa2BrqwGD-",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "코큐렉스연질캡슐",
+        "entp_name": "(주)알피바이오",
+        "item_seq": "200901014",
+        "chart": "황갈색의 내용물을 함유한 암갈색의 장방형 연질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800062",
+        "drug_shape": "장방형",
+        "class_name": "기타의 비타민제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "발크로버정500밀리그램(발라시클로비르염산염수화물)",
+        "entp_name": "환인제약(주)",
+        "item_seq": "200901073",
+        "chart": "흰색의 양면이 볼록한 장방형의 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154333342488200040",
+        "drug_shape": "장방형",
+        "class_name": "기타의 화학요법제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "엔에이피정(나프록센나트륨)",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200901148",
+        "chart": "연한 파란색의 타원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800080",
+        "drug_shape": "타원형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "메디헤모연질캡슐",
+        "entp_name": "동화약품(주)",
+        "item_seq": "200901177",
+        "chart": "갈색의 유상 내용물을 함유한 암갈색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154661645880000003",
+        "drug_shape": "장방형",
+        "class_name": "무기질제제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "이지에스정(방기황기탕건조엑스)",
+        "entp_name": "주식회사 제이비케이랩",
+        "item_seq": "200901187",
+        "chart": "분홍색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154333330132500115",
+        "drug_shape": "원형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "제일아노민정",
+        "entp_name": "제일약품(주)",
+        "item_seq": "200901205",
+        "chart": "진한갈 색의 장방형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/150834126208100146",
+        "drug_shape": "장방형",
+        "class_name": "기타의 자양강장변질제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "오렉스캡슐",
+        "entp_name": "(주)휴온스생명과학",
+        "item_seq": "200902918",
+        "chart": "분홍색분말이 들어있는 상하부 적색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400062",
+        "drug_shape": "장방형",
+        "class_name": "기타의 중추신경용약",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "선콜정",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200902983",
+        "chart": "연분홍색의 장방형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400068",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "베리콜노즈정",
+        "entp_name": "삼천당제약(주)",
+        "item_seq": "200903022",
+        "chart": "장방형의 분홍색 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400071",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "마그놀정",
+        "entp_name": "(주)제뉴파마",
+        "item_seq": "200903023",
+        "chart": "흰색의 타원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400074",
+        "drug_shape": "타원형",
+        "class_name": "하제, 완장제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "덴티콤캡슐",
+        "entp_name": "천우신약(주)",
+        "item_seq": "200903040",
+        "chart": "짙은 청록색 가루가 든 상부 담청색, 하부 담청색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400077",
+        "drug_shape": "장방형",
+        "class_name": "치과구강용약",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "리버파워포르테연질캡슐",
+        "entp_name": "아이큐어(주)",
+        "item_seq": "200903043",
+        "chart": "황갈색의 내용물을 함유한 황녹색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400080",
+        "drug_shape": "장방형",
+        "class_name": "간장질환용제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "본렉스이알캡슐15밀리그램(시클로벤자프린염산염)",
+        "entp_name": "(주)새한제약",
+        "item_seq": "200903044",
+        "chart": "흰색 내지 미백색의 구형 입자가 들어있는 상·하부 밝은 주황색의 불투명 서방성 경질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1Me1jz_9pfx",
+        "drug_shape": "장방형",
+        "class_name": "골격근이완제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "본렉스이알캡슐30밀리그램(시클로벤자프린염산염)",
+        "entp_name": "(주)새한제약",
+        "item_seq": "200903045",
+        "chart": "흰색 내지 미백색의 구형 입자가 들어있는 상부 빨강색, 하부 진한 파랑색의 불투명 서방성 경질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1Mdm43vUUC-",
+        "drug_shape": "장방형",
+        "class_name": "골격근이완제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "오메코프정",
+        "entp_name": "(주)에이프로젠바이오로직스",
+        "item_seq": "200903055",
+        "chart": "흰색의 원형필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400089",
+        "drug_shape": "원형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "산도스올란자핀정10밀리그램",
+        "entp_name": "삼일제약(주)",
+        "item_seq": "200903065",
+        "chart": "흰색의 원형 필름코팅 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1MeM47xF873",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "올란프레서정10mg(올란자핀)",
+        "entp_name": "한국노바티스(주)",
+        "item_seq": "200903066",
+        "chart": "흰색의 원형 필름코팅 정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400099",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "산도스올란자핀정5밀리그램",
+        "entp_name": "삼일제약(주)",
+        "item_seq": "200903067",
+        "chart": "흰색의 원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1MeM47xF86T",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "올란프레서정5mg (올란자핀)",
+        "entp_name": "한국노바티스(주)",
+        "item_seq": "200903068",
+        "chart": "흰색의 원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400107",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "산도스올란자핀정2.5밀리그램",
+        "entp_name": "삼일제약(주)",
+        "item_seq": "200903078",
+        "chart": "흰색의 원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1MeM47xF85t",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "올란프레서정2.5mg (올란자핀)",
+        "entp_name": "한국노바티스(주)",
+        "item_seq": "200903080",
+        "chart": "흰색의 원형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400122",
+        "drug_shape": "원형",
+        "class_name": "정신신경용제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "센트룸실버정",
+        "entp_name": "한국화이자제약(주)",
+        "item_seq": "200903183",
+        "chart": "이 약은 회색의 타원형 필름코팅정으로 한쪽 면에는 왼쪽에 “W\", 오른쪽에 ”2“가, 다른쪽 면에는 ”SELECT\"가 각각 새겨져 있다.",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1MwITgp4WIn",
+        "drug_shape": "타원형",
+        "class_name": "혼합비타민제(비타민AD 혼합제제를 제외)",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "헤파피스연질캡슐",
+        "entp_name": "(주)에이프로젠바이오로직스",
+        "item_seq": "200903210",
+        "chart": "황갈색의 유상내용물을 함유한 황녹색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/148604072451200094",
+        "drug_shape": "장방형",
+        "class_name": "간장질환용제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "메펜연질캡슐(메페남산)",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200903217",
+        "chart": "연한 청색 내용물을 함유한 청색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400143",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "센타민플러스연질캡슐",
+        "entp_name": "(주)알피바이오",
+        "item_seq": "200903247",
+        "chart": "주황색의 내용물을 포함한 갈색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400155",
+        "drug_shape": "장방형",
+        "class_name": "기타의 비타민제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "헤모퀸골드캡슐",
+        "entp_name": "경남제약(주)",
+        "item_seq": "200903378",
+        "chart": "갈색의 분말이 충진된 상·하부 적갈색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1NOwp2F6KEQ",
+        "drug_shape": "장방형",
+        "class_name": "무기질제제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "제로민연질캡슐(디펜히드라민염산염)",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200903392",
+        "chart": "무색 내지 연한 청록색의 투명한 액상의 내용물을 함유한 연청록색의 볼록한 타원형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400164",
+        "drug_shape": "타원형",
+        "class_name": "최면진정제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "비나코연질캡슐",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200903395",
+        "chart": "미황 내지 연한 청색의 투명한 액상 내용물이 든 청색의 투명한 장방형의 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426416757400167",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "리피다운캡슐120밀리그램(오르리스타트)",
+        "entp_name": "한미약품(주)",
+        "item_seq": "200903409",
+        "chart": "흰색 내지 연한노란색의 펠렛이 든 청록색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706772283900057",
+        "drug_shape": "장방형",
+        "class_name": "따로 분류되지 않는 대사성 의약품",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "비오펜연질캡슐(덱시부프로펜)",
+        "entp_name": "(주)동구바이오제약",
+        "item_seq": "200903482",
+        "chart": "무색 내지 연한 녹색의 투명한 액상 내용물을 함유한 녹색의 장방형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/146031002845800195",
+        "drug_shape": "타원형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "카이로정",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200903579",
+        "chart": "흰색의 장방형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/1NNuh6mJov1",
+        "drug_shape": "장방형",
+        "class_name": "진경제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "덴탈에프정(옥수수불검화정량추출물)",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200903580",
+        "chart": "주황색의 원형 당의정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154661648918900142",
+        "drug_shape": "원형",
+        "class_name": "치과구강용약",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "마이에신캡슐(은교산)",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200903585",
+        "chart": "갈색의 분말이 충진된 상부 갈색, 하부 백색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706772284000000",
+        "drug_shape": "장방형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "미카몰정",
+        "entp_name": "한솔신약(주)",
+        "item_seq": "200901403",
+        "chart": "흰색의 장방형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800116",
+        "drug_shape": "장방형",
+        "class_name": "골격근이완제",
+        "etc_otc_name": "전문의약품"
+    },
+    {
+        "item_name": "행심연질캡슐(은행엽건조엑스)",
+        "entp_name": "동화약품(주)",
+        "item_seq": "200901575",
+        "chart": "진한갈색의 내용물이 든 녹색의 타원형 연질캡슐",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/154661645880000009",
+        "drug_shape": "타원형",
+        "class_name": "기타의 순환계용약",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "알룬정",
+        "entp_name": "(주)휴온스",
+        "item_seq": "200901619",
+        "chart": "분홍색의 장방형 필를코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800128",
+        "drug_shape": "타원형",
+        "class_name": "따로 분류되지 않는 대사성 의약품",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "미니메이드정(수출용)",
+        "entp_name": "(주)넥스팜코리아",
+        "item_seq": "200901620",
+        "chart": "분홍색의 장방형 필름코팅정제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800131",
+        "drug_shape": "타원형",
+        "class_name": "따로 분류되지 않는 대사성 의약품",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "리버플란연질캡슐",
+        "entp_name": "(주)서흥",
+        "item_seq": "200901818",
+        "chart": "황갈색의 내용물을 함유하는 암갈색의 장방형 연질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800137",
+        "drug_shape": "장방형",
+        "class_name": "간장질환용제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "에코닉신정(클로닉신리시네이트)",
+        "entp_name": "화일약품(주)",
+        "item_seq": "200902147",
+        "chart": "주황색의 원형 필름코팅정",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/147426411393800158",
+        "drug_shape": "원형",
+        "class_name": "해열.진통.소염제",
+        "etc_otc_name": "일반의약품"
+    },
+    {
+        "item_name": "토넥스포르테캡슐",
+        "entp_name": "대우제약(주)",
+        "item_seq": "200902192",
+        "chart": "엷은 홍색의 분말이 든 상·하부 적색의 경질캡슐제",
+        "item_image": "https://nedrug.mfds.go.kr/pbp/cmn/itemImageDownload/151706768099900101",
+        "drug_shape": "장방형",
+        "class_name": "기타의 중추신경용약",
+        "etc_otc_name": "일반의약품"
+    }
+]

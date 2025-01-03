@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+.write__container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 60px auto 0 auto;
+   border: 1px solid #ddd;
+   padding: 40px;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+.write__date__container__box ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.write__date__container__box ul li {
+   border-bottom: 1px solid #ddd;
+   padding: 20px 0;
+}
+
+
+.write__date__container__box ul li:nth-child(-n+2) {
+   padding: 0px 0 20px 0;
+}
+
+.write__date__container__box ul li:nth-last-child(-n+2) {
+   border-bottom: 0px;
+   padding: 20px 0 0px 0;
+}
+
+.write__date__container__box ul li:nth-child(odd) {
+   width: 170px;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.write__btn__ul {
+   display: flex;
+   justify-content: center;
+   margin: 20px auto 120px;
+}
+
+.write__date__container__box ul li:nth-child(even) {
+   width: calc(100% - 170px);
+   text-align: left;
+}
+
+/* 캘린더 아이콘 */
+.write__date__container {
+   position: relative;
+   display: inline-block;
+}
+
+.write__date__container span {
+   position: absolute;
+   right: 12px;
+   bottom: 12px;
+   color: #333;
+   font-size: 20px;
+   font-weight: 100;
+   display: inline-block;
+}
+
+.write__container input {
+   width: 500px;
+   height: 42px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   font-size: 16px;
+   padding: 0 12px;
+}
+
+.write__search__btn {
+   background-color: #333;
+   color: #ddd;
+   font-size: 16px;
+   border-radius: 5px;
+   width: 130px;
+   height: 42px;
+   margin-left: 16px;
+   cursor: pointer;
+}
+
+.write__img__btn {
+   background-color: #333;
+   color: #ddd;
+   font-size: 16px;
+   border-radius: 5px;
+   width: 130px;
+   height: 42px;
+   margin-left: 16px;
+}
+
+.write__modal__search__btn {
+   background-color: #333;
+   color: #ddd;
+   font-size: 14px;
+   border-radius: 5px;
+   width: 130px;
+   height: 42px;
+   margin-left: 16px;
+}
+
+.write__ok__btn {
+   background-color: #333;
+   color: #ddd;
+   font-size: 16px;
+   border-radius: 5px;
+   width: 130px;
+   height: 42px;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.write__no__btn {
+   background-color: #ffff;
+   color: #666;
+   font-size: 16px;
+   border-radius: 5px;
+   border-color: #aaa;
+   width: 130px;
+   height: 42px;
+   cursor: pointer;
+}
+
+.write__no__btn:hover {
+   border: 1px solid var(--MainColor);
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.write__ok__btn:hover {
+   background-color: var(--MainColor);
+   color: var(--MainWhite);
+   transition: all 0.3s;
+}
+
+/* input type=file style */
+.filebox .uploadName {
+   width: 500px; /* 가로 크기 */
+   display: inline-block;
+   height: 42px;
+   font-size: 16px;
+   padding: 0 15px;
+   vertical-align: middle;
+   border: 1px solid #dddddd;
+   color: #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.filebox {
+   display: flex;
+}
+
+.filebox label {
+   width: 130px;
+   height: 42px;
+   border-radius: 5px;
+   display: inline-block;
+   padding: 0px 20px;
+   color: #fff;
+   vertical-align: middle;
+   background-color: #999999;
+   cursor: pointer;
+   height: 40px;
+   line-height: 40px;
+   margin-left: 16px;
+   box-sizing: border-box;
+   text-align: center;
+   font-size: 16px;
+}
+
+/* 기존 디자인 삭제 */
+.filebox input[type="file"] {
+   position: absolute;
+   width: 0;
+   height: 0;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+}
+
+/* ============= ck에디터  높이 조정 ============= */
+.ckeditor {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.ckEditorEditable {
+   min-height: 300px; /* 최소 높이 */
+   max-height: 500px; /* 최대 높이 */
+   overflow-y: auto;  /* 스크롤 활성화 */
+   padding: 10px; /* 내부 여백 */
+   border: 1px solid #ccc; /* 테두리 */
+   box-sizing: border-box; /* 박스 크기 조정 */
+
+   /* 폰트와 줄 간격 설정 */
+   font-family: Arial, sans-serif; /* 기본 폰트 */
+   font-size: 16px; /* 폰트 크기 */
+   line-height: 1.6; /* 줄 간격 */
+}
+
+/* 모달창 */
+
+.write__modalContainer {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 2;
+}
+
+.write__modalContent__box {
+   background-color: #ffffff;
+   width: 800px;
+   height: 566px;
+   padding: 30px;
+   border-radius: 10px;
+}
+
+.write__modal__search {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 2px solid #000;
+   padding-bottom: 12px;
+}
+
+.write__modal__search2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+button.material-icons {
+   font-size: 24px;
+   font-weight: 300;
+}
+
+.write__modal__search > li {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.write__modal__search > li > button {
+   border: 0;
+   background-color: transparent; /* 배경 투명 */
+   color: #333;
+   font-size: 24px;
+   cursor: pointer;
+}
+
+.write__modal__search > li > button:hover {
+   color: var(--MainColor);
+   transition: all 0.3s;
+}
+
+.write__modal__search2 input{
+   width: 100%;
+   height: 36px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   font-size: 14px;
+}
+
+.write__modal__search2 li:first-child {
+   width: calc(100% - 100px);
+}
+
+.write__modal__search2 li:last-child {
+   width: 100px;
+   margin-left: 16px;
+}
+
+.write__modalContent__box table tbody {
+   width: 100%;
+   height: 100%;
+}
+
+.write__modalContent__box table thead, table tbody tr {
+   width: 100%;
+}
+
+.write__table {
+   width: 100%;
+   height: 370px;
+   overflow: auto;
+}
+
+.write__table table {
+   width: 100%;
+}
+
+/* 테이블 헤더 */
+.write__modalContent__box table thead tr {
+   background-color: #f4f4f4; /* 헤더 배경색 */
+   font-weight: bold; /* 글자 두껍게 */
+   text-align: center;
+   border-bottom: 2px solid #ddd; /* 헤더 밑에 테두리 */
+}
+
+.write__modalContent__box table thead th {
+   padding: 10px 15px; /* 헤더 셀에 여백 추가 */
+   color: #333; /* 글자 색 */
+   font-size: 16px; /* 글자 크기 */
+}
+
+/* .write__modalContent__box table thead tr th {
+   height: 36px;
+   box-sizing: border-box;
+   padding: 0;
+   vertical-align: middle;
+   position: sticky;
+   top: 0;
+   text-align: center;
+} */
+
+/* 테이블 본문 */
+.write__modalContent__box table tbody tr {
+   text-align: center;
+   transition: background-color 0.3s ease; /* 마우스 오버 시 부드럽게 색 변화 */
+}
+
+.write__modalContent__box table tbody tr:hover {
+   background-color: #f0f0f0; /* 마우스 오버 시 배경색 */
+}
+
+/* 테이블 본문의 각 셀 */
+.write__modalContent__box table tbody td {
+   padding: 10px 15px; /* 셀에 여백 추가 */
+   border-bottom: 1px solid #eee; /* 셀 밑에 경계선 추가 */
+   color: #555; /* 글자 색 */
+   font-size: 14px; /* 글자 크기 */
+}
+
+/* 테이블 첫 번째 열에 스타일 추가 */
+.write__modalContent__box table tbody tr td:first-child {
+   font-weight: bold; /* 첫 번째 열 글자 두껍게 */
+   color: #333; 
+}
+
+/* 테이블 마지막 셀에 여백 추가 */
+.write__modalContent__box table tbody tr td:last-child {
+   padding-right: 20px; /* 오른쪽 여백 */
+}
+
+.write__modalContent__box table tbody tr td {
+   height: 36px;
+   box-sizing: border-box;
+   padding: 0;
+   vertical-align: middle;
+   text-align: center;
+}
+
+.write__search__container {
+   width: 100%;
+   display: flex;
+}
+
+/* 반응형 디자인 */
+
+@media screen and (max-width: 1380px) {
+   .write__container {
+      width: 90%;
+   }
+
+   .write__date__container__box ul li:nth-child(even) input {
+      width: 400px;
+   }
+
+   .filebox .uploadName {
+      width: 400px;
+   }
+   
+   .write__modalContent__box {
+      width: 700px;
+      height: 500px;
+   }
+}
+
+/* ========== 1000px 기준 ========== */
+@media screen and (max-width: 1000px) {
+   .write__date__container__box ul li:nth-child(even) input {
+      width: 300px;
+   }
+   .filebox .uploadName {
+      width: 300px;
+   }
+   .write__modalContent__box {
+      width: 600px;
+      height: 450px;
+   }
+
+   .button {
+      width: 100px;
+      height: 36px;
+      font-size: 14px;
+   }
+
+   .write__modalContent__box table tbody tr td {
+      box-sizing: border-box;
+   }
+
+   .write__date__container__box ul li:nth-child(odd) {
+      width: 20%;
+   }
+
+   .write__date__container__box ul li:nth-child(even) {
+      width: 80%;
+      text-align: left;
+   }
+}
+
+/* ========== 768px 기준 ========== */
+@media screen and (max-width: 768px) {
+   .write__container {
+      padding: 30px;
+   }
+
+   .write__date__container__box ul {
+      flex-direction: column;
+      border-bottom: none;
+   }
+   .write__date__container__box ul li {
+      width: 100%;
+      padding: 10px 0;
+   }
+   .write__date__container__box ul li:nth-child(odd) {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      border-bottom: 0;
+   }
+   .write__date__container__box ul li:nth-child(even) {
+      width: 100%;
+   }
+   .write__modalContent__box {
+      width: 100%;
+      height: auto;
+   }
+
+   .write__search__modalbtn {
+      margin-left: 1px;
+   }
+
+   .write__date__container__span {
+      position: absolute;
+      left: 40%;
+      bottom: 12px;
+      color: #333;
+      font-size: 20px;
+      font-weight: 100;
+      display: inline-block;
+   }
+
+   .filebox label {
+      width: 100px;
+      height: 42px;
+      font-size: 16px;
+   }
+
+   .filebox .uploadName {
+      width: calc(100% - 116px); /* 가로 크기 */
+      font-size: 16px;
+   }
+}
+
+/* ========== 480px 기준 ========== */
+@media screen and (max-width: 480px) {
+   .write__date__container__box ul li:nth-child(even) input {
+      width: 100%;
+      font-size: 14px;
+   }
+   .filebox .uploadName {
+      width: 100%;
+      font-size: 14px;
+   }
+   .write__modalContent__box {
+      width: 100%;
+      padding: 20px;
+      height: auto;
+   }
+   
+   .write__search__btn, .write__modal__search2 button {
+      width: 90px;
+      margin: 0;
+   }
+   .write__btn__ul li button {
+      width: 90px;
+      height: 32px;
+      font-size: 12px;
+   }
+   .write__table table thead th, .write__table table tbody td {
+      font-size: 12px;
+      padding: 5px;
+   }
+
+   .write__search__container {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .board__input__text {
+      font-size: 14px;
+   }
+
+   .filebox .uploadName {
+      font-size: 14px;
+   }
+
+   .write__search__modalbtn {
+      width: 90px;
+      height: 33px;
+      font-size: 12px;
+      margin: 0;
+   }
+
+   .write__modalContent__box {
+      background-color: #ffffff;
+      width: 90%;
+      height: 90%;
+      border-radius: 10px;
+   }
+
+   .write__modal__search2 li:first-child {
+      width: calc(100% - 90px);
+   }
+
+   .write__search__btn {
+      margin-left: 16px;
+      width: 90px;
+   }
+
+   .filebox .uploadName {
+      font-size: 14px;
+   }
+
+   .filebox > div {
+      align-items: center;
+   }
+
+}
