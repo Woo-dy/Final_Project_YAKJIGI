@@ -1,0 +1,9 @@
+.mybasicboardlog__calendar__box {
+   width: 1320px;
+   margin: 60px auto 120px;
+   padding: 20px;
+   background-color: #ffff; /* 캘린더 배경색 */
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border: 1px solid #ddd;
+}

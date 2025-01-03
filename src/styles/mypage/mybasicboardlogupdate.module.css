@@ -258,6 +258,11 @@
    font-size: 16px;
    color: #333;
    border-bottom: 1px solid #ddd;
+   padding: 10px;
+}
+
+.statusupdate__table tbody tr td:nth-child(2) {
+   text-align: center;
 }
 
 .statusupdate__table thead tr th:nth-child(1) {
@@ -294,6 +299,12 @@
    width: 60px;
 }
 
+.statusupdate__table thead tr th:nth-child(4) span:hover {
+   color: var(--MainColor);
+   transition: all 0.3s;
+   cursor: pointer;
+}
+
 .statusupdate__table tbody tr td button {
    border-radius: 50%;
    background-color: #000;
@@ -305,6 +316,11 @@
    justify-content: center;
    align-items: center;
    margin: 0 auto;
+}
+
+.statusupdate__table tbody tr td button:hover {
+   background-color: var(--MainColor);
+   transition: all 0.3s;
 }
 
 /* 반응형 */

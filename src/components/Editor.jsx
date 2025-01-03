@@ -44,58 +44,61 @@ function Editor({onChange}) {
    return (
    <> 
    <CKEditor 
-      editor = {ClassicEditor}
-      data = {editorData}
-   config = {{
-toolbar: [
-'bold',
-'italic',
-'underline',
-'strikethrough',
-'link',
-'bulletedList',
-'numberedList',
-'imageUpload',
-'blockQuote',
-'insertTable',
-'horizontalLine',
-'specialCharacters'
-],
-// 이미지 드래그 앤 드롭을 위한 설정
-image: {
-toolbar: [
-'imageTextAlternative',
-'imageStyle:full',
-'imageStyle:side'
-],
-// 업로드 어댑터 설정
-upload: {
-adapter: uploadAdapter
-}
-},
-// CKFinder 설정
-ckfinder: {
-uploadUrl: 'http://localhost:3001/upload' // 이미지 업로드를 처리할 URL
-}
-}}
-   onReady = {
-      editor => {
-         console.log('에디터가 준비되었습니다!', editor);
+      editor={ClassicEditor}
+      data={editorData}
+      config = {{
+         toolbar: [
+               'bold',
+               'italic',
+               'underline',
+               'strikethrough',
+               'link',
+               'bulletedList',
+               'numberedList',
+               'imageUpload',
+               'blockQuote',
+               'insertTable',
+               'horizontalLine',
+               'specialCharacters'
+            ],
+            // 이미지 드래그 앤 드롭을 위한 설정
+         image: {
+            toolbar: [
+               'imageTextAlternative',
+               'imageStyle:full',
+               'imageStyle:side'
+            ],
+            // 업로드 어댑터 설정
+            upload: {
+               adapter: uploadAdapter
+            }
+         },
+         // CKFinder 설정
+         ckfinder: {
+            uploadUrl: 'http://localhost:3001/upload' // 이미지 업로드를 처리할 URL
+         }
+      }}
+      onReady = {
+         editor => {
+            console.log('에디터가 준비되었습니다!', editor);
+         }
       }
-   }
-   onBlur = {
-      (event, editor) => {
-         console.log('Blur 이벤트 발생.', editor);
+      onBlur = {
+         (event, editor) => {
+            console.log('Blur 이벤트 발생.', editor);
+         }
       }
-   }
-   onFocus = {
-      (event, editor) => {
-         console.log('Focus 이벤트 발생.', editor);
+      onFocus = {
+         (event, editor) => {
+            console.log('Focus 이벤트 발생.', editor);
+         }
       }
-   }
-   onChange = {
-      handleChange
-   } /> </>);
+      onChange = {
+         handleChange
+      } 
+   /> 
+   </>
+   );
 }
 
 export default Editor;

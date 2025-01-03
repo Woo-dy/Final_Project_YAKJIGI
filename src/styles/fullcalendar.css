@@ -1,0 +1,14 @@
+.fc .fc-scroller-harness {
+   z-index: 0;
+}
+
+.fc .fc-scroller {
+   position: relative;
+   z-index: 0;
+}
+
+.fc .fc-scrollgrid-section-sticky > * {
+   background: var(--fc-page-bg-color);
+   position: sticky;
+   z-index: 0;
+}

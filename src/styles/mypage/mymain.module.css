@@ -155,6 +155,7 @@ nav.mypage_nav ul li {
    line-height: 50px;
    border: 1px solid #ddd;
    font-size: 18px;
+   text-align: center;
 }
 
 .my__board__tabmenu ul li a {
